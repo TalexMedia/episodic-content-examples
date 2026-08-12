@@ -19,12 +19,16 @@ Ten case studies, each one a real show with a repeating format, a real person on
 | 4 | Make My Space Work | Shopify Studios | Software | Long, median 13m43s |
 | 5 | YETI Presents | YETI | Outdoor gear | Long, median 8m17s |
 | 6 | Between 2 Rides | eBay Motors | Online marketplace | Long, 8 to 12m |
-| 7 | Live Tests | Volvo Trucks | Heavy trucks | Short, median 1m17s |
-| 8 | IKEA Home Tour | IKEA USA | Home furnishing | Short, median 49s |
-| 9 | Rico's Tacos | Albertsons with P&G | Grocery | Short, median 49s |
-| 10 | DIY Influencer Program | Sherwin-Williams | Paint | Counter-example |
+| 7 | Who Is JOB | Red Bull | Energy drinks | Long, median 8m59s |
+| 8 | Live Tests | Volvo Trucks | Heavy trucks | Short, median 1m17s |
+| 9 | IKEA Home Tour | IKEA USA | Home furnishing | Short, median 49s |
+| 10 | Rico's Tacos | Albertsons with P&G | Grocery | Short, median 49s |
 
-Sections: `01 Long Form`, `02 Short Form`, `03 And One That Did Not`, `04 What They Have In Common`. Closes with the Talex credential row and a low-pressure intro-call CTA (`ct7b-xvd-c9x`, the team link).
+Sections: `01 Long Form`, `02 Short Form`, `03 What They Have In Common`. Closes with the Talex credential row and a low-pressure intro-call CTA (`ct7b-xvd-c9x`, the team link).
+
+**The counter-example was removed 2026-08-12.** Sherwin-Williams' DIY Influencer Program was cut on Evan's call: the page is framed as inspiration, so an example of something that did not work pulled against it. He also pointed out the framing was wrong, since that program does have a repeatable idea (every creator paints with the Color of the Year); what it lacks is a series. Do not reintroduce a failure card without asking.
+
+**Red Bull caveat.** The "All 85 episodes" playlist contains two laddish titles, "Flying Bikini Babes in Hawaii" (the second most viewed) and "Bikini Bottoms and SUP Surfing Big Waves". Flagged to Evan 2026-08-12 and left in place. If a recipient is sensitive, point the link at a single clean season instead. The embedded episode is deliberately a clean one rather than the top performer.
 
 Every card uses the same anatomy: sector, show name, **Format**, **On camera**, **Length**, a three-number result strip, the video, then a note and sources.
 
@@ -32,6 +36,8 @@ Every card uses the same anatomy: sector, show name, **Format**, **On camera**, 
 
 - Every number must trace to the YouTube Data API or to a named public source. Never estimate.
 - Self-reported figures must stay labelled as such on the card. Currently: IKEA store sales (+4.1%), eBay view total, subscriber gain, awareness lift and watch time, e.l.f. cross-platform views (7.6M), Volvo earned media (€126M), subscriber growth and the driver purchase-intent survey.
+- **The opening does not explain the long/short split in prose.** Evan cut that line 2026-08-12 as "just weird". The distinction is carried structurally instead, by the two sections and the `Length` row on every card, which satisfies the `audit_shorts_vs_longform` rule. Do not add the explanation back.
+- Tom's newsletter [Welcome to the Taco Drama](https://www.linkedin.com/pulse/welcome-taco-drama-tom-langan-wusce/) is linked from the Rico's Tacos card, because that piece is specifically about that show.
 - **Never put a short-form number next to a long-form one without labelling both.** See the `audit_shorts_vs_longform` memory. This is why the page is split by scale and why every card carries a `Length` line.
 - Every example must have a person on camera. That rule is why the "Oddly IKEA" ASMR film is not here, along with the fact that it is a one-month campaign burst rather than a format.
 - Videos use click-to-play facades, not live iframes. More than about eight live iframes on one page causes browsers to mis-paint players into the wrong cards. Keep the facade pattern.

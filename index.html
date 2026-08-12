@@ -1,0 +1,534 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width,initial-scale=1.0"/>
+<meta name="robots" content="noindex"/>
+<title>Episodic Branded Content · A Reference Library · Talex Media</title>
+<link rel="icon" type="image/png" sizes="192x192" href="https://static.wixstatic.com/media/3c6878_9a68ae0b3ff84e198fdd43fac493e294~mv2_d_1500_1500_s_2.png/v1/fill/w_192,h_192,lg_1,usm_0.66_1.00_0.01/3c6878_9a68ae0b3ff84e198fdd43fac493e294~mv2_d_1500_1500_s_2.png"/>
+<link rel="shortcut icon" href="https://static.wixstatic.com/media/3c6878_9a68ae0b3ff84e198fdd43fac493e294~mv2_d_1500_1500_s_2.png/v1/fill/w_32,h_32,lg_1,usm_0.66_1.00_0.01/3c6878_9a68ae0b3ff84e198fdd43fac493e294~mv2_d_1500_1500_s_2.png" type="image/png"/>
+<link rel="apple-touch-icon" href="https://static.wixstatic.com/media/3c6878_9a68ae0b3ff84e198fdd43fac493e294~mv2_d_1500_1500_s_2.png/v1/fill/w_180,h_180,lg_1,usm_0.66_1.00_0.01/3c6878_9a68ae0b3ff84e198fdd43fac493e294~mv2_d_1500_1500_s_2.png"/>
+<link rel="preconnect" href="https://fonts.googleapis.com"/>
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Oswald:wght@300;400;500;600&family=EB+Garamond:ital,wght@0,400;1,400;1,500&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet"/>
+
+<style>
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+
+:root{
+  --o:#E85A0C;
+  --o-dim:rgba(232,90,12,0.08);
+  --o-mid:rgba(232,90,12,0.18);
+  --o-border:rgba(232,90,12,0.28);
+  --bg:#F5F2EC;
+  --surface:#FFFFFF;
+  --surface2:#FAF8F5;
+  --border:#E2DDD6;
+  --border-strong:#C8C2BA;
+  --txt:#1A1816;
+  --txt2:#6B625A;
+  --txt3:#A89E96;
+}
+
+html{background:var(--bg);color:var(--txt);font-family:'DM Sans',system-ui,sans-serif;font-size:15px;line-height:1.6}
+body{background:var(--bg);min-height:100vh}
+#wrap{max-width:700px;margin:0 auto;padding:0 1.25rem 5rem}
+
+.disp{font-family:'Bebas Neue',sans-serif;letter-spacing:0.04em;line-height:1}
+.lbl{font-family:'Oswald',sans-serif;font-weight:500;font-size:11px;letter-spacing:0.14em;text-transform:uppercase}
+.italic{font-family:'EB Garamond',Georgia,serif;font-style:italic}
+
+.topbar{display:flex;align-items:center;justify-content:space-between;padding:1rem 0;border-bottom:1px solid var(--border)}
+.topbar-brand{display:flex;align-items:center;gap:10px;text-decoration:none}
+.topbar-logo{height:28px;width:auto}
+.topbar-name{font-family:'Bebas Neue',sans-serif;font-size:20px;letter-spacing:0.08em;color:var(--txt)}
+
+.hero{padding:3rem 0 2.5rem;border-bottom:2px solid var(--o)}
+.hero-title{font-size:clamp(40px,8vw,66px);color:var(--txt);margin-bottom:0.5rem}
+.hero-tagline{font-size:clamp(19px,3.5vw,26px);color:var(--o);margin-bottom:0}
+
+.stat-strip{display:grid;grid-template-columns:repeat(3,1fr);border:1px solid var(--border);border-radius:8px;background:var(--surface);overflow:hidden;margin:1.5rem 0 0}
+.stat-cell{padding:1rem;text-align:center;border-right:1px solid var(--border)}
+.stat-cell:last-child{border-right:none}
+.stat-num{font-family:'Bebas Neue',sans-serif;font-size:34px;letter-spacing:0.04em;color:var(--o)}
+.stat-label{font-size:11px;letter-spacing:0.08em;text-transform:uppercase;color:var(--txt3);font-family:'Oswald',sans-serif;font-weight:400}
+
+.section-intro{margin-bottom:1.25rem}
+.section-intro-row{display:flex;align-items:center;gap:8px;margin-bottom:0.4rem}
+.sec-pill-dark{background:var(--txt);color:#fff;font-family:'Oswald',sans-serif;font-weight:600;font-size:10px;letter-spacing:0.12em;text-transform:uppercase;padding:3px 10px;border-radius:3px}
+.sec-pill-orange{background:var(--o);color:#fff;font-family:'Oswald',sans-serif;font-weight:600;font-size:10px;letter-spacing:0.12em;text-transform:uppercase;padding:3px 10px;border-radius:3px}
+.section-title{font-family:'Oswald',sans-serif;font-weight:600;letter-spacing:0.02em;line-height:1.1;font-size:22px;color:var(--txt);margin-bottom:0.25rem}
+.section-subtitle{font-size:13px;color:var(--txt3);font-style:italic;font-family:'EB Garamond',Georgia,serif}
+
+.section-block{background:var(--surface);border:1px solid var(--border);border-radius:10px;padding:1.5rem;margin-bottom:1rem}
+.section-block p{font-size:14px;color:var(--txt2);line-height:1.8;margin-bottom:0.9rem}
+.section-block p:last-child{margin-bottom:0}
+.section-block strong{color:var(--txt);font-weight:500}
+.section-block em{font-family:'EB Garamond',Georgia,serif;font-style:italic;color:var(--txt)}
+
+.rule-orange{height:2px;background:var(--o);border:none;margin:2.5rem 0}
+
+.proj-card{background:var(--surface);border:1px solid var(--border);border-radius:12px;padding:1.5rem 1.5rem 1.75rem;margin-bottom:1rem}
+.proj-header{display:flex;align-items:center;gap:14px;padding-bottom:1rem;border-bottom:1px solid var(--border);margin-bottom:1.1rem}
+.proj-meta{flex:1;min-width:0}
+.proj-label{font-family:'Oswald',sans-serif;font-weight:500;font-size:10px;letter-spacing:0.14em;text-transform:uppercase;color:var(--o);margin-bottom:3px}
+.proj-name{font-family:'Bebas Neue',sans-serif;font-size:26px;letter-spacing:0.03em;line-height:1;color:var(--txt)}
+.proj-desc{font-size:13.5px;color:var(--txt2);line-height:1.75;padding:0 0 0.25rem 0}
+.proj-desc a{color:inherit;text-decoration:none;border-bottom:1px dotted var(--border-strong);transition:color 0.15s,border-color 0.15s}
+.proj-desc a:hover{color:var(--o);border-bottom-color:var(--o)}
+.proj-video-embed{margin-top:1.1rem;position:relative;width:100%;aspect-ratio:16/9;background:var(--txt);border-radius:8px;overflow:hidden}
+.proj-video-embed iframe{position:absolute;top:0;left:0;width:100%;height:100%;border:0;display:block}
+
+.bullets{list-style:none;margin:0.15rem 0 0;padding:0}
+.bullets li{position:relative;padding-left:16px;font-size:13.5px;color:var(--txt2);line-height:1.7;margin-bottom:7px}
+.bullets li:last-child{margin-bottom:0}
+.bullets li::before{content:"";position:absolute;left:2px;top:0.62em;width:5px;height:5px;border-radius:50%;background:var(--o)}
+.bullets li strong{color:var(--txt);font-weight:500}
+.bullets li em{font-family:'EB Garamond',Georgia,serif;font-style:italic;color:var(--txt)}
+
+.video-facade{cursor:pointer;display:block;border:0;padding:0}
+.video-facade .vf-thumb{position:absolute;top:50%;left:0;width:100%;height:auto;transform:translateY(-50%);display:block}
+.vf-play{position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);width:68px;height:48px;border-radius:12px;background:rgba(0,0,0,0.72);transition:background 0.15s}
+.vf-play::after{content:"";position:absolute;top:50%;left:52%;transform:translate(-50%,-50%);border-style:solid;border-width:11px 0 11px 19px;border-color:transparent transparent transparent #fff}
+.video-facade:hover .vf-play,.video-facade:focus-visible .vf-play{background:var(--o)}
+.video-facade:focus-visible{outline:2px solid var(--o);outline-offset:3px}
+.video-facade .vf-title{position:absolute;left:0;right:0;bottom:0;padding:0.6rem 0.75rem;font-family:'Oswald',sans-serif;font-weight:500;font-size:11.5px;letter-spacing:0.04em;color:#fff;background:linear-gradient(to top,rgba(0,0,0,0.78),rgba(0,0,0,0));line-height:1.3}
+.embed-note{font-family:'Oswald',sans-serif;font-weight:400;font-size:10px;letter-spacing:0.12em;text-transform:uppercase;color:var(--txt3);margin-top:0.9rem}
+
+.cred-row{display:flex;flex-wrap:wrap;gap:8px;margin-top:1.25rem}
+.cred-chip{padding:6px 12px;border:1px solid var(--o-border);background:var(--o-dim);border-radius:4px;font-family:'Oswald',sans-serif;font-weight:500;font-size:11px;letter-spacing:0.08em;text-transform:uppercase;color:var(--o)}
+
+.cta-block{background:var(--txt);border-radius:12px;padding:2.25rem 1.75rem;margin-top:2rem;text-align:center}
+.cta-eyebrow{font-size:11px;letter-spacing:0.14em;text-transform:uppercase;color:rgba(232,90,12,0.9);font-family:'Oswald',sans-serif;font-weight:500;margin-bottom:0.75rem}
+.cta-headline{font-size:clamp(28px,5vw,44px);color:#fff;margin-bottom:0.6rem}
+.cta-sub{font-size:13.5px;color:rgba(255,255,255,0.65);line-height:1.75;max-width:480px;margin:0 auto 1.75rem}
+.cta-primary{display:inline-block;background:var(--o);color:#fff;padding:14px 30px;border-radius:8px;font-family:'Oswald',sans-serif;font-weight:600;font-size:14px;letter-spacing:0.08em;text-transform:uppercase;text-decoration:none;transition:background 0.15s,transform 0.1s}
+.cta-primary:hover{background:#c94d08}
+.cta-primary:active{transform:scale(0.98)}
+.cta-reply{margin-top:1.5rem;padding-top:1.25rem;border-top:1px solid rgba(255,255,255,0.08);font-size:13px;color:rgba(255,255,255,0.55);font-family:'EB Garamond',Georgia,serif;font-style:italic;line-height:1.6}
+
+.site-footer{margin-top:3rem;padding:1.5rem 0 1rem;border-top:1px solid var(--border);display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:1rem}
+.footer-brand{font-family:'Bebas Neue',sans-serif;font-size:16px;letter-spacing:0.08em;color:var(--txt2)}
+.footer-links{display:flex;gap:1.25rem;flex-wrap:wrap}
+.footer-links a{font-size:12px;color:var(--txt3);text-decoration:none;letter-spacing:0.06em;font-family:'Oswald',sans-serif;text-transform:uppercase}
+.footer-links a:hover{color:var(--o)}
+.footer-copy{font-size:11px;color:var(--txt3);width:100%}
+
+@media(max-width:560px){
+  .proj-header{flex-direction:column;align-items:flex-start;gap:10px}
+}
+
+@media print{
+  body{background:#fff}
+  .cta-primary{display:none}
+}
+</style>
+</head>
+<body>
+<div id="wrap">
+
+  <!-- LOCKED · topbar. Do not edit. -->
+  <nav class="topbar">
+    <a class="topbar-brand" href="https://www.talexmedia.com" target="_blank" rel="noopener">
+      <img class="topbar-logo"
+        src="https://static.wixstatic.com/media/3c6878_456d81e9cdb84e6c8bb3260ebfcc0523~mv2.png"
+        alt="Talex Media"
+        onerror="this.style.display='none'; this.nextElementSibling.style.display='inline'"
+      />
+      <span class="topbar-name" style="display:none">TALEX MEDIA</span>
+    </a>
+  </nav>
+
+  <!-- Hero -->
+  <header class="hero">
+    <h1 class="disp hero-title">Episodic Branded Content</h1>
+    <div class="italic hero-tagline">Thirteen examples of video that a brand paid for and an audience chose to watch, and what each one shows about building a format that lasts.</div>
+  </header>
+
+  <!-- Opening -->
+  <div class="section-block" style="margin-top:2rem">
+    <p>Most brand video gets made once, published, and forgotten. The examples here work differently, because each one is a format rather than a film: a repeatable idea with a new subject every time, so the audience knows what it is getting and comes back for the next one.</p>
+    <p>The page is grouped by what each example demonstrates: how a format repeats, where the brand sits inside the story, and what the form can do at different budgets. The range runs from a single creator with a small crew up to a scripted short film and an in-house studio slate.</p>
+    <p><strong>On the numbers.</strong> Every view count, episode count and channel figure was pulled from the YouTube API on 29 July 2026. Those figures move, so read them as a snapshot rather than a fixed result. Where a number comes from a brand's own award entry instead of a public source, the card says so plainly.</p>
+  </div>
+
+  <hr class="rule-orange"/>
+
+  <!-- ============ SECTION 01 ============ -->
+  <div class="section-intro">
+    <div class="section-intro-row">
+      <span class="sec-pill-orange">01</span>
+    </div>
+    <h2 class="section-title">Formats That Repeat</h2>
+    <p class="section-subtitle">One idea, a new subject each time. These four were built to run for years rather than for a campaign.</p>
+  </div>
+
+  <div class="proj-card">
+    <div class="proj-header">
+      <div class="proj-meta">
+        <div class="proj-label">Repeatable Format · Eight Seasons</div>
+        <div class="proj-name">The Weekender</div>
+      </div>
+    </div>
+    <ul class="bullets">
+      <li>A host helps one homeowner finish a room or a yard over a single weekend. Lowe's started it in 2016 and it has run for at least eight seasons across Apple TV, Fire TV, Roku and YouTube.</li>
+      <li>The episode below comes from season eight, runs 23 minutes and has 95,821 views.</li>
+      <li><strong>What it shows:</strong> one clear constraint, a single weekend, has carried a retailer's series for the better part of a decade without the format needing to change.</li>
+    </ul>
+    <div class="proj-video-embed video-facade" data-yt="TOj6NJNusAw" role="button" tabindex="0" aria-label="Play video: The Weekender, season eight"><img class="vf-thumb" src="https://i.ytimg.com/vi/TOj6NJNusAw/hqdefault.jpg" alt="" loading="lazy" onerror="this.style.display='none'"/><span class="vf-play" aria-hidden="true"></span><span class="vf-title">The Weekender · Lowe's</span></div>
+    <p class="proj-desc" style="margin-top:0.9rem;font-size:12.5px;color:var(--txt3)">Lowe's, host Monica Mangin · <a target="_blank" rel="noopener" href="https://corporate.lowes.com/newsroom/press-releases/lowes-premieres-new-original-series-weekender-07-14-16">Launch release</a> · <a target="_blank" rel="noopener" href="https://www.youtube.com/playlist?list=PLXRbmDDj3R96F9usLRnOqhfnuhpPZoV_j">Season 8 playlist</a></p>
+  </div>
+
+  <div class="proj-card">
+    <div class="proj-header">
+      <div class="proj-meta">
+        <div class="proj-label">Repeatable Format · 245 Videos</div>
+        <div class="proj-name">IKEA Home Tour</div>
+      </div>
+    </div>
+    <ul class="bullets">
+      <li>Five IKEA employees travel the country and make over rooms in real families' homes, working to whatever problem that household actually has. Using staff rather than celebrities keeps the results looking reachable.</li>
+      <li>The makeovers playlist now holds 245 videos with 59.6 million views between them, counting the full episodes alongside trailers and shorter tips.</li>
+      <li>The three most watched episodes all run between three and five minutes, well ahead of the longer ten to fifteen minute ones.</li>
+      <li><strong>What it shows:</strong> a format can scale to hundreds of videos, and the short cuts can outperform the full episodes by a wide margin.</li>
+    </ul>
+    <div class="proj-video-embed video-facade" data-yt="9vwtjTTPbLs" role="button" tabindex="0" aria-label="Play video: IKEA Home Tour Episode 202, family bedroom makeover"><img class="vf-thumb" src="https://i.ytimg.com/vi/9vwtjTTPbLs/hqdefault.jpg" alt="" loading="lazy" onerror="this.style.display='none'"/><span class="vf-play" aria-hidden="true"></span><span class="vf-title">Family Bedroom Makeover · IKEA Home Tour Ep. 202</span></div>
+    <div class="stat-strip">
+      <div class="stat-cell"><div class="stat-num">245</div><div class="stat-label">Videos</div></div>
+      <div class="stat-cell"><div class="stat-num">59.6M</div><div class="stat-label">Playlist Views</div></div>
+      <div class="stat-cell"><div class="stat-num">4.1M</div><div class="stat-label">Top Episode</div></div>
+    </div>
+    <p class="proj-desc" style="margin-top:0.9rem;font-size:12.5px;color:var(--txt3)">The episode above runs 4 minutes and has 4,081,131 views. IKEA separately reported 5.6 million views for the first season and store sales up an average of 4.1 percent during the weeks it aired. That sales figure comes from IKEA's own award entry and cannot be checked independently.</p>
+    <p class="proj-desc" style="margin-top:0.4rem;font-size:12.5px;color:var(--txt3)">IKEA USA · <a target="_blank" rel="noopener" href="https://www.youtube.com/playlist?list=PLk5L7f7HqQ7FseahfMCjuaixZgxZ8vX8_">Makeovers playlist</a> · <a target="_blank" rel="noopener" href="https://shortyawards.com/7th/ikea-home-tour">Case study and figures</a></p>
+  </div>
+
+  <div class="proj-card">
+    <div class="proj-header">
+      <div class="proj-meta">
+        <div class="proj-label">Repeatable Format · Software Brand</div>
+        <div class="proj-name">Make My Space Work</div>
+      </div>
+    </div>
+    <ul class="bullets">
+      <li>The designer Alexandra Gater rebuilds one entrepreneur's workspace in each episode, working to a budget and around how that person actually runs their business.</li>
+      <li>Shopify Studios makes it, and the series has its own channel separate from both Shopify's and the designer's, carrying 26 videos and five million views.</li>
+      <li>That channel has 61,200 subscribers against those five million views, so most of the audience arrives through search and recommendations rather than by following it.</li>
+      <li><strong>What it shows:</strong> a software company with nothing physical to film can still build a watchable series, by putting its customers on camera instead of its product.</li>
+    </ul>
+    <div class="proj-video-embed video-facade" data-yt="cJ7QmsUON7U" role="button" tabindex="0" aria-label="Play video: Make My Space Work, rental live-work transformation"><img class="vf-thumb" src="https://i.ytimg.com/vi/cJ7QmsUON7U/hqdefault.jpg" alt="" loading="lazy" onerror="this.style.display='none'"/><span class="vf-play" aria-hidden="true"></span><span class="vf-title">Rental live-work transformation · Make My Space Work</span></div>
+    <div class="stat-strip">
+      <div class="stat-cell"><div class="stat-num">26</div><div class="stat-label">Videos</div></div>
+      <div class="stat-cell"><div class="stat-num">5.0M</div><div class="stat-label">Channel Views</div></div>
+      <div class="stat-cell"><div class="stat-num">396K</div><div class="stat-label">Top Episode</div></div>
+    </div>
+    <p class="proj-desc" style="margin-top:0.9rem;font-size:12.5px;color:var(--txt3)">The episode above runs 15 minutes and has 395,598 views with 11,728 likes.</p>
+    <p class="proj-desc" style="margin-top:0.4rem;font-size:12.5px;color:var(--txt3)">Shopify Studios with Alexandra Gater · <a target="_blank" rel="noopener" href="https://www.youtube.com/c/makemyspacework/featured">Series channel</a></p>
+  </div>
+
+  <div class="proj-card">
+    <div class="proj-header">
+      <div class="proj-meta">
+        <div class="proj-label">Repeatable Format · Creator Partnership</div>
+        <div class="proj-name">From Scratch</div>
+      </div>
+    </div>
+    <ul class="bullets">
+      <li>The Home Depot and the gardening creator Kevin Espiritu turn a real property into a working garden, one stage per episode: pathways, fencing, a greenhouse, an outdoor kitchen and the build shown below.</li>
+      <li>That episode is published as a collaboration across six channels at once, so it appears on all six rather than only the brand's.</li>
+      <li>The creator's channel brings 4.1 million subscribers to the partnership against The Home Depot's 661,000, so the larger audience belongs to the creator rather than the brand.</li>
+      <li><strong>What it shows:</strong> publishing as a multi-channel collaboration puts a single episode in front of several audiences at once, including audiences the brand does not own and could not buy.</li>
+    </ul>
+    <div class="proj-video-embed video-facade" data-yt="ld4P-3i3MPc" role="button" tabindex="0" aria-label="Play video: From Scratch with Epic Gardening, pergola build"><img class="vf-thumb" src="https://i.ytimg.com/vi/ld4P-3i3MPc/hqdefault.jpg" alt="" loading="lazy" onerror="this.style.display='none'"/><span class="vf-play" aria-hidden="true"></span><span class="vf-title">Pergola build · From Scratch</span></div>
+    <div class="stat-strip">
+      <div class="stat-cell"><div class="stat-num">6</div><div class="stat-label">Collaborator Channels</div></div>
+      <div class="stat-cell"><div class="stat-num">8</div><div class="stat-label">Episodes</div></div>
+      <div class="stat-cell"><div class="stat-num">4.1M</div><div class="stat-label">Creator Subscribers</div></div>
+    </div>
+    <p class="proj-desc" style="margin-top:0.9rem;font-size:12.5px;color:var(--txt3)">The episode above runs 15 minutes and has 25,630 views. The playlist holds 15 videos in total, the eight numbered episodes plus seven shorter extras. This is the newest example on the page, first posted in April 2026.</p>
+    <p class="proj-desc" style="margin-top:0.4rem;font-size:12.5px;color:var(--txt3)">The Home Depot with Epic Gardening · <a target="_blank" rel="noopener" href="https://www.youtube.com/playlist?list=PL4wNSwy14b1CLBw7uqly-2VsyIHWUJkDK">Full playlist</a></p>
+  </div>
+
+  <hr class="rule-orange"/>
+
+  <!-- ============ SECTION 02 ============ -->
+  <div class="section-intro">
+    <div class="section-intro-row">
+      <span class="sec-pill-dark">02</span>
+    </div>
+    <h2 class="section-title">Where The Brand Sits</h2>
+    <p class="section-subtitle">Four ways of putting a product inside a story, from the center of the plot through to almost invisible.</p>
+  </div>
+
+  <div class="proj-card">
+    <div class="proj-header">
+      <div class="proj-meta">
+        <div class="proj-label">Integration · Product As The Plot</div>
+        <div class="proj-name">Between 2 Rides</div>
+      </div>
+    </div>
+    <ul class="bullets">
+      <li>Two versions of the same car go side by side, one left stock and one modified with parts sourced through eBay, then get tested against each other.</li>
+      <li>Season two ran five episodes with seven builder-creators, and eBay cut more than 200 social assets from the same footage for YouTube, Instagram and TikTok.</li>
+      <li><strong>What it shows:</strong> when the product causes the difference the episode is built around, the integration needs no voiceover to explain it. It also shows how far one shoot can stretch across channels.</li>
+    </ul>
+    <div class="proj-video-embed video-facade" data-yt="jEe7yZQlhvM" role="button" tabindex="0" aria-label="Play video: Between 2 Rides, drift test"><img class="vf-thumb" src="https://i.ytimg.com/vi/jEe7yZQlhvM/hqdefault.jpg" alt="" loading="lazy" onerror="this.style.display='none'"/><span class="vf-play" aria-hidden="true"></span><span class="vf-title">Drift test · Between 2 Rides</span></div>
+    <div class="stat-strip">
+      <div class="stat-cell"><div class="stat-num">22.9M</div><div class="stat-label">Season 2 Views</div></div>
+      <div class="stat-cell"><div class="stat-num">222K</div><div class="stat-label">New Subscribers</div></div>
+      <div class="stat-cell"><div class="stat-num">200+</div><div class="stat-label">Social Assets</div></div>
+    </div>
+    <p class="proj-desc" style="margin-top:0.9rem;font-size:12.5px;color:var(--txt3)">The episode above runs 8 minutes and has 1,297,649 views. The season totals, the subscriber gain and the claim that the channel moved from sixth to first among auto-parts channels all come from eBay's own award entry rather than from an independent source.</p>
+    <p class="proj-desc" style="margin-top:0.4rem;font-size:12.5px;color:var(--txt3)">eBay Motors, agency The Many · <a target="_blank" rel="noopener" href="https://shortyawards.com/16th/between-2-rides">Case study and results</a></p>
+  </div>
+
+  <div class="proj-card">
+    <div class="proj-header">
+      <div class="proj-meta">
+        <div class="proj-label">Integration · A Decade-Long Sponsorship</div>
+        <div class="proj-name">Roadkill</div>
+      </div>
+    </div>
+    <ul class="bullets">
+      <li>Two former car-magazine editors buy junk cars, get them running again on camera, and then drive them somewhere far away. Dodge came on as sponsor in 2015.</li>
+      <li>The launch episode below is a 39-minute thrash between three new Dodge cars, and its description opens with the line "Roadkill is now powered by Dodge!" so the arrangement is declared rather than hidden.</li>
+      <li>After that the sponsor stays light. Across the 142 videos in the run only 8 titles name Dodge or one of its models, and the rest are junk cars of every make.</li>
+      <li><strong>What it shows:</strong> a sponsor can announce itself once and then step back, and the goodwill lasts. The run has 187.7 million views across it and the live event it spawned was still running ten years later.</li>
+    </ul>
+    <div class="proj-video-embed video-facade" data-yt="wOQe1hWvX_c" role="button" tabindex="0" aria-label="Play video: Roadkill Episode 38, the Dodge launch episode"><img class="vf-thumb" src="https://i.ytimg.com/vi/wOQe1hWvX_c/hqdefault.jpg" alt="" loading="lazy" onerror="this.style.display='none'"/><span class="vf-play" aria-hidden="true"></span><span class="vf-title">The sponsorship launch episode · Roadkill Ep. 38</span></div>
+    <div class="stat-strip">
+      <div class="stat-cell"><div class="stat-num">142</div><div class="stat-label">Videos In The Run</div></div>
+      <div class="stat-cell"><div class="stat-num">187.7M</div><div class="stat-label">Views Across It</div></div>
+      <div class="stat-cell"><div class="stat-num">6.3M</div><div class="stat-label">This Episode</div></div>
+    </div>
+    <p class="proj-desc" style="margin-top:0.9rem;font-size:12.5px;color:var(--txt3)">The episode above was posted in April 2015, runs 39 minutes and has 6,271,721 views with 53,701 likes. MotorTrend files the run in a playlist titled Roadkill, Powered by Dodge, so the sponsor is named in the collection itself.</p>
+    <p class="proj-desc" style="margin-top:0.4rem;font-size:12.5px;color:var(--txt3)">MotorTrend, sponsored by Dodge · <a target="_blank" rel="noopener" href="https://www.youtube.com/playlist?list=PL12C0C916CECEA3BC">Roadkill, Powered by Dodge</a> · <a target="_blank" rel="noopener" href="https://en.wikipedia.org/wiki/Roadkill_(web_series)">Background</a></p>
+  </div>
+
+  <div class="proj-card">
+    <div class="proj-header">
+      <div class="proj-meta">
+        <div class="proj-label">Integration · Product Almost Absent</div>
+        <div class="proj-name">YETI Presents</div>
+      </div>
+    </div>
+    <ul class="bullets">
+      <li>Short documentary films about the kind of people who use the gear, including anglers, hunters, cooks and surfers. They are built around personal stories and barely mention the product.</li>
+      <li>The library now holds 90 films with 37.6 million views between them. They are sorted by what the viewer does rather than by release order, with separate collections for fishing, hunting, surfing, mountains, rodeo and cooking.</li>
+      <li>The film below runs 28 minutes and is the most watched of all 90.</li>
+      <li><strong>What it shows:</strong> a library organized around the audience's interests rather than a release schedule keeps earning views for years, and the longest film can be the best performing one.</li>
+    </ul>
+    <div class="proj-video-embed video-facade" data-yt="OmrufRLGdAk" role="button" tabindex="0" aria-label="Play video: YETI Presents, A Thousand Casts"><img class="vf-thumb" src="https://i.ytimg.com/vi/OmrufRLGdAk/hqdefault.jpg" alt="" loading="lazy" onerror="this.style.display='none'"/><span class="vf-play" aria-hidden="true"></span><span class="vf-title">A Thousand Casts · YETI Presents</span></div>
+    <div class="stat-strip">
+      <div class="stat-cell"><div class="stat-num">90</div><div class="stat-label">Films In The Library</div></div>
+      <div class="stat-cell"><div class="stat-num">37.6M</div><div class="stat-label">Library Views</div></div>
+      <div class="stat-cell"><div class="stat-num">1.3M</div><div class="stat-label">This Film</div></div>
+    </div>
+    <p class="proj-desc" style="margin-top:0.9rem;font-size:12.5px;color:var(--txt3)">The film above has 1,333,943 views with 17,298 likes. The channel carries 239,000 subscribers and 116.5 million views across everything it has posted.</p>
+    <p class="proj-desc" style="margin-top:0.4rem;font-size:12.5px;color:var(--txt3)">YETI · <a target="_blank" rel="noopener" href="https://www.youtube.com/playlist?list=PLT6IyUkzp1o2G2YHBFRsUDP_NLg_jh3QV">Film library</a> · <a target="_blank" rel="noopener" href="https://www.yeti.com/films.html">YETI Presents site</a></p>
+  </div>
+
+  <div class="proj-card">
+    <div class="proj-header">
+      <div class="proj-meta">
+        <div class="proj-label">Integration · Brand As A Point Of View</div>
+        <div class="proj-name">Living Off The Wall</div>
+      </div>
+    </div>
+    <ul class="bullets">
+      <li>Portraits of skaters, artists, musicians and other people living outside the mainstream, funded by Vans and released on its own channel.</li>
+      <li>The shoes are barely mentioned and the subjects wore their own rather than being dressed by the brand.</li>
+      <li><strong>What it shows:</strong> a brand can pay for a documentary strand that carries its point of view without putting its product on screen at all. What is being advertised is the outlook, not the item.</li>
+    </ul>
+    <div class="proj-video-embed video-facade" data-yt="90XBkgcWALc" role="button" tabindex="0" aria-label="Play video: Living Off the Wall, East Los"><img class="vf-thumb" src="https://i.ytimg.com/vi/90XBkgcWALc/hqdefault.jpg" alt="" loading="lazy" onerror="this.style.display='none'"/><span class="vf-play" aria-hidden="true"></span><span class="vf-title">East Los · Living Off The Wall</span></div>
+    <p class="proj-desc" style="margin-top:0.9rem;font-size:12.5px;color:var(--txt3)">The film above runs 4 minutes and has 135,342 views.</p>
+    <p class="proj-desc" style="margin-top:0.4rem;font-size:12.5px;color:var(--txt3)">Vans · <a target="_blank" rel="noopener" href="https://www.adweek.com/creativity/vans-celebrates-its-fans-and-their-lifestyles-incredible-documentary-series-155787/">Adweek feature</a></p>
+  </div>
+
+  <hr class="rule-orange"/>
+
+  <!-- ============ SECTION 03 ============ -->
+  <div class="section-intro">
+    <div class="section-intro-row">
+      <span class="sec-pill-dark">03</span>
+    </div>
+    <h2 class="section-title">Format And Scale</h2>
+    <p class="section-subtitle">What else the form can do, from a casting idea that needs almost no script through to a scripted film and a studio slate.</p>
+  </div>
+
+  <div class="proj-card">
+    <div class="proj-header">
+      <div class="proj-meta">
+        <div class="proj-label">Format · Casting Carries The Story</div>
+        <div class="proj-name">Make Up Over Makeup</div>
+      </div>
+    </div>
+    <ul class="bullets">
+      <li>Two people with unresolved tension between them do each other's makeup while talking through what went wrong, across three episodes.</li>
+      <li>Every pair had already fallen out in public before filming, so the backstory was out there before episode one. Doing someone's makeup also means sitting inches apart, which makes the conversation hard to avoid.</li>
+      <li>The first two pairs were creators who had documented their relationship and then split, and two castmates from <em>Vanderpump Rules</em> (the Bravo series set around Lisa Vanderpump's Los Angeles restaurants).</li>
+      <li>The third was a couple from <em>Love Is Blind</em> (the Netflix series where couples get engaged before meeting in person) whose wedding did not happen.</li>
+      <li><strong>What it shows:</strong> casting can do the work a script would otherwise have to. The third episode drew four times the first and sixteen times the second, and it was also the most recent and most public falling out.</li>
+    </ul>
+    <div class="proj-video-embed video-facade" data-yt="BbB4t_ibVHo" role="button" tabindex="0" aria-label="Play video: Make Up Over Makeup, the Love Is Blind couple"><img class="vf-thumb" src="https://i.ytimg.com/vi/BbB4t_ibVHo/hqdefault.jpg" alt="" loading="lazy" onerror="this.style.display='none'"/><span class="vf-play" aria-hidden="true"></span><span class="vf-title">The most watched of the three · Make Up Over Makeup</span></div>
+    <div class="stat-strip">
+      <div class="stat-cell"><div class="stat-num">3</div><div class="stat-label">Episodes</div></div>
+      <div class="stat-cell"><div class="stat-num">2.0M</div><div class="stat-label">Best Episode</div></div>
+      <div class="stat-cell"><div class="stat-num">2.6M</div><div class="stat-label">All Three</div></div>
+    </div>
+    <p class="proj-desc" style="margin-top:0.9rem;font-size:12.5px;color:var(--txt3)">On YouTube the three episodes have 483,941, 125,268 and 2,016,681 views. They run 9, 15 and 15 minutes. The brand separately reported 7.6 million views for episode one across owned and earned channels, which counts every platform rather than YouTube alone. That figure comes from its own award submission.</p>
+    <p class="proj-desc" style="margin-top:0.4rem;font-size:12.5px;color:var(--txt3)">e.l.f. Cosmetics · <a target="_blank" rel="noopener" href="https://www.youtube.com/playlist?list=PLYuNnWe8A-TX83tp4sgv_zomPQ1ri9kjB">All three episodes</a> · <a target="_blank" rel="noopener" href="https://shortyawards.com/16th/make-up-over-makeup">Case study and results</a></p>
+  </div>
+
+  <div class="proj-card">
+    <div class="proj-header">
+      <div class="proj-meta">
+        <div class="proj-label">Format · An Ad With No Script</div>
+        <div class="proj-name">Oddly IKEA</div>
+      </div>
+    </div>
+    <ul class="bullets">
+      <li>Twenty-five minutes of ASMR, all whispering and soft tapping, shot around bedding, storage boxes and a desk lamp, and made as a back-to-college ad for dorm rooms.</li>
+      <li>There is no story and no presenter delivering a script, just the products being handled, and it holds 3.5 million views with 81,138 likes.</li>
+      <li><strong>What it shows:</strong> a piece of advertising can borrow a native internet format outright and hold attention far longer than an ad normally would. This one runs longer than most of the documentaries on this page.</li>
+    </ul>
+    <div class="proj-video-embed video-facade" data-yt="uLFaj3Z_tWw" role="button" tabindex="0" aria-label="Play video: Oddly IKEA, ASMR"><img class="vf-thumb" src="https://i.ytimg.com/vi/uLFaj3Z_tWw/hqdefault.jpg" alt="" loading="lazy" onerror="this.style.display='none'"/><span class="vf-play" aria-hidden="true"></span><span class="vf-title">Oddly IKEA · ASMR</span></div>
+    <div class="stat-strip">
+      <div class="stat-cell"><div class="stat-num">25</div><div class="stat-label">Minutes Long</div></div>
+      <div class="stat-cell"><div class="stat-num">3.5M</div><div class="stat-label">Views</div></div>
+      <div class="stat-cell"><div class="stat-num">81K</div><div class="stat-label">Likes</div></div>
+    </div>
+    <p class="proj-desc" style="margin-top:0.9rem;font-size:12.5px;color:var(--txt3)">IKEA USA, 2017 · 3,471,549 views, 81,138 likes and 7,774 comments.</p>
+  </div>
+
+  <div class="proj-card">
+    <div class="proj-header">
+      <div class="proj-meta">
+        <div class="proj-label">Scale · Scripted Short Film</div>
+        <div class="proj-name">Two Bellmen</div>
+      </div>
+    </div>
+    <ul class="bullets">
+      <li>Scripted action-comedy shorts about two hotel bellmen, set in and around Marriott properties and made by the brand's own content studio.</li>
+      <li>Three films in the run, and the first runs 18 minutes and now has 5,276,888 views.</li>
+      <li><strong>What it shows:</strong> at the upper end of the scale a brand can commission genuine narrative filmmaking and use its own premises as the set, so the location budget is already paid for.</li>
+    </ul>
+    <div class="proj-video-embed video-facade" data-yt="ZOgteFrOKt8" role="button" tabindex="0" aria-label="Play video: Two Bellmen, Marriott"><img class="vf-thumb" src="https://i.ytimg.com/vi/ZOgteFrOKt8/hqdefault.jpg" alt="" loading="lazy" onerror="this.style.display='none'"/><span class="vf-play" aria-hidden="true"></span><span class="vf-title">Two Bellmen · Marriott</span></div>
+    <p class="proj-desc" style="margin-top:0.9rem;font-size:12.5px;color:var(--txt3)">Marriott Content Studio · <a target="_blank" rel="noopener" href="https://www.hollywoodreporter.com/news/general-news/marriott-content-studio-greenlights-3rd-804632/">Hollywood Reporter</a></p>
+  </div>
+
+  <div class="proj-card">
+    <div class="proj-header">
+      <div class="proj-meta">
+        <div class="proj-label">Scale · Brand As Studio</div>
+        <div class="proj-name">Second Act</div>
+      </div>
+    </div>
+    <ul class="bullets">
+      <li>Mailchimp launched an in-house entertainment slate of original films, series and podcasts for small-business owners, made with partners including Vice and the production company behind <em>Queer Eye</em> (the Netflix makeover series).</li>
+      <li>The episode below comes from <em>Second Act</em>, the documentary strand about people who changed direction in their working lives. It sits on VICE TV's channel rather than on Mailchimp's.</li>
+      <li><strong>What it shows:</strong> the far end of the scale, where a brand funds a whole slate and lets a distribution partner's channel carry it. The trade is reach in exchange for the content not living on your own channel.</li>
+    </ul>
+    <div class="proj-video-embed video-facade" data-yt="tgCuCxoSXXI" role="button" tabindex="0" aria-label="Play video: Second Act, Mailchimp Presents"><img class="vf-thumb" src="https://i.ytimg.com/vi/tgCuCxoSXXI/hqdefault.jpg" alt="" loading="lazy" onerror="this.style.display='none'"/><span class="vf-play" aria-hidden="true"></span><span class="vf-title">Second Act · Mailchimp Presents</span></div>
+    <p class="proj-desc" style="margin-top:0.9rem;font-size:12.5px;color:var(--txt3)">The episode above runs 6 minutes and has 114,719 views.</p>
+    <p class="proj-desc" style="margin-top:0.4rem;font-size:12.5px;color:var(--txt3)">Mailchimp Presents with Vice · <a target="_blank" rel="noopener" href="https://mailchimp.com/presents/">Mailchimp Presents</a> · <a target="_blank" rel="noopener" href="https://variety.com/2019/digital/news/mailchimp-presents-entertainment-studio-1203235773/">Variety</a></p>
+  </div>
+
+  <hr class="rule-orange"/>
+
+  <!-- ============ SECTION 04 ============ -->
+  <div class="section-intro">
+    <div class="section-intro-row">
+      <span class="sec-pill-dark">04</span>
+    </div>
+    <h2 class="section-title">And One That Went The Other Way</h2>
+    <p class="section-subtitle">The same ingredients as the examples above, without a format to hold them together.</p>
+  </div>
+
+  <div class="proj-card">
+    <div class="proj-header">
+      <div class="proj-meta">
+        <div class="proj-label">Counter-Example · A Roster, Not A Series</div>
+        <div class="proj-name">DIY Influencer Program</div>
+      </div>
+    </div>
+    <ul class="bullets">
+      <li>Eleven designers and DIY creators make over spaces using Sherwin-Williams paint, built around the annual Color of the Year, with a charitable strand in which they repaint shelters and community centers.</li>
+      <li>There is no series and no format holding it together. The creators post to their own blogs and social accounts, and what sits on the brand's own channel is short before-and-after clips like the one-minute film below.</li>
+      <li><strong>What it shows:</strong> good creators and a real budget are not enough on their own. Without a repeatable format the output is a scatter of clips, and none of them reach the numbers the formatted series on this page do.</li>
+    </ul>
+    <div class="proj-video-embed video-facade" data-yt="Za5HwXjl49o" role="button" tabindex="0" aria-label="Play video: Sherwin-Williams shed makeover"><img class="vf-thumb" src="https://i.ytimg.com/vi/Za5HwXjl49o/hqdefault.jpg" alt="" loading="lazy" onerror="this.style.display='none'"/><span class="vf-play" aria-hidden="true"></span><span class="vf-title">Shed makeover · Sherwin-Williams</span></div>
+    <p class="proj-desc" style="margin-top:0.9rem;font-size:12.5px;color:var(--txt3)">The clip above runs 1 minute and has 28,070 views, against the millions carried by the formatted examples elsewhere on this page.</p>
+    <p class="proj-desc" style="margin-top:0.4rem;font-size:12.5px;color:var(--txt3)">Sherwin-Williams · <a target="_blank" rel="noopener" href="https://www.sherwin-williams.com/homeowners/inspiration/diy-influencers">Program page</a></p>
+  </div>
+
+  <hr class="rule-orange"/>
+
+  <!-- ============ WHAT RUNS THROUGH THEM ============ -->
+  <div class="section-intro">
+    <div class="section-intro-row">
+      <span class="sec-pill-orange">05</span>
+    </div>
+    <h2 class="section-title">What Runs Through All Of Them</h2>
+  </div>
+
+  <div class="section-block">
+    <p><strong>The format is the asset, not the film.</strong> Every example that lasted has one sentence a viewer can repeat: a room in a weekend, two versions of the same car, a garden built one stage at a time. The ones without that sentence did not build an audience.</p>
+    <p><strong>The brand can sit anywhere on the scale.</strong> It can be the plot, as with the eBay builds, or almost absent, as with the YETI films. What stays constant is that the product is never the reason to watch. It earns its place by being useful to what is happening on screen.</p>
+    <p><strong>Repetition is what builds the habit.</strong> A single film gets one launch, while a format gets a new launch every time it returns, and the back catalog keeps earning views in the meantime. The IKEA and Roadkill libraries are still collecting views years after the cameras stopped.</p>
+    <p><strong>Scale is a choice, not a barrier.</strong> The examples here run from one creator with a small crew up to a scripted short film. Several of the strongest performers on this page were also among the cheapest to make.</p>
+  </div>
+
+  <div class="cred-row">
+    <span class="cred-chip">2x Emmy Nominated</span>
+    <span class="cred-chip">25 Years Experience</span>
+    <span class="cred-chip">100+ Hours Distributed Globally</span>
+    <span class="cred-chip">BBC · Discovery · NBC Universal</span>
+  </div>
+
+  <!-- Close -->
+  <div class="cta-block">
+    <div class="cta-eyebrow">If It Is Useful</div>
+    <h2 class="disp cta-headline">Happy To Talk It Through</h2>
+    <p class="cta-sub">We put this together because the same question keeps coming up: what does branded content look like when it actually works? If any of these formats sit close to something you have been considering, we are glad to talk it through.</p>
+    <a class="cta-primary" href="https://calendly.com/d/ct7b-xvd-c9x/intro-call" target="_blank" rel="noopener">Book A Call With Our Team →</a>
+    <div class="cta-reply">Fifteen minutes, nothing to prepare, and nothing is sold on the call. If you would rather just reply by email, that works too.</div>
+  </div>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <span class="footer-brand">Talex Media</span>
+    <div class="footer-links">
+      <a href="https://www.talexmedia.com" target="_blank" rel="noopener">talexmedia.com</a>
+      <a href="mailto:solutions@talexmedia.com">solutions@talexmedia.com</a>
+    </div>
+    <div class="footer-copy">© 2026 Talex Media LLC · Episodic branded content reference library · Figures pulled from the YouTube API on 29 July 2026</div>
+  </footer>
+
+</div>
+<script>
+(function(){
+  function play(el){
+    if(el.dataset.loaded) return;
+    el.dataset.loaded = "1";
+    var id = el.getAttribute("data-yt");
+    var f = document.createElement("iframe");
+    f.setAttribute("src","https://www.youtube-nocookie.com/embed/"+id+"?autoplay=1&rel=0");
+    f.setAttribute("title", el.getAttribute("aria-label")||"Video");
+    f.setAttribute("allow","accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture");
+    f.setAttribute("allowfullscreen","");
+    el.innerHTML = "";
+    el.appendChild(f);
+  }
+  document.addEventListener("click", function(e){
+    var el = e.target.closest(".video-facade");
+    if(el) play(el);
+  });
+  document.addEventListener("keydown", function(e){
+    if(e.key !== "Enter" && e.key !== " ") return;
+    var el = e.target.closest && e.target.closest(".video-facade");
+    if(el){ e.preventDefault(); play(el); }
+  });
+})();
+</script>
+</body>
+</html>

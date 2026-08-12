@@ -9,32 +9,35 @@ A general-purpose, client-facing set of case studies on branded video that audie
 
 ## What it is
 
-Eight case studies, each one a real show with a repeating format, a real person on camera, and published results.
+Ten case studies, each one a real show with a repeating format, a real person on camera, and published results. **Long form and short form are kept in separate sections and never compared**, because their view counts are not on the same scale.
 
-| # | Show | Brand | Sector |
-|---|---|---|---|
-| 1 | Live Tests | Volvo Trucks | Heavy trucks |
-| 2 | IKEA Home Tour | IKEA USA | Home furnishing |
-| 3 | Make Up Over Makeup | e.l.f. Cosmetics | Beauty |
-| 4 | Roadkill | MotorTrend, sponsored by Dodge | Automotive |
-| 5 | Make My Space Work | Shopify Studios | Software |
-| 6 | YETI Presents | YETI | Outdoor gear |
-| 7 | Between 2 Rides | eBay Motors | Online marketplace |
-| 8 | DIY Influencer Program | Sherwin-Williams | Paint (counter-example) |
+| # | Show | Brand | Sector | Scale |
+|---|---|---|---|---|
+| 1 | DIRT | Huckberry | Apparel and outdoor gear | Long, median 32m36s |
+| 2 | Make Up Over Makeup | e.l.f. Cosmetics | Beauty | Long, 9 to 15m |
+| 3 | Roadkill | MotorTrend, sponsored by Dodge | Automotive | Long, median 7m39s |
+| 4 | Make My Space Work | Shopify Studios | Software | Long, median 13m43s |
+| 5 | YETI Presents | YETI | Outdoor gear | Long, median 8m17s |
+| 6 | Between 2 Rides | eBay Motors | Online marketplace | Long, 8 to 12m |
+| 7 | Live Tests | Volvo Trucks | Heavy trucks | Short, median 1m17s |
+| 8 | IKEA Home Tour | IKEA USA | Home furnishing | Short, median 49s |
+| 9 | Rico's Tacos | Albertsons with P&G | Grocery | Short, median 49s |
+| 10 | DIY Influencer Program | Sherwin-Williams | Paint | Counter-example |
 
-Sections: `01 Seven Shows That Worked`, `02 And One That Did Not`, `03 What They Have In Common`. Closes with the Talex credential row and a low-pressure intro-call CTA (`ct7b-xvd-c9x`, the team link).
+Sections: `01 Long Form`, `02 Short Form`, `03 And One That Did Not`, `04 What They Have In Common`. Closes with the Talex credential row and a low-pressure intro-call CTA (`ct7b-xvd-c9x`, the team link).
 
-Every card uses the same anatomy: sector, show name, **Format**, **On camera**, a three-number result strip, the video, then a note and sources.
+Every card uses the same anatomy: sector, show name, **Format**, **On camera**, **Length**, a three-number result strip, the video, then a note and sources.
 
 ## Rules for editing
 
 - Every number must trace to the YouTube Data API or to a named public source. Never estimate.
-- Self-reported figures must stay labelled as such on the card. Currently: IKEA store sales (+4.1%), eBay season totals and subscriber gain, e.l.f. cross-platform views (7.6M), Volvo earned media (€126M) and the driver purchase-intent survey.
+- Self-reported figures must stay labelled as such on the card. Currently: IKEA store sales (+4.1%), eBay view total, subscriber gain, awareness lift and watch time, e.l.f. cross-platform views (7.6M), Volvo earned media (€126M), subscriber growth and the driver purchase-intent survey.
+- **Never put a short-form number next to a long-form one without labelling both.** See the `audit_shorts_vs_longform` memory. This is why the page is split by scale and why every card carries a `Length` line.
 - Every example must have a person on camera. That rule is why the "Oddly IKEA" ASMR film is not here, along with the fact that it is a one-month campaign burst rather than a format.
 - Videos use click-to-play facades, not live iframes. More than about eight live iframes on one page causes browsers to mis-paint players into the wrong cards. Keep the facade pattern.
 - Verify a video is still live and embeddable before adding it:
   `https://www.googleapis.com/youtube/v3/videos?id=<ID>&part=status&key=<KEY>`
-- Keep text minimal. The page is about 1,240 visible words and should stay near that.
+- Keep text minimal. The page is about 1,950 visible words and should stay near that.
 - No em dashes or en dashes. US English. See the voice rules in memory.
 - Do not use the framing lead-ins "What it shows", "Why it matters", or "The takeaway".
 

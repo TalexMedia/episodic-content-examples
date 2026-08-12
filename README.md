@@ -4,7 +4,7 @@ A general-purpose, client-facing reference library of branded video that audienc
 
 - **File:** `index.html` (single self-contained file, no build step, no external JS)
 - **First intended recipient:** Vijay Iyer, Cranbrook
-- **Status:** built 2026-07-29, **not yet deployed**
+- **Status:** built 2026-08-12, **not yet deployed**
 
 ## What it is
 

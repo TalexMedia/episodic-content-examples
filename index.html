@@ -60,8 +60,25 @@ body{background:var(--bg);min-height:100vh}
 
 /* ---- case-study card ---- */
 .case{background:var(--surface);border:1px solid var(--border);border-radius:12px;padding:1.5rem;margin-bottom:1rem}
-.case-sector{font-family:'Oswald',sans-serif;font-weight:500;font-size:10px;letter-spacing:0.14em;text-transform:uppercase;color:var(--o-text);margin-bottom:3px}
-.case-name{font-family:'Bebas Neue',sans-serif;font-size:28px;letter-spacing:0.03em;line-height:1;color:var(--txt);margin-bottom:1.1rem}
+.case-head{display:flex;align-items:center;gap:13px;margin-bottom:1.15rem}
+.case-icon{flex:none;width:40px;height:40px;border-radius:10px;background:var(--o-dim);border:1px solid var(--o-border);display:flex;align-items:center;justify-content:center;color:var(--o-text)}
+.case-icon svg{width:21px;height:21px;stroke:currentColor;fill:none;stroke-width:1.6;stroke-linecap:round;stroke-linejoin:round}
+.case-headtext{min-width:0}
+.case-sector{font-family:'Oswald',sans-serif;font-weight:500;font-size:10px;letter-spacing:0.14em;text-transform:uppercase;color:var(--o-text);margin-bottom:2px}
+.case-name{font-family:'Bebas Neue',sans-serif;font-size:28px;letter-spacing:0.03em;line-height:1;color:var(--txt)}
+
+/* ---- opening: lead + length diagram ---- */
+.lead{font-size:17px;color:var(--txt2);line-height:1.7;margin:2rem 0 1.25rem}
+.lead strong{color:var(--txt);font-weight:500}
+.scale-panel{background:var(--surface);border:1px solid var(--border);border-radius:10px;padding:1.4rem 1.5rem}
+.scale-row{margin-bottom:1.15rem}
+.scale-head{display:flex;align-items:baseline;justify-content:space-between;gap:1rem;margin-bottom:0.45rem}
+.scale-name{font-family:'Oswald',sans-serif;font-weight:600;font-size:12px;letter-spacing:0.12em;text-transform:uppercase;color:var(--txt)}
+.scale-len{font-family:'Oswald',sans-serif;font-weight:400;font-size:12px;letter-spacing:0.06em;text-transform:uppercase;color:var(--txt3);white-space:nowrap}
+.scale-track{height:13px;background:#EFE9E1;border-radius:7px;overflow:hidden}
+.scale-fill{display:block;height:100%;background:var(--o);border-radius:7px}
+.scale-note{margin-top:0.35rem;padding-top:1rem;border-top:1px solid var(--border);font-size:14px;color:var(--txt2);line-height:1.7}
+.scale-foot{font-size:12.5px;color:var(--txt3);line-height:1.65;margin-top:0.75rem}
 
 .spec{display:grid;grid-template-columns:88px 1fr;gap:6px 14px;margin-bottom:1.25rem}
 .spec dt{font-family:'Oswald',sans-serif;font-weight:500;font-size:9.5px;letter-spacing:0.13em;text-transform:uppercase;color:var(--txt3);padding-top:4px}
@@ -118,6 +135,8 @@ body{background:var(--bg);min-height:100vh}
   .spec{grid-template-columns:1fr;gap:2px 0}
   .spec dt{padding-top:8px}
   .stat-num{font-size:26px}
+  .scale-head{flex-direction:column;align-items:flex-start;gap:1px}
+  .case-name{font-size:25px}
 }
 
 @media print{
@@ -144,14 +163,29 @@ body{background:var(--bg);min-height:100vh}
   <!-- Hero -->
   <header class="hero">
     <h1 class="disp hero-title">Episodic Branded Content</h1>
-    <div class="italic hero-tagline">Nine shows that brands paid for and audiences chose to watch, the results each one got, and one example of what happens when there is no format.</div>
+    <div class="italic hero-tagline">Nine branded series, one that never became one, and the results they got.</div>
   </header>
 
   <!-- Opening -->
-  <div class="section-block" style="margin-top:2rem">
-    <p>Most brand video gets made once, published, and forgotten. Nine of the shows below work differently, because each one is a format rather than a single film: one repeatable idea with a new subject every time, so people know what they are getting and come back for the next one. The tenth shows what happens without a format.</p>
-    <p><strong>Two lengths, shown separately.</strong> Six of these are long form, with episodes running from about eight minutes to over half an hour, and three are short form, with episodes of about a minute. The two lengths do different jobs and their view counts cannot be compared, so they sit in separate sections and every card gives its own length.</p>
-    <p><strong>On the numbers.</strong> View counts, episode counts and channel figures were pulled from the YouTube API on 12 August 2026, so they are accurate as of that date. Where a figure comes from a brand's or an agency's own award entry, the card says so.</p>
+  <p class="lead">Have a look through these. <strong>They are all branded video that people chose to watch</strong>, and they might be useful inspiration for something you want to make. Nine are series, one idea with a new subject every episode. The tenth had a good idea and never turned it into a series.</p>
+
+  <div class="scale-panel">
+    <div class="scale-row">
+      <div class="scale-head">
+        <span class="scale-name">Long form &middot; 6 shows</span>
+        <span class="scale-len">8 to 33 minutes</span>
+      </div>
+      <div class="scale-track"><span class="scale-fill" style="width:100%"></span></div>
+    </div>
+    <div class="scale-row">
+      <div class="scale-head">
+        <span class="scale-name">Short form &middot; 3 shows</span>
+        <span class="scale-len">About 1 minute</span>
+      </div>
+      <div class="scale-track"><span class="scale-fill" style="width:3%"></span></div>
+    </div>
+    <p class="scale-note">The bars are to scale. These two lengths do different jobs, so their view counts cannot be compared and they sit in separate sections below.</p>
+    <p class="scale-foot">Figures pulled from the YouTube API on 12 August 2026. Where a number comes from a brand's or an agency's own award entry, the card says so.</p>
   </div>
 
   <hr class="rule-orange"/>
@@ -165,8 +199,13 @@ body{background:var(--bg);min-height:100vh}
 
   <!-- HUCKBERRY DIRT -->
   <div class="case">
-    <div class="case-sector">Apparel And Outdoor Gear · United States</div>
-    <div class="case-name">DIRT</div>
+    <div class="case-head">
+      <span class="case-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M15.6 8.4l-2.1 5.1-5.1 2.1 2.1-5.1z"/></svg></span>
+      <div class="case-headtext">
+        <div class="case-sector">Apparel And Outdoor Gear · United States</div>
+        <div class="case-name">DIRT</div>
+      </div>
+    </div>
     <dl class="spec">
       <dt>Format</dt><dd>One region per episode. The host finds a local chef, they source ingredients from nearby farmers, fishermen and foragers, and they cook a meal from that region.</dd>
       <dt>On camera</dt><dd>Josh Rosen, a former professional snowboarder and surfer, and the chefs and fishermen he cooks with.</dd>
@@ -184,8 +223,13 @@ body{background:var(--bg);min-height:100vh}
 
   <!-- 3. E.L.F. -->
   <div class="case">
-    <div class="case-sector">Beauty · United States</div>
-    <div class="case-name">Make Up Over Makeup</div>
+    <div class="case-head">
+      <span class="case-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M9.6 21h4.8v-7.4H9.6z"/><path d="M10.6 13.6V6.3l3.1-2.3v9.6"/></svg></span>
+      <div class="case-headtext">
+        <div class="case-sector">Beauty · United States</div>
+        <div class="case-name">Make Up Over Makeup</div>
+      </div>
+    </div>
     <dl class="spec">
       <dt>Format</dt><dd>Two people who fell out in public do each other's makeup and talk through what went wrong.</dd>
       <dt>On camera</dt><dd>Real former friends and a couple whose wedding did not happen, sitting inches apart to do each other's makeup.</dd>
@@ -203,8 +247,13 @@ body{background:var(--bg);min-height:100vh}
 
   <!-- 4. ROADKILL -->
   <div class="case">
-    <div class="case-sector">Automotive · United States</div>
-    <div class="case-name">Roadkill</div>
+    <div class="case-head">
+      <span class="case-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M4.6 15.8v-3l1.9-4.3A2 2 0 0 1 8.3 7.2h7.4a2 2 0 0 1 1.8 1.3l1.9 4.3v3"/><path d="M4.6 15.8h14.8"/><circle cx="7.6" cy="16.6" r="1.6"/><circle cx="16.4" cy="16.6" r="1.6"/></svg></span>
+      <div class="case-headtext">
+        <div class="case-sector">Automotive · United States</div>
+        <div class="case-name">Roadkill</div>
+      </div>
+    </div>
     <dl class="spec">
       <dt>Format</dt><dd>Buy a junk car, get it running again on camera, then drive it somewhere far away.</dd>
       <dt>On camera</dt><dd>Two former car-magazine editors who do the repairs themselves, and when a repair fails, the failure stays in the episode.</dd>
@@ -222,8 +271,13 @@ body{background:var(--bg);min-height:100vh}
 
   <!-- 5. SHOPIFY -->
   <div class="case">
-    <div class="case-sector">Software · Canada</div>
-    <div class="case-name">Make My Space Work</div>
+    <div class="case-head">
+      <span class="case-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><rect x="3" y="4.5" width="18" height="12" rx="2"/><path d="M8.5 20h7M12 16.5V20"/></svg></span>
+      <div class="case-headtext">
+        <div class="case-sector">Software · Canada</div>
+        <div class="case-name">Make My Space Work</div>
+      </div>
+    </div>
     <dl class="spec">
       <dt>Format</dt><dd>A designer rebuilds one entrepreneur's workspace per episode, to a real budget.</dd>
       <dt>On camera</dt><dd>Shopify's own customers, small-business owners in the rooms where they actually work.</dd>
@@ -241,8 +295,13 @@ body{background:var(--bg);min-height:100vh}
 
   <!-- 6. YETI -->
   <div class="case">
-    <div class="case-sector">Outdoor Gear · United States</div>
-    <div class="case-name">YETI Presents</div>
+    <div class="case-head">
+      <span class="case-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M2.8 18.8l6.1-10.2 3.9 6 2.5-3.6 5.9 7.8z"/></svg></span>
+      <div class="case-headtext">
+        <div class="case-sector">Outdoor Gear · United States</div>
+        <div class="case-name">YETI Presents</div>
+      </div>
+    </div>
     <dl class="spec">
       <dt>Format</dt><dd>Short documentaries about one person, sorted into collections by activity such as fishing, hunting and surfing, rather than by release date.</dd>
       <dt>On camera</dt><dd>Anglers, hunters, cooks, surfers and rodeo riders, telling their own stories, with the product barely mentioned.</dd>
@@ -260,8 +319,13 @@ body{background:var(--bg);min-height:100vh}
 
   <!-- 7. EBAY -->
   <div class="case">
-    <div class="case-sector">Online Marketplace · United States</div>
-    <div class="case-name">Between 2 Rides</div>
+    <div class="case-head">
+      <span class="case-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M3.6 11.6V4h7.6l8.8 8.8-7.6 7.6z"/><circle cx="7.6" cy="8" r="1.3"/></svg></span>
+      <div class="case-headtext">
+        <div class="case-sector">Online Marketplace · United States</div>
+        <div class="case-name">Between 2 Rides</div>
+      </div>
+    </div>
     <dl class="spec">
       <dt>Format</dt><dd>Two versions of the same car, one left as it came from the factory and one built with parts sourced through eBay, then tested against each other.</dd>
       <dt>On camera</dt><dd>Seven of the biggest builders and creators on YouTube, doing the builds and driving the results.</dd>
@@ -288,8 +352,13 @@ body{background:var(--bg);min-height:100vh}
 
 <!-- 1. VOLVO TRUCKS -->
   <div class="case">
-    <div class="case-sector">Heavy Trucks · Sweden</div>
-    <div class="case-name">Volvo Trucks Live Tests</div>
+    <div class="case-head">
+      <span class="case-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M2.4 6.4h10.8v9H2.4z"/><path d="M13.2 9.4h3.9l3.1 3.2v2.8h-7z"/><circle cx="6.2" cy="17.4" r="1.7"/><circle cx="16.6" cy="17.4" r="1.7"/></svg></span>
+      <div class="case-headtext">
+        <div class="case-sector">Heavy Trucks · Sweden</div>
+        <div class="case-name">Volvo Trucks Live Tests</div>
+      </div>
+    </div>
     <dl class="spec">
       <dt>Format</dt><dd>One truck feature, one physical test, filmed live in a single take.</dd>
       <dt>On camera</dt><dd>Volvo's own test drivers, a hamster, a herd of bulls, and Jean-Claude Van Damme doing the splits between two reversing trucks.</dd>
@@ -307,8 +376,13 @@ body{background:var(--bg);min-height:100vh}
 
   <!-- 2. IKEA HOME TOUR -->
   <div class="case">
-    <div class="case-sector">Home Furnishing · United States</div>
-    <div class="case-name">IKEA Home Tour</div>
+    <div class="case-head">
+      <span class="case-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M6.2 11.2V6.4a2 2 0 0 1 2-2h7.6a2 2 0 0 1 2 2v4.8"/><path d="M5 11.2h14v5.2H5z"/><path d="M7 16.4V20M17 16.4V20"/></svg></span>
+      <div class="case-headtext">
+        <div class="case-sector">Home Furnishing · United States</div>
+        <div class="case-name">IKEA Home Tour</div>
+      </div>
+    </div>
     <dl class="spec">
       <dt>Format</dt><dd>Five IKEA employees, the Home Tour Squad, travel the country and make over one room in a real family's home.</dd>
       <dt>On camera</dt><dd>The family whose house it is, and IKEA staff rather than celebrities, which keeps the results looking achievable.</dd>
@@ -326,8 +400,13 @@ body{background:var(--bg);min-height:100vh}
 
   <!-- RICO'S TACOS -->
   <div class="case">
-    <div class="case-sector">Grocery · United States</div>
-    <div class="case-name">Rico's Tacos</div>
+    <div class="case-head">
+      <span class="case-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M2.6 17.2a9.4 9.4 0 0 1 18.8 0z"/><path d="M7 17.2c0-2.6 1.4-4.8 3.4-5.9"/><path d="M13.6 11.3c2 1.1 3.4 3.3 3.4 5.9"/></svg></span>
+      <div class="case-headtext">
+        <div class="case-sector">Grocery · United States</div>
+        <div class="case-name">Rico's Tacos</div>
+      </div>
+    </div>
     <dl class="spec">
       <dt>Format</dt><dd>A scripted family drama told in one and two minute episodes, written to be watched on a phone or on the screens above the checkout.</dd>
       <dt>On camera</dt><dd>A widowed father, his teenage daughter and her grandmother, starting a taco stand. Some of it was shot inside real stores with real staff.</dd>
@@ -348,15 +427,20 @@ body{background:var(--bg);min-height:100vh}
   <!-- ============ SECTION 03 ============ -->
   <div class="section-intro">
     <span class="sec-pill-dark">03</span>
-    <h2 class="section-title">And One Without A Format</h2>
+    <h2 class="section-title">And One That Never Became A Series</h2>
   </div>
 
   <div class="case">
-    <div class="case-sector">Paint · United States</div>
-    <div class="case-name">DIY Influencer Program</div>
+    <div class="case-head">
+      <span class="case-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><rect x="3" y="4.8" width="11.5" height="5" rx="1"/><path d="M14.5 7.3h3.7A1.8 1.8 0 0 1 20 9.1v1.8a1.8 1.8 0 0 1-1.8 1.8H11.5V14.6"/><rect x="9.8" y="14.6" width="3.4" height="5.6" rx="1"/></svg></span>
+      <div class="case-headtext">
+        <div class="case-sector">Paint · United States</div>
+        <div class="case-name">DIY Influencer Program</div>
+      </div>
+    </div>
     <dl class="spec">
-      <dt>Format</dt><dd>There is no format. A rotating panel of DIY creators paints spaces using the annual Color of the Year and posts to their own accounts.</dd>
-      <dt>On camera</dt><dd>Designers and DIY creators, each doing their own thing, with no returning premise to tie them together.</dd>
+      <dt>The idea</dt><dd>Every creator gets the annual Color of the Year and paints a space with it. The idea repeats, but it was never turned into a series.</dd>
+      <dt>On camera</dt><dd>A rotating panel of designers and DIY creators, each filming in their own home, with no host and no returning cast.</dd>
       <dt>Length</dt><dd>Neither. The brand's own channel gets only one-minute before-and-after clips.</dd>
     </dl>
     <div class="stat-strip">
@@ -365,7 +449,7 @@ body{background:var(--bg);min-height:100vh}
       <div class="stat-cell"><div class="stat-num">28K</div><div class="stat-label">Views On The Clip</div></div>
     </div>
     <div class="proj-video-embed video-facade" data-yt="Za5HwXjl49o" role="button" tabindex="0" aria-label="Play video: Sherwin-Williams shed makeover"><img class="vf-thumb" src="https://i.ytimg.com/vi/Za5HwXjl49o/hqdefault.jpg" alt="" loading="lazy" onerror="this.style.display='none'"/><span class="vf-play" aria-hidden="true"></span><span class="vf-title">Shed makeover · Sherwin-Williams</span></div>
-    <p class="src note">The program has good creators and a real budget, but the brand's own channel ends up with unconnected one-minute clips like the one above.</p>
+    <p class="src note">The creators are good and the budget is real. What is missing is the series: no episode order, no host, and no single place to watch it, so the work sits on each creator's own account and the brand's channel gets short clips like the one above.</p>
     <p class="src">Sherwin-Williams · <a target="_blank" rel="noopener" href="https://www.sherwin-williams.com/homeowners/inspiration/diy-influencers">Program page</a></p>
   </div>
 
@@ -396,9 +480,9 @@ body{background:var(--bg);min-height:100vh}
 
   <!-- Close -->
   <div class="cta-block">
-    <div class="cta-eyebrow">If This Is Useful</div>
-    <h2 class="disp cta-headline">Happy To Talk It Through</h2>
-    <p class="cta-sub">We put this together because the same question keeps coming up: what does branded content look like when it actually works? If any of these formats is close to something you have been considering, we are glad to talk it through.</p>
+    <div class="cta-eyebrow">Open Invitation</div>
+    <h2 class="disp cta-headline">Happy To Brainstorm</h2>
+    <p class="cta-sub">If any of these gave you an idea, or you want to talk one through, we are always available for that.</p>
     <a class="cta-primary" href="https://calendly.com/d/ct7b-xvd-c9x/intro-call" target="_blank" rel="noopener">Book A Call With Our Team →</a>
     <div class="cta-reply">Fifteen minutes, nothing to prepare, and nothing is sold on the call. If you would rather just reply by email, that works too.</div>
   </div>

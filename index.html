@@ -67,18 +67,17 @@ body{background:var(--bg);min-height:100vh}
 .case-sector{font-family:'Oswald',sans-serif;font-weight:500;font-size:10px;letter-spacing:0.14em;text-transform:uppercase;color:var(--o-text);margin-bottom:2px}
 .case-name{font-family:'Bebas Neue',sans-serif;font-size:28px;letter-spacing:0.03em;line-height:1;color:var(--txt)}
 
-/* ---- opening: lead + length diagram ---- */
-.lead{font-size:17px;color:var(--txt2);line-height:1.7;margin:2rem 0 1.25rem}
+/* ---- opening: lead + three principles ---- */
+.lead{font-size:17.5px;color:var(--txt2);line-height:1.7;margin:2rem 0 1.4rem}
 .lead strong{color:var(--txt);font-weight:500}
-.scale-panel{background:var(--surface);border:1px solid var(--border);border-radius:10px;padding:1.4rem 1.5rem}
-.scale-row{margin-bottom:1.15rem}
-.scale-head{display:flex;align-items:baseline;justify-content:space-between;gap:1rem;margin-bottom:0.45rem}
-.scale-name{font-family:'Oswald',sans-serif;font-weight:600;font-size:12px;letter-spacing:0.12em;text-transform:uppercase;color:var(--txt)}
-.scale-len{font-family:'Oswald',sans-serif;font-weight:400;font-size:12px;letter-spacing:0.06em;text-transform:uppercase;color:var(--txt3);white-space:nowrap}
-.scale-track{height:13px;background:#EFE9E1;border-radius:7px;overflow:hidden}
-.scale-fill{display:block;height:100%;background:var(--o);border-radius:7px}
-.scale-note{margin-top:0.35rem;padding-top:1rem;border-top:1px solid var(--border);font-size:14px;color:var(--txt2);line-height:1.7}
-.scale-foot{font-size:12.5px;color:var(--txt3);line-height:1.65;margin-top:0.75rem}
+.principles{display:grid;grid-template-columns:repeat(3,1fr);gap:0.85rem;margin-bottom:1.4rem}
+.principle{background:var(--surface);border:1px solid var(--border);border-radius:10px;padding:1.2rem 1.15rem}
+.principle-icon{width:34px;height:34px;border-radius:9px;background:var(--o-dim);border:1px solid var(--o-border);display:flex;align-items:center;justify-content:center;color:var(--o-text);margin-bottom:0.75rem}
+.principle-icon svg{width:18px;height:18px;stroke:currentColor;fill:none;stroke-width:1.6;stroke-linecap:round;stroke-linejoin:round}
+.principle-name{font-family:'Oswald',sans-serif;font-weight:600;font-size:11.5px;letter-spacing:0.1em;text-transform:uppercase;color:var(--txt);margin-bottom:0.4rem;line-height:1.35}
+.principle-text{font-size:13.5px;color:var(--txt2);line-height:1.65}
+.opening-prompt{font-family:'EB Garamond',Georgia,serif;font-style:italic;font-size:16px;color:var(--txt);line-height:1.7;margin-bottom:1.3rem}
+.opening-foot{font-size:12.5px;color:var(--txt3);line-height:1.7}
 
 .spec{display:grid;grid-template-columns:88px 1fr;gap:6px 14px;margin-bottom:1.25rem}
 .spec dt{font-family:'Oswald',sans-serif;font-weight:500;font-size:9.5px;letter-spacing:0.13em;text-transform:uppercase;color:var(--txt3);padding-top:4px}
@@ -135,7 +134,11 @@ body{background:var(--bg);min-height:100vh}
   .spec{grid-template-columns:1fr;gap:2px 0}
   .spec dt{padding-top:8px}
   .stat-num{font-size:26px}
-  .scale-head{flex-direction:column;align-items:flex-start;gap:1px}
+  .principles{grid-template-columns:1fr;gap:0.6rem}
+  .principle{display:grid;grid-template-columns:34px 1fr;gap:0 13px;align-items:start}
+  .principle-icon{margin-bottom:0}
+  .principle-name{grid-column:2;margin-bottom:0.25rem}
+  .principle-text{grid-column:2}
   .case-name{font-size:25px}
 }
 
@@ -163,30 +166,33 @@ body{background:var(--bg);min-height:100vh}
   <!-- Hero -->
   <header class="hero">
     <h1 class="disp hero-title">Episodic Branded Content</h1>
-    <div class="italic hero-tagline">Nine branded series, one that never became one, and the results they got.</div>
+    <div class="italic hero-tagline">Ten brands that invested in episodic video, and what they got back.</div>
   </header>
 
   <!-- Opening -->
-  <p class="lead">Have a look through these. <strong>They are all branded video that people chose to watch</strong>, and they might be useful inspiration for something you want to make. Nine are series, one idea with a new subject every episode. The tenth had a good idea and never turned it into a series.</p>
+  <p class="lead">These are brands that put real money into episodic video and kept going. <strong>Watch a few of them.</strong> They hold up on their own, because people came to these shows for their own reasons rather than because a brand wanted them to.</p>
 
-  <div class="scale-panel">
-    <div class="scale-row">
-      <div class="scale-head">
-        <span class="scale-name">Long form &middot; 6 shows</span>
-        <span class="scale-len">8 to 33 minutes</span>
-      </div>
-      <div class="scale-track"><span class="scale-fill" style="width:100%"></span></div>
+  <div class="principles">
+    <div class="principle">
+      <span class="principle-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><circle cx="9.2" cy="8" r="3.1"/><path d="M3.2 19.2c0-3.3 2.7-5.1 6-5.1s6 1.8 6 5.1"/><path d="M16.2 6.3a3 3 0 0 1 0 5.5"/><path d="M18.4 19.2c0-2.5-.9-4-2.4-4.7"/></svg></span>
+      <div class="principle-name">Made for the audience</div>
+      <p class="principle-text">Every one of these was built for the people watching, not for the brand paying for it.</p>
     </div>
-    <div class="scale-row">
-      <div class="scale-head">
-        <span class="scale-name">Short form &middot; 3 shows</span>
-        <span class="scale-len">About 1 minute</span>
-      </div>
-      <div class="scale-track"><span class="scale-fill" style="width:3%"></span></div>
+    <div class="principle">
+      <span class="principle-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><rect x="3.2" y="9.2" width="17.6" height="10.8" rx="1.6"/><path d="M3.2 13.2h17.6M12 9.2V20"/><path d="M12 9.2S10.6 4.8 8.4 5.5 8.2 9.2 12 9.2z"/><path d="M12 9.2s1.4-4.4 3.6-3.7S15.8 9.2 12 9.2z"/></svg></span>
+      <div class="principle-name">Nothing asked in return</div>
+      <p class="principle-text">Each one is worth your time whether or not you ever buy a thing from the brand behind it.</p>
     </div>
-    <p class="scale-note">The bars are to scale. These two lengths do different jobs, so their view counts cannot be compared and they sit in separate sections below.</p>
-    <p class="scale-foot">Figures pulled from the YouTube API on 12 August 2026. Where a number comes from a brand's or an agency's own award entry, the card says so.</p>
+    <div class="principle">
+      <span class="principle-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M4.2 10.2A7.9 7.9 0 0 1 17.7 5L20 7.2"/><path d="M20 3.7v3.5h-3.5"/><path d="M19.8 13.8a7.9 7.9 0 0 1-13.5 5.2L4 16.8"/><path d="M4 20.3v-3.5h3.5"/></svg></span>
+      <div class="principle-name">Built to come back to</div>
+      <p class="principle-text">One idea returns with a new subject each time, so watching turns into a habit.</p>
+    </div>
   </div>
+
+  <p class="opening-prompt">Nine of them did that. The tenth had a good idea and never turned it into a series, which is why it is here too. As you go through them, the useful question is what your own version would look like.</p>
+
+  <p class="opening-foot">Six are long form and three are short form. They do different jobs, so they sit in separate sections and their view counts are never compared. Figures pulled from the YouTube API on 12 August 2026, and any number that comes from a brand's or an agency's own award entry is labelled on the card.</p>
 
   <hr class="rule-orange"/>
 

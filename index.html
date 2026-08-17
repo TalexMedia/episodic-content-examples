@@ -47,6 +47,7 @@ body{background:var(--bg);min-height:100vh}
 
 .section-intro{margin-bottom:1.25rem}
 .sec-pill-orange{display:inline-block;background:var(--o);color:#fff;font-family:'Oswald',sans-serif;font-weight:600;font-size:10px;letter-spacing:0.12em;text-transform:uppercase;padding:3px 10px;border-radius:3px;margin-bottom:0.5rem}
+.sec-pill-feature{display:inline-block;background:#15233F;color:#fff;font-family:'Oswald',sans-serif;font-weight:600;font-size:10px;letter-spacing:0.12em;text-transform:uppercase;padding:3px 10px;border-radius:3px;margin-bottom:0.5rem}
 .sec-pill-dark{display:inline-block;background:var(--txt);color:#fff;font-family:'Oswald',sans-serif;font-weight:600;font-size:10px;letter-spacing:0.12em;text-transform:uppercase;padding:3px 10px;border-radius:3px;margin-bottom:0.5rem}
 .section-title{font-family:'Oswald',sans-serif;font-weight:600;letter-spacing:0.02em;line-height:1.1;font-size:22px;color:var(--txt);margin-bottom:0.3rem}
 .section-subtitle{font-size:13.5px;color:var(--txt3);font-style:italic;font-family:'EB Garamond',Georgia,serif;line-height:1.6}
@@ -70,6 +71,7 @@ body{background:var(--bg);min-height:100vh}
 /* ---- opening: lead + three principles ---- */
 .lead{font-size:17.5px;color:var(--txt2);line-height:1.7;margin:2rem 0 1.4rem}
 .lead strong{color:var(--txt);font-weight:500}
+.lead-sub{font-size:15.5px;color:var(--txt2);line-height:1.8;margin-bottom:1.5rem}
 .principles{display:grid;grid-template-columns:repeat(3,1fr);gap:0.85rem;margin-bottom:1.4rem}
 .principle{background:var(--surface);border:1px solid var(--border);border-radius:10px;padding:1.2rem 1.15rem}
 .principle-icon{width:34px;height:34px;border-radius:9px;background:var(--o-dim);border:1px solid var(--o-border);display:flex;align-items:center;justify-content:center;color:var(--o-text);margin-bottom:0.75rem}
@@ -78,6 +80,18 @@ body{background:var(--bg);min-height:100vh}
 .principle-text{font-size:13.5px;color:var(--txt2);line-height:1.65}
 .opening-prompt{font-family:'EB Garamond',Georgia,serif;font-style:italic;font-size:16px;color:var(--txt);line-height:1.7;margin-bottom:1.3rem}
 .opening-foot{font-size:12.5px;color:var(--txt3);line-height:1.7}
+
+/* ---- featured case ---- */
+.feature{background:#15233F;border-radius:12px;padding:1.8rem 1.6rem;margin-bottom:1rem;border-top:4px solid var(--o)}
+.feature p{font-size:14.5px;line-height:1.8;color:rgba(255,255,255,0.82);margin-bottom:0.95rem}
+.feature p:last-child{margin-bottom:0}
+.feature strong{color:#fff;font-weight:500}
+.feature-stats{display:grid;grid-template-columns:repeat(3,1fr);gap:1px;background:rgba(255,255,255,0.16);border-radius:8px;overflow:hidden;margin:1.35rem 0}
+.feature-stat{background:#1D2E50;padding:0.9rem 0.5rem;text-align:center}
+.feature-stat .n{font-family:'Bebas Neue',sans-serif;font-size:30px;letter-spacing:0.03em;color:#FFA45C;line-height:1.1}
+.feature-stat .l{font-size:10px;letter-spacing:0.07em;text-transform:uppercase;color:rgba(255,255,255,0.68);font-family:'Oswald',sans-serif;font-weight:400;margin-top:3px;line-height:1.25}
+.feature-close{margin-top:1.35rem;padding-top:1.15rem;border-top:1px solid rgba(255,255,255,0.16);font-family:'EB Garamond',Georgia,serif;font-style:italic;font-size:15.5px;color:#fff;line-height:1.7}
+@media(max-width:520px){.feature-stats{grid-template-columns:1fr}}
 
 .spec{display:grid;grid-template-columns:88px 1fr;gap:6px 14px;margin-bottom:1.25rem}
 .spec dt{font-family:'Oswald',sans-serif;font-weight:500;font-size:9.5px;letter-spacing:0.13em;text-transform:uppercase;color:var(--txt3);padding-top:4px}
@@ -172,6 +186,8 @@ body{background:var(--bg);min-height:100vh}
   <!-- Opening -->
   <p class="lead"><strong>Here are ten shows worth taking inspiration from.</strong> Brands invested in making each show for an audience first, and people chose to watch.</p>
 
+  <p class="lead-sub">Brands paid for these shows, but none of them feel like ads. They were made the way regular TV is made: good enough that people choose to watch, with the brand present without interrupting. Watch any of them without knowing who paid, and you'd still enjoy it.</p>
+
   <div class="principles">
     <div class="principle">
       <span class="principle-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><circle cx="9.2" cy="8" r="3.1"/><path d="M3.2 19.2c0-3.3 2.7-5.1 6-5.1s6 1.8 6 5.1"/><path d="M16.2 6.3a3 3 0 0 1 0 5.5"/><path d="M18.4 19.2c0-2.5-.9-4-2.4-4.7"/></svg></span>
@@ -200,7 +216,7 @@ body{background:var(--bg);min-height:100vh}
   <div class="section-intro">
     <span class="sec-pill-orange">01</span>
     <h2 class="section-title">Long Form</h2>
-    <p class="section-subtitle">Seven shows with longer episodes, and each card gives its own running time.</p>
+    <p class="section-subtitle">Six shows with longer episodes, and each card gives its own running time.</p>
   </div>
 
   <!-- HUCKBERRY DIRT -->
@@ -347,6 +363,28 @@ body{background:var(--bg);min-height:100vh}
     <p class="src">eBay Motors with agency The Many · <a target="_blank" rel="noopener" href="https://shortyawards.com/16th/between-2-rides">Case study and results</a></p>
   </div>
 
+  <hr class="rule-orange"/>
+
+  <!-- ============ SECTION 02 · RED BULL ============ -->
+  <div class="section-intro">
+    <span class="sec-pill-feature">02 &middot; Special Case</span>
+    <h2 class="section-title">A Special Case: Red Bull</h2>
+    <p class="section-subtitle">One brand took this further than anyone else, and the story is worth knowing.</p>
+  </div>
+
+  <div class="feature">
+    <p>Red Bull started as a Thai drink. Chaleo Yoovidhya launched Krating Daeng in 1976 and sold the drink to truck drivers and factory workers. Dietrich Mateschitz tried a bottle on a trip to Thailand in 1982, and the two men founded Red Bull GmbH together in 1984. The can went on sale in Austria in 1987.</p>
+    <p><strong>Then Red Bull started making the thing people wanted to watch.</strong> Rather than only paying to appear around other people's sport, Red Bull began staging events and keeping the footage. Red Bull Media House opened in 2007 as a production company in its own right. Red Bull had already bought the Jaguar Formula One team from Ford in late 2004, and that team has since won six constructors' titles and seven drivers' titles.</p>
+    <p>In October 2012 Red Bull put Felix Baumgartner in a capsule at the edge of space and streamed the jump live. Eight million people watched at the same moment, the largest live audience YouTube had carried up to that point.</p>
+    <div class="feature-stats">
+      <div class="feature-stat"><div class="n">12.7B</div><div class="l">Cans Sold In 2024</div></div>
+      <div class="feature-stat"><div class="n">28.7B</div><div class="l">Views On YouTube</div></div>
+      <div class="feature-stat"><div class="n">7,045</div><div class="l">Videos Published</div></div>
+    </div>
+    <p>Red Bull makes an energy drink, and the shows barely acknowledge the drink exists. Not one of the 85 <em>Who is JOB</em> episode titles mentions Red Bull. The audience came first and the product followed, which is the same bet every brand on this page made.</p>
+    <p class="feature-close">Talex calls this Legendeering: give people something worth their time, then let people decide to come to you. Red Bull is the most recognizable example of the idea working.</p>
+  </div>
+
   <!-- RED BULL -->
   <div class="case">
     <div class="case-head">
@@ -373,9 +411,9 @@ body{background:var(--bg);min-height:100vh}
 
   <hr class="rule-orange"/>
 
-  <!-- ============ SECTION 02 · SHORT FORM ============ -->
+  <!-- ============ SECTION 03 · SHORT FORM ============ -->
   <div class="section-intro">
-    <span class="sec-pill-orange">02</span>
+    <span class="sec-pill-orange">03</span>
     <h2 class="section-title">Short Form</h2>
     <p class="section-subtitle">Three shows with episodes of about a minute, including one scripted series made for phone screens. Short form works differently, so the view counts here are not comparable to the long form numbers above.</p>
   </div>
@@ -452,9 +490,9 @@ body{background:var(--bg);min-height:100vh}
     <p class="src">Albertsons Media Collective with Procter &amp; Gamble, made by Minivela and Brilla Media · <a target="_blank" rel="noopener" href="https://www.youtube.com/playlist?list=PLD-Q2N8Wv-zLUeXnrglqit-M3zRMEO5F9">All episodes</a> · <a target="_blank" rel="noopener" href="https://www.marketingdive.com/news/pgs-latest-branded-microdrama-is-built-on-albertsons-retail-media-data/823121/">Trade coverage</a> &middot; <a target="_blank" rel="noopener" href="https://www.linkedin.com/pulse/welcome-taco-drama-tom-langan-wusce/">Tom Langan wrote about this one</a></p>
   </div>
 
-  <!-- ============ SECTION 03 ============ -->
+  <!-- ============ SECTION 04 ============ -->
   <div class="section-intro">
-    <span class="sec-pill-orange">03</span>
+    <span class="sec-pill-orange">04</span>
     <h2 class="section-title">What They Have In Common</h2>
   </div>
 

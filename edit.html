@@ -1,0 +1,839 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width,initial-scale=1.0"/>
+<meta name="robots" content="noindex"/>
+<title>Episodic Branded Content · Ten Case Studies · Talex Media</title>
+<link rel="icon" type="image/png" sizes="192x192" href="https://static.wixstatic.com/media/3c6878_9a68ae0b3ff84e198fdd43fac493e294~mv2_d_1500_1500_s_2.png/v1/fill/w_192,h_192,lg_1,usm_0.66_1.00_0.01/3c6878_9a68ae0b3ff84e198fdd43fac493e294~mv2_d_1500_1500_s_2.png"/>
+<link rel="shortcut icon" href="https://static.wixstatic.com/media/3c6878_9a68ae0b3ff84e198fdd43fac493e294~mv2_d_1500_1500_s_2.png/v1/fill/w_32,h_32,lg_1,usm_0.66_1.00_0.01/3c6878_9a68ae0b3ff84e198fdd43fac493e294~mv2_d_1500_1500_s_2.png" type="image/png"/>
+<link rel="apple-touch-icon" href="https://static.wixstatic.com/media/3c6878_9a68ae0b3ff84e198fdd43fac493e294~mv2_d_1500_1500_s_2.png/v1/fill/w_180,h_180,lg_1,usm_0.66_1.00_0.01/3c6878_9a68ae0b3ff84e198fdd43fac493e294~mv2_d_1500_1500_s_2.png"/>
+<link rel="preconnect" href="https://fonts.googleapis.com"/>
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Oswald:wght@300;400;500;600&family=EB+Garamond:ital,wght@0,400;1,400;1,500&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet"/>
+
+<style>
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+
+:root{
+  --o:#E85A0C;
+  --o-text:#B84A07;
+  --o-dim:rgba(232,90,12,0.08);
+  --o-border:rgba(232,90,12,0.28);
+  --bg:#F5F2EC;
+  --surface:#FFFFFF;
+  --border:#E2DDD6;
+  --border-strong:#C8C2BA;
+  --txt:#1A1816;
+  --txt2:#5A524B;
+  --txt3:#736A61;
+}
+
+html{background:var(--bg);color:var(--txt);font-family:'DM Sans',system-ui,sans-serif;font-size:15px;line-height:1.6}
+body{background:var(--bg);min-height:100vh}
+#wrap{max-width:700px;margin:0 auto;padding:0 1.25rem 5rem}
+
+.disp{font-family:'Bebas Neue',sans-serif;letter-spacing:0.04em;line-height:1}
+.italic{font-family:'EB Garamond',Georgia,serif;font-style:italic}
+
+.topbar{display:flex;align-items:center;justify-content:space-between;padding:1rem 0;border-bottom:1px solid var(--border)}
+.topbar-brand{display:flex;align-items:center;gap:10px;text-decoration:none}
+.topbar-logo{height:28px;width:auto}
+.topbar-name{font-family:'Bebas Neue',sans-serif;font-size:20px;letter-spacing:0.08em;color:var(--txt)}
+
+.hero{padding:3rem 0 2.5rem;border-bottom:2px solid var(--o)}
+.hero-title{font-size:clamp(40px,8vw,66px);color:var(--txt);margin-bottom:0.5rem}
+.hero-tagline{font-size:clamp(19px,3.5vw,26px);color:var(--o);margin-bottom:0}
+
+.section-intro{margin-bottom:1.25rem}
+.sec-pill-orange{display:inline-block;background:var(--o);color:#fff;font-family:'Oswald',sans-serif;font-weight:600;font-size:10px;letter-spacing:0.12em;text-transform:uppercase;padding:3px 10px;border-radius:3px;margin-bottom:0.5rem}
+.sec-pill-feature{display:inline-block;background:#15233F;color:#fff;font-family:'Oswald',sans-serif;font-weight:600;font-size:10px;letter-spacing:0.12em;text-transform:uppercase;padding:3px 10px;border-radius:3px;margin-bottom:0.5rem}
+.sec-pill-dark{display:inline-block;background:var(--txt);color:#fff;font-family:'Oswald',sans-serif;font-weight:600;font-size:10px;letter-spacing:0.12em;text-transform:uppercase;padding:3px 10px;border-radius:3px;margin-bottom:0.5rem}
+.section-title{font-family:'Oswald',sans-serif;font-weight:600;letter-spacing:0.02em;line-height:1.1;font-size:22px;color:var(--txt);margin-bottom:0.3rem}
+.section-subtitle{font-size:13.5px;color:var(--txt3);font-style:italic;font-family:'EB Garamond',Georgia,serif;line-height:1.6}
+
+.section-block{background:var(--surface);border:1px solid var(--border);border-radius:10px;padding:1.5rem;margin-bottom:1rem}
+.section-block p{font-size:14.5px;color:var(--txt2);line-height:1.8;margin-bottom:0.9rem}
+.section-block p:last-child{margin-bottom:0}
+.section-block strong{color:var(--txt);font-weight:500}
+
+.rule-orange{height:2px;background:var(--o);border:none;margin:2.5rem 0}
+
+/* ---- case-study card ---- */
+.case{background:var(--surface);border:1px solid var(--border);border-radius:12px;padding:1.5rem;margin-bottom:1rem}
+.case-head{display:flex;align-items:center;gap:13px;margin-bottom:1.15rem}
+.case-icon{flex:none;width:40px;height:40px;border-radius:10px;background:var(--o-dim);border:1px solid var(--o-border);display:flex;align-items:center;justify-content:center;color:var(--o-text)}
+.case-icon svg{width:21px;height:21px;stroke:currentColor;fill:none;stroke-width:1.6;stroke-linecap:round;stroke-linejoin:round}
+.case-headtext{min-width:0}
+.case-sector{font-family:'Oswald',sans-serif;font-weight:500;font-size:10px;letter-spacing:0.14em;text-transform:uppercase;color:var(--o-text);margin-bottom:2px}
+.case-name{font-family:'Bebas Neue',sans-serif;font-size:28px;letter-spacing:0.03em;line-height:1;color:var(--txt)}
+
+/* ---- opening: lead + three principles ---- */
+.lead{font-size:17.5px;color:var(--txt2);line-height:1.7;margin:2rem 0 1.4rem}
+.lead strong{color:var(--txt);font-weight:500}
+.lead-sub{font-size:15.5px;color:var(--txt2);line-height:1.8;margin-bottom:1.5rem}
+.principles{display:grid;grid-template-columns:repeat(3,1fr);gap:0.85rem;margin-bottom:1.4rem}
+.principle{background:var(--surface);border:1px solid var(--border);border-radius:10px;padding:1.2rem 1.15rem}
+.principle-icon{width:34px;height:34px;border-radius:9px;background:var(--o-dim);border:1px solid var(--o-border);display:flex;align-items:center;justify-content:center;color:var(--o-text);margin-bottom:0.75rem}
+.principle-icon svg{width:18px;height:18px;stroke:currentColor;fill:none;stroke-width:1.6;stroke-linecap:round;stroke-linejoin:round}
+.principle-name{font-family:'Oswald',sans-serif;font-weight:600;font-size:11.5px;letter-spacing:0.1em;text-transform:uppercase;color:var(--txt);margin-bottom:0.4rem;line-height:1.35}
+.principle-text{font-size:13.5px;color:var(--txt2);line-height:1.65}
+.opening-prompt{font-family:'EB Garamond',Georgia,serif;font-style:italic;font-size:16px;color:var(--txt);line-height:1.7;margin-bottom:1.3rem}
+.opening-foot{font-size:12.5px;color:var(--txt3);line-height:1.7}
+
+/* ---- featured case ---- */
+.feature{background:#15233F;border-radius:12px;padding:1.8rem 1.6rem;margin-bottom:1rem;border-top:4px solid var(--o)}
+.feature-logo{display:inline-block;background:#fff;border-radius:8px;padding:11px 16px;margin-bottom:1.3rem;line-height:0}
+.feature-logo svg{display:block;height:24px;width:auto}
+.feature p{font-size:14.5px;line-height:1.8;color:rgba(255,255,255,0.82);margin-bottom:0.95rem}
+.feature p:last-child{margin-bottom:0}
+.feature strong{color:#fff;font-weight:500}
+.feature-stats{display:grid;grid-template-columns:repeat(3,1fr);gap:1px;background:rgba(255,255,255,0.16);border-radius:8px;overflow:hidden;margin:1.35rem 0}
+.feature-stat{background:#1D2E50;padding:0.9rem 0.5rem;text-align:center}
+.feature-stat .n{font-family:'Bebas Neue',sans-serif;font-size:30px;letter-spacing:0.03em;color:#FFA45C;line-height:1.1}
+.feature-stat .l{font-size:10px;letter-spacing:0.07em;text-transform:uppercase;color:rgba(255,255,255,0.68);font-family:'Oswald',sans-serif;font-weight:400;margin-top:3px;line-height:1.25}
+.feature-src{font-size:12.5px;line-height:1.65;color:rgba(255,255,255,0.74);margin-top:0.9rem}
+.feature-src:first-of-type{margin-top:1.35rem;padding-top:1.15rem;border-top:1px solid rgba(255,255,255,0.16)}
+.feature-src a{color:rgba(255,255,255,0.88);text-decoration:none;border-bottom:1px dotted rgba(255,255,255,0.35)}
+.feature-src a:hover{color:#FFA45C;border-bottom-color:#FFA45C}
+.feature-example{margin-top:1.6rem;padding-top:1.5rem;border-top:1px solid rgba(255,255,255,0.16)}
+.fx-eyebrow{font-family:'Oswald',sans-serif;font-weight:600;font-size:10px;letter-spacing:0.14em;text-transform:uppercase;color:#FFA45C;margin-bottom:0.9rem}
+.feature-example .case-icon{background:rgba(255,255,255,0.10);border-color:rgba(255,255,255,0.24);color:#FFA45C}
+.feature-example .case-sector{color:#FFA45C}
+.feature-example .case-name{color:#fff}
+.feature-example .spec dt{color:rgba(255,255,255,0.55)}
+.feature-example .spec dd{color:rgba(255,255,255,0.82)}
+.feature-example .stat-strip{background:rgba(255,255,255,0.18);border-color:rgba(255,255,255,0.18)}
+.feature-example .stat-cell{background:#1D2E50;border-right-color:rgba(255,255,255,0.18)}
+.feature-example .stat-num{color:#FFA45C}
+.feature-example .stat-label{color:rgba(255,255,255,0.68)}
+.feature-example .src{color:rgba(255,255,255,0.74)}
+.feature-example .src.note{color:rgba(255,255,255,0.78)}
+.feature-example .src a{color:rgba(255,255,255,0.88);border-bottom-color:rgba(255,255,255,0.35)}
+.feature-example .src a:hover{color:#FFA45C;border-bottom-color:#FFA45C}
+@media(max-width:520px){.feature-stats{grid-template-columns:1fr}}
+
+.spec{display:grid;grid-template-columns:88px 1fr;gap:6px 14px;margin-bottom:1.25rem}
+.spec dt{font-family:'Oswald',sans-serif;font-weight:500;font-size:9.5px;letter-spacing:0.13em;text-transform:uppercase;color:var(--txt3);padding-top:4px}
+.spec dd{font-size:14px;color:var(--txt2);line-height:1.65}
+
+.stat-strip{display:grid;grid-template-columns:repeat(3,1fr);border:1px solid var(--border);border-radius:8px;background:#FAF8F5;overflow:hidden;margin-bottom:1.1rem}
+.stat-cell{padding:0.85rem 0.5rem;text-align:center;border-right:1px solid var(--border)}
+.stat-cell:last-child{border-right:none}
+.stat-num{font-family:'Bebas Neue',sans-serif;font-size:30px;letter-spacing:0.03em;color:var(--o);line-height:1.1}
+.stat-label{font-size:10px;letter-spacing:0.07em;text-transform:uppercase;color:var(--txt3);font-family:'Oswald',sans-serif;font-weight:400;margin-top:2px;line-height:1.25}
+
+.proj-video-embed{position:relative;width:100%;aspect-ratio:16/9;background:var(--txt);border-radius:8px;overflow:hidden}
+.proj-video-embed iframe{position:absolute;top:0;left:0;width:100%;height:100%;border:0;display:block}
+.video-facade{cursor:pointer;display:block;border:0;padding:0}
+.video-facade .vf-thumb{position:absolute;top:50%;left:0;width:100%;height:auto;transform:translateY(-50%);display:block}
+.vf-play{position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);width:68px;height:48px;border-radius:12px;background:rgba(0,0,0,0.72);transition:background 0.15s}
+.vf-play::after{content:"";position:absolute;top:50%;left:52%;transform:translate(-50%,-50%);border-style:solid;border-width:11px 0 11px 19px;border-color:transparent transparent transparent #fff}
+.video-facade:hover .vf-play,.video-facade:focus-visible .vf-play{background:var(--o)}
+.video-facade:focus-visible{outline:2px solid var(--o);outline-offset:3px}
+.video-facade .vf-title{position:absolute;left:0;right:0;bottom:0;padding:0.6rem 0.75rem;font-family:'Oswald',sans-serif;font-weight:500;font-size:11.5px;letter-spacing:0.04em;color:#fff;background:linear-gradient(to top,rgba(0,0,0,0.8),rgba(0,0,0,0));line-height:1.3}
+
+.src{font-size:12.5px;color:var(--txt3);line-height:1.65;margin-top:0.9rem}
+.src a{color:var(--txt2);text-decoration:none;border-bottom:1px dotted var(--border-strong)}
+.src a:hover{color:var(--o);border-bottom-color:var(--o)}
+.src.note{font-style:italic;font-family:'EB Garamond',Georgia,serif;font-size:13.5px;margin-top:0.55rem}
+
+.takeaways{list-style:none;margin:0;padding:0}
+.takeaways li{position:relative;padding-left:18px;font-size:14.5px;color:var(--txt2);line-height:1.75;margin-bottom:0.9rem}
+.takeaways li:last-child{margin-bottom:0}
+.takeaways li::before{content:"";position:absolute;left:2px;top:0.66em;width:6px;height:6px;border-radius:50%;background:var(--o)}
+.takeaways li strong{color:var(--txt);font-weight:500}
+
+.cred-row{display:flex;flex-wrap:wrap;gap:8px;margin-top:1.25rem}
+.cred-chip{padding:6px 12px;border:1px solid var(--o-border);background:var(--o-dim);border-radius:4px;font-family:'Oswald',sans-serif;font-weight:500;font-size:11px;letter-spacing:0.08em;text-transform:uppercase;color:var(--o-text)}
+
+.cta-block{background:var(--txt);border-radius:12px;padding:2.25rem 1.75rem;margin-top:2rem;text-align:center}
+.cta-eyebrow{font-size:11px;letter-spacing:0.14em;text-transform:uppercase;color:#F0894A;font-family:'Oswald',sans-serif;font-weight:500;margin-bottom:0.75rem}
+.cta-headline{font-size:clamp(28px,5vw,44px);color:#fff;margin-bottom:0.6rem}
+.cta-sub{font-size:14px;color:rgba(255,255,255,0.78);line-height:1.75;max-width:460px;margin:0 auto 1.75rem}
+.cta-primary{display:inline-block;background:var(--o);color:#fff;padding:14px 30px;border-radius:8px;font-family:'Oswald',sans-serif;font-weight:600;font-size:14px;letter-spacing:0.08em;text-transform:uppercase;text-decoration:none;transition:background 0.15s,transform 0.1s}
+.cta-primary:hover{background:#c94d08}
+.cta-primary:active{transform:scale(0.98)}
+.cta-primary:focus-visible{outline:2px solid #fff;outline-offset:3px}
+.cta-reply{margin-top:1.5rem;padding-top:1.25rem;border-top:1px solid rgba(255,255,255,0.12);font-size:13.5px;color:rgba(255,255,255,0.7);font-family:'EB Garamond',Georgia,serif;font-style:italic;line-height:1.6}
+
+.site-footer{margin-top:3rem;padding:1.5rem 0 1rem;border-top:1px solid var(--border);display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:1rem}
+.footer-brand{font-family:'Bebas Neue',sans-serif;font-size:16px;letter-spacing:0.08em;color:var(--txt2)}
+.footer-links{display:flex;gap:1.25rem;flex-wrap:wrap}
+.footer-links a{font-size:12px;color:var(--txt3);text-decoration:none;letter-spacing:0.06em;font-family:'Oswald',sans-serif;text-transform:uppercase}
+.footer-links a:hover{color:var(--o)}
+.footer-copy{font-size:11.5px;color:var(--txt3);width:100%}
+
+@media(max-width:520px){
+  .spec{grid-template-columns:1fr;gap:2px 0}
+  .spec dt{padding-top:8px}
+  .stat-num{font-size:26px}
+  .principles{grid-template-columns:1fr;gap:0.6rem}
+  .principle{display:grid;grid-template-columns:34px 1fr;gap:0 13px;align-items:start}
+  .principle-icon{margin-bottom:0}
+  .principle-name{grid-column:2;margin-bottom:0.25rem}
+  .principle-text{grid-column:2}
+  .case-name{font-size:25px}
+}
+
+@media print{
+  body{background:#fff}
+  .cta-primary{display:none}
+}
+</style>
+</head>
+<body>
+
+<div id="tm-bar">
+  <span class="tm-pill">DRAFT v1 · EDITABLE</span>
+  <span class="tm-status" id="tm-status">Loading…</span>
+  <button id="tm-reset">Reset</button>
+  <button id="tm-export">Export Final Version</button>
+  <button id="tm-publish" class="tm-primary">Publish To Live Site</button>
+  <div class="tm-note">Edits save automatically as you type. When the page is ready, click <b>Publish To Live Site</b> and the main link updates straight away. <b>Export Final Version</b> downloads a locked copy if you want the file.</div>
+</div>
+
+<style id="tm-edit-css">
+
+#tm-bar{position:fixed;left:0;right:0;bottom:0;z-index:9999;background:#161616;color:#fff;
+  font-family:'Oswald','DM Sans',system-ui,sans-serif;display:flex;flex-wrap:wrap;align-items:center;
+  gap:10px 16px;padding:10px 18px;box-shadow:0 -4px 24px rgba(0,0,0,0.18);font-size:13px;letter-spacing:0.02em}
+#tm-bar .tm-pill{background:#E85A0C;color:#fff;font-weight:600;font-size:10px;letter-spacing:0.12em;
+  text-transform:uppercase;padding:4px 10px;border-radius:3px;white-space:nowrap}
+#tm-bar .tm-status{color:#9a9a9a;font-size:11px}
+#tm-bar .tm-status.saved{color:#7BC99A}
+#tm-bar .tm-status.warn{color:#E8C060}
+#tm-bar .tm-note{width:100%;color:#8f8f8f;font-size:11px;line-height:1.5}
+#tm-bar button,#tm-bar .tm-btn{background:transparent;border:1px solid #3d3d3d;color:#e6e6e6;font-family:inherit;
+  font-size:11px;letter-spacing:0.08em;text-transform:uppercase;padding:7px 14px;border-radius:4px;
+  cursor:pointer;transition:background 0.15s,border-color 0.15s}
+#tm-bar button:hover,#tm-bar .tm-btn:hover{border-color:#E85A0C;color:#fff}
+#tm-bar .tm-btn{text-decoration:none;display:inline-block;line-height:1.35}
+#tm-bar button.tm-primary{background:#E85A0C;border-color:#E85A0C;color:#fff;font-weight:600}
+#tm-bar button.tm-primary:hover{background:#c94d08}
+@media print{#tm-bar{display:none!important}}
+.tm-edit{cursor:text;border-radius:2px;outline:1px dashed transparent;outline-offset:3px;
+  transition:outline-color 0.12s,background 0.12s}
+.tm-edit:hover{outline-color:rgba(232,90,12,0.35)}
+.tm-edit:focus{outline:2px solid #E85A0C;background:#FFFDF6;outline-offset:2px}
+.idea-card{position:relative}
+.idea-card.tm-idea{border:1px dashed #E85A0C!important;background:rgba(232,90,12,0.04)!important}
+.tm-chip{position:absolute;top:-9px;right:12px;background:#E85A0C;color:#fff;font-family:'Oswald',
+  'DM Sans',system-ui,sans-serif;font-size:9px;font-weight:600;letter-spacing:0.12em;text-transform:uppercase;
+  padding:2px 8px;border-radius:3px;z-index:5}
+.channel-link{pointer-events:none}
+
+</style>
+<div id="wrap">
+
+  <!-- LOCKED · topbar. Do not edit. -->
+  <nav class="topbar">
+    <a class="topbar-brand" href="https://www.talexmedia.com" target="_blank" rel="noopener">
+      <img class="topbar-logo"
+        src="https://static.wixstatic.com/media/3c6878_456d81e9cdb84e6c8bb3260ebfcc0523~mv2.png"
+        alt="Talex Media"
+        onerror="this.style.display='none'; this.nextElementSibling.style.display='inline'"
+      />
+      <span class="topbar-name" style="display:none">TALEX MEDIA</span>
+    </a>
+  </nav>
+
+  <!-- Hero -->
+  <header class="hero">
+    <h1 class="disp hero-title">Episodic Branded Content</h1>
+    <div class="italic hero-tagline">Ten brands that invested in episodic video, and what they got back.</div>
+  </header>
+
+  <!-- Opening -->
+  <p class="lead"><strong>Here are ten shows worth taking inspiration from.</strong> Brands invested in making each show for an audience first, and people chose to watch.</p>
+
+  <p class="lead-sub">Brands paid for these shows, but none of them feel like ads. They were made the way regular TV is made: good enough that people choose to watch, with the brand present without interrupting. Watch any of them without knowing who paid, and you'd still enjoy it.</p>
+
+  <div class="principles">
+    <div class="principle">
+      <span class="principle-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><circle cx="9.2" cy="8" r="3.1"/><path d="M3.2 19.2c0-3.3 2.7-5.1 6-5.1s6 1.8 6 5.1"/><path d="M16.2 6.3a3 3 0 0 1 0 5.5"/><path d="M18.4 19.2c0-2.5-.9-4-2.4-4.7"/></svg></span>
+      <div class="principle-name">Made for the audience</div>
+      <p class="principle-text">Every show here was made for the people watching first, not for the brand.</p>
+    </div>
+    <div class="principle">
+      <span class="principle-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><rect x="3.2" y="9.2" width="17.6" height="10.8" rx="1.6"/><path d="M3.2 13.2h17.6M12 9.2V20"/><path d="M12 9.2S10.6 4.8 8.4 5.5 8.2 9.2 12 9.2z"/><path d="M12 9.2s1.4-4.4 3.6-3.7S15.8 9.2 12 9.2z"/></svg></span>
+      <div class="principle-name">Free to watch</div>
+      <p class="principle-text">Each show is worth your time whether or not you ever buy anything from the brand.</p>
+    </div>
+    <div class="principle">
+      <span class="principle-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M4.2 10.2A7.9 7.9 0 0 1 17.7 5L20 7.2"/><path d="M20 3.7v3.5h-3.5"/><path d="M19.8 13.8a7.9 7.9 0 0 1-13.5 5.2L4 16.8"/><path d="M4 20.3v-3.5h3.5"/></svg></span>
+      <div class="principle-name">Built to come back to</div>
+      <p class="principle-text">One idea comes back episode after episode, so watching turns into a habit.</p>
+    </div>
+  </div>
+
+  <p class="opening-prompt">Take a look through the ten below, seven long form and three short form, and think about what your own version would look like.</p>
+
+  <p class="opening-foot">Figures pulled from the YouTube API on 12 August 2026. Any number that comes from a brand's or an agency's own award entry is labeled on the card.</p>
+
+  <hr class="rule-orange"/>
+
+  <!-- ============ SECTION 01 ============ -->
+  <div class="section-intro">
+    <span class="sec-pill-orange">01</span>
+    <h2 class="section-title">Long Form</h2>
+    <p class="section-subtitle">Six shows with longer episodes, and each card gives its own running time.</p>
+  </div>
+
+  <!-- HUCKBERRY DIRT -->
+  <div class="case">
+    <div class="case-head">
+      <span class="case-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M15.6 8.4l-2.1 5.1-5.1 2.1 2.1-5.1z"/></svg></span>
+      <div class="case-headtext">
+        <div class="case-sector">Apparel And Outdoor Gear · United States</div>
+        <div class="case-name">DIRT</div>
+      </div>
+    </div>
+    <dl class="spec">
+      <dt>Format</dt><dd>One region per episode. The host finds a local chef, they source ingredients from nearby farmers, fishermen and foragers, and they cook a meal from that region.</dd>
+      <dt>On camera</dt><dd>Josh Rosen, a former professional snowboarder and surfer, and the chefs and fishermen he cooks with.</dd>
+      <dt>Length</dt><dd>Long form. The median episode runs 32 minutes 36 seconds, and all 18 episodes run over 12 minutes.</dd>
+    </dl>
+    <div class="stat-strip">
+      <div class="stat-cell"><div class="stat-num">18</div><div class="stat-label">Episodes</div></div>
+      <div class="stat-cell"><div class="stat-num">22.3M</div><div class="stat-label">Views, All Episodes</div></div>
+      <div class="stat-cell"><div class="stat-num">3.5M</div><div class="stat-label">Top Episode</div></div>
+    </div>
+    <div class="proj-video-embed video-facade" data-yt="3gNph25gxhw" role="button" tabindex="0" aria-label="Play video: DIRT, New York City episode"><img class="vf-thumb" src="https://i.ytimg.com/vi/3gNph25gxhw/hqdefault.jpg" alt="" loading="lazy" onerror="this.style.display='none'"/><span class="vf-play" aria-hidden="true"></span><span class="vf-title">New York City · DIRT</span></div>
+    <p class="src note">DIRT is a travel documentary, close to <em>Parts Unknown</em> (the Anthony Bourdain series that visited one place per episode to eat and talk with the people there). The series has been running since 2022 and the most recent episode went up in May 2026. Huckberry's channel has 506,000 subscribers and 54.4 million views across everything it has ever posted, so the 18 episodes account for about 41 percent of the channel's lifetime views.</p>
+    <p class="src">Huckberry, hosted by Josh Rosen · <a target="_blank" rel="noopener" href="https://www.youtube.com/playlist?list=PLArn8wzOPwPY">DIRT playlist</a> · <a target="_blank" rel="noopener" href="https://www.session-magazine.com/issues/dirt--huckberrys-leap-into-food-and-adventure-travel.html">How they make it</a></p>
+  </div>
+
+  <!-- 3. E.L.F. -->
+  <div class="case">
+    <div class="case-head">
+      <span class="case-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M9.6 21h4.8v-7.4H9.6z"/><path d="M10.6 13.6V6.3l3.1-2.3v9.6"/></svg></span>
+      <div class="case-headtext">
+        <div class="case-sector">Beauty · United States</div>
+        <div class="case-name">Make Up Over Makeup</div>
+      </div>
+    </div>
+    <dl class="spec">
+      <dt>Format</dt><dd>Two people who fell out in public do each other's makeup and talk through what went wrong.</dd>
+      <dt>On camera</dt><dd>Real former friends, and a couple whose wedding didn't happen, sitting inches apart.</dd>
+      <dt>Length</dt><dd>Long form. The three episodes run 9, 15 and 15 minutes.</dd>
+    </dl>
+    <div class="stat-strip">
+      <div class="stat-cell"><div class="stat-num">3</div><div class="stat-label">Episodes</div></div>
+      <div class="stat-cell"><div class="stat-num">2.6M</div><div class="stat-label">Views On YouTube</div></div>
+      <div class="stat-cell"><div class="stat-num">7.6M</div><div class="stat-label">Episode 1, All Platforms</div></div>
+    </div>
+    <div class="proj-video-embed video-facade" data-yt="BbB4t_ibVHo" role="button" tabindex="0" aria-label="Play video: Make Up Over Makeup, the most watched episode"><img class="vf-thumb" src="https://i.ytimg.com/vi/BbB4t_ibVHo/hqdefault.jpg" alt="" loading="lazy" onerror="this.style.display='none'"/><span class="vf-play" aria-hidden="true"></span><span class="vf-title">The most watched of the three · Make Up Over Makeup</span></div>
+    <p class="src note">There's no script. The whole thing rests on putting two people who stopped speaking back in front of each other. On YouTube the three drew 484,006, 125,336 and 2,016,681 views. The most watched was the third, with a couple from <em>Love Is Blind</em> (the Netflix series where couples get engaged before meeting in person). The 7.6 million figure is for episode one, counts every platform, and comes from e.l.f.'s own award entry.</p>
+    <p class="src">e.l.f. Cosmetics · <a target="_blank" rel="noopener" href="https://www.youtube.com/playlist?list=PLYuNnWe8A-TX83tp4sgv_zomPQ1ri9kjB">All three episodes</a> · <a target="_blank" rel="noopener" href="https://shortyawards.com/16th/make-up-over-makeup">Case study and results</a></p>
+  </div>
+
+  <!-- 4. ROADKILL -->
+  <div class="case">
+    <div class="case-head">
+      <span class="case-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M4.6 15.8v-3l1.9-4.3A2 2 0 0 1 8.3 7.2h7.4a2 2 0 0 1 1.8 1.3l1.9 4.3v3"/><path d="M4.6 15.8h14.8"/><circle cx="7.6" cy="16.6" r="1.6"/><circle cx="16.4" cy="16.6" r="1.6"/></svg></span>
+      <div class="case-headtext">
+        <div class="case-sector">Automotive · United States</div>
+        <div class="case-name">Roadkill</div>
+      </div>
+    </div>
+    <dl class="spec">
+      <dt>Format</dt><dd>Buy a junk car, get it running again on camera, then drive it somewhere far away.</dd>
+      <dt>On camera</dt><dd>Two former car-magazine editors do the repairs themselves, and when one fails, the failure stays in the episode.</dd>
+      <dt>Length</dt><dd>Long form. The median episode runs 7 minutes 39 seconds and 24 episodes run over 20 minutes.</dd>
+    </dl>
+    <div class="stat-strip">
+      <div class="stat-cell"><div class="stat-num">142</div><div class="stat-label">Videos</div></div>
+      <div class="stat-cell"><div class="stat-num">187.7M</div><div class="stat-label">Views Across The Run</div></div>
+      <div class="stat-cell"><div class="stat-num">11</div><div class="stat-label">Years Sponsored</div></div>
+    </div>
+    <div class="proj-video-embed video-facade" data-yt="wOQe1hWvX_c" role="button" tabindex="0" aria-label="Play video: Roadkill Episode 38, the Dodge sponsorship launch"><img class="vf-thumb" src="https://i.ytimg.com/vi/wOQe1hWvX_c/hqdefault.jpg" alt="" loading="lazy" onerror="this.style.display='none'"/><span class="vf-play" aria-hidden="true"></span><span class="vf-title">The sponsorship launch episode · Roadkill Ep. 38</span></div>
+    <p class="src note">Dodge put its name on the show once, in the 2015 launch episode above, and then got out of the way. Only 8 titles across the run name Dodge or one of its models, and the rest are junk cars from other makers. The playlist holds 142 videos, 140 still public.</p>
+    <p class="src">MotorTrend, sponsored by Dodge · <a target="_blank" rel="noopener" href="https://www.youtube.com/playlist?list=PL12C0C916CECEA3BC">Roadkill, Powered by Dodge</a> · <a target="_blank" rel="noopener" href="https://en.wikipedia.org/wiki/Roadkill_(web_series)">Background</a></p>
+  </div>
+
+  <!-- 5. SHOPIFY -->
+  <div class="case">
+    <div class="case-head">
+      <span class="case-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><rect x="3" y="4.5" width="18" height="12" rx="2"/><path d="M8.5 20h7M12 16.5V20"/></svg></span>
+      <div class="case-headtext">
+        <div class="case-sector">Software · Canada</div>
+        <div class="case-name">Make My Space Work</div>
+      </div>
+    </div>
+    <dl class="spec">
+      <dt>Format</dt><dd>A designer rebuilds one small-business owner's workspace per episode, to a set budget.</dd>
+      <dt>On camera</dt><dd>Shopify's own customers, small-business owners in the rooms where they actually work.</dd>
+      <dt>Length</dt><dd>Long form. The median episode runs 13 minutes 43 seconds, and 24 of the 26 run over 10 minutes.</dd>
+    </dl>
+    <div class="stat-strip">
+      <div class="stat-cell"><div class="stat-num">26</div><div class="stat-label">Videos</div></div>
+      <div class="stat-cell"><div class="stat-num">5.0M</div><div class="stat-label">Channel Views</div></div>
+      <div class="stat-cell"><div class="stat-num">61.2K</div><div class="stat-label">Subscribers</div></div>
+    </div>
+    <div class="proj-video-embed video-facade" data-yt="cJ7QmsUON7U" role="button" tabindex="0" aria-label="Play video: Make My Space Work, rental live-work transformation"><img class="vf-thumb" src="https://i.ytimg.com/vi/cJ7QmsUON7U/hqdefault.jpg" alt="" loading="lazy" onerror="this.style.display='none'"/><span class="vf-play" aria-hidden="true"></span><span class="vf-title">Rental live-work transformation · Make My Space Work</span></div>
+    <p class="src note">Shopify pointed the camera at its customers instead of its software. The series runs on its own channel, separate from Shopify's, and that channel has five million views and 61,200 subscribers.</p>
+    <p class="src">Shopify Studios with Alexandra Gater · <a target="_blank" rel="noopener" href="https://www.youtube.com/c/makemyspacework/featured">Series channel</a></p>
+  </div>
+
+  <!-- 6. YETI -->
+  <div class="case">
+    <div class="case-head">
+      <span class="case-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M2.8 18.8l6.1-10.2 3.9 6 2.5-3.6 5.9 7.8z"/></svg></span>
+      <div class="case-headtext">
+        <div class="case-sector">Outdoor Gear · United States</div>
+        <div class="case-name">YETI Presents</div>
+      </div>
+    </div>
+    <dl class="spec">
+      <dt>Format</dt><dd>Short documentaries about one person, sorted into collections by activity such as fishing, hunting and surfing, rather than by release date.</dd>
+      <dt>On camera</dt><dd>Anglers, hunters, cooks, surfers and rodeo riders, telling their own stories.</dd>
+      <dt>Length</dt><dd>Long form. The median film runs 8 minutes 17 seconds, 32 of the 90 run over 10 minutes, and the longest is 34 minutes.</dd>
+    </dl>
+    <div class="stat-strip">
+      <div class="stat-cell"><div class="stat-num">90</div><div class="stat-label">Films In The Library</div></div>
+      <div class="stat-cell"><div class="stat-num">37.6M</div><div class="stat-label">Library Views</div></div>
+      <div class="stat-cell"><div class="stat-num">1.3M</div><div class="stat-label">Top Film</div></div>
+    </div>
+    <div class="proj-video-embed video-facade" data-yt="OmrufRLGdAk" role="button" tabindex="0" aria-label="Play video: YETI Presents, A Thousand Casts"><img class="vf-thumb" src="https://i.ytimg.com/vi/OmrufRLGdAk/hqdefault.jpg" alt="" loading="lazy" onerror="this.style.display='none'"/><span class="vf-play" aria-hidden="true"></span><span class="vf-title">A Thousand Casts · YETI Presents</span></div>
+    <p class="src note">YETI's films are about the people, not about the coolers, and the one above runs 28 minutes and is the most watched of all 90.</p>
+    <p class="src">YETI · <a target="_blank" rel="noopener" href="https://www.youtube.com/playlist?list=PLT6IyUkzp1o2G2YHBFRsUDP_NLg_jh3QV">Film library</a></p>
+  </div>
+
+  <!-- 7. EBAY -->
+  <div class="case">
+    <div class="case-head">
+      <span class="case-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M3.6 11.6V4h7.6l8.8 8.8-7.6 7.6z"/><circle cx="7.6" cy="8" r="1.3"/></svg></span>
+      <div class="case-headtext">
+        <div class="case-sector">Online Marketplace · United States</div>
+        <div class="case-name">Between 2 Rides</div>
+      </div>
+    </div>
+    <dl class="spec">
+      <dt>Format</dt><dd>Two versions of the same car, one straight from the factory and one built with parts from eBay, then tested against each other.</dd>
+      <dt>On camera</dt><dd>Seven YouTube car builders and creators, who do the builds and drive the finished cars.</dd>
+      <dt>Length</dt><dd>Long form. Five episodes of 8 to 12 minutes, plus a trailer and a 15-minute behind-the-scenes cut.</dd>
+    </dl>
+    <div class="stat-strip">
+      <div class="stat-cell"><div class="stat-num">22.9M</div><div class="stat-label">Views Across The Series</div></div>
+      <div class="stat-cell"><div class="stat-num">222K</div><div class="stat-label">New Subscribers</div></div>
+      <div class="stat-cell"><div class="stat-num">200+</div><div class="stat-label">Social Cuts</div></div>
+    </div>
+    <div class="proj-video-embed video-facade" data-yt="jEe7yZQlhvM" role="button" tabindex="0" aria-label="Play video: Between 2 Rides, drift test"><img class="vf-thumb" src="https://i.ytimg.com/vi/jEe7yZQlhvM/hqdefault.jpg" alt="" loading="lazy" onerror="this.style.display='none'"/><span class="vf-play" aria-hidden="true"></span><span class="vf-title">Drift test · Between 2 Rides</span></div>
+    <p class="src note">The build is the show, and the parts that make the difference come from eBay, so nobody has to explain the product in a voiceover. eBay's own award entry is the source for the view total, the subscriber gain, the 200 social cuts, the 4.6 point lift in brand awareness, and the average watch time of 4 minutes 49 seconds.</p>
+    <p class="src">eBay Motors with agency The Many · <a target="_blank" rel="noopener" href="https://shortyawards.com/16th/between-2-rides">Case study and results</a></p>
+  </div>
+
+  <hr class="rule-orange"/>
+
+  <!-- ============ SECTION 02 · RED BULL ============ -->
+  <div class="section-intro">
+    <span class="sec-pill-feature">02 &middot; Special Case</span>
+    <h2 class="section-title">A Special Case: Red Bull</h2>
+    <p class="section-subtitle">One brand built its own media company around the idea and has run it for nearly twenty years.</p>
+  </div>
+
+  <div class="feature">
+    <span class="feature-logo"><svg viewBox="0 0 145 47" role="img" aria-label="Red Bull"><path d="M117.383,20.086L117.383,31.59C117.09,36.149 110.387,36.149 110.094,31.59L110.094,20.086L103.754,20.086L103.754,32.836C103.754,37.142 108.219,40.633 113.715,40.633C119.211,40.633 123.676,37.142 123.676,32.836L123.676,20.086L117.383,20.086ZM138,6.412L138,39.892L144.375,39.892L144.375,6.412L138,6.412ZM127.176,39.892L133.551,39.892L133.551,6.412L127.176,6.412L127.176,39.892ZM95.953,22.477C97.719,20.892 98.737,18.638 98.766,16.267C98.762,14.129 97.938,12.076 96.464,10.528C94.964,8.856 92.25,7.918 88.612,7.918L77.707,7.918L77.707,39.892L91.793,39.892C97.184,39.809 101.543,35.731 101.543,30.735C101.535,27.099 100.254,24.5 95.953,22.477ZM90.612,34.322L84.512,34.322L84.512,13.431L88.762,13.431C90.671,13.52 92.171,15.106 92.151,17.017C92.151,18.888 90.632,20.403 88.762,20.399L86.55,20.399L86.55,26.145L90.612,26.145C96.085,26.145 96.085,34.349 90.612,34.349L90.612,34.322ZM21.487,17.384C21.464,14.86 20.438,12.447 18.632,10.677C16.832,8.908 14.397,7.927 11.871,7.951L0.203,7.951L0.203,39.892L6.987,39.892L6.987,13.431L10.5,13.431C12.882,13.349 14.871,15.235 14.91,17.619C14.805,20.004 12.8,21.869 10.41,21.793L8.835,21.793L8.835,29.438L15.585,39.892L23.535,39.892L14.16,26.552C18.43,25.559 21.46,21.767 21.487,17.384ZM33.352,19.259C27.565,19.415 22.957,24.149 22.957,29.934C22.957,35.724 27.565,40.457 33.352,40.615C37.8,40.615 41.266,38.602 43.059,35.455L37.875,33.059C37.125,34.576 35.565,35.52 33.878,35.481C31.569,35.582 29.621,33.787 29.535,31.477L29.535,31.258L43.589,31.258C43.632,30.832 43.651,30.408 43.647,29.977C43.746,23.047 39.18,19.259 33.352,19.259ZM29.512,27.622C29.414,25.403 31.188,23.552 33.41,23.552C35.628,23.552 37.401,25.403 37.305,27.622L29.512,27.622ZM69,39.892L69,6.412L62.617,6.412L62.617,22.258C60.921,20.547 58.612,19.58 56.203,19.567C50.953,19.567 46.664,24.24 46.664,30C46.664,35.758 50.94,40.477 56.203,40.477C58.637,40.457 60.957,39.457 62.647,37.711L62.647,39.961L69,39.892ZM58.012,35C55.434,35 53.332,32.707 53.332,29.879C53.332,27.052 55.434,24.727 58.012,24.727C60.594,24.727 62.699,27.024 62.699,29.856C62.699,32.692 60.602,35 58.012,35Z" style="fill:rgb(210,0,60);fill-rule:nonzero;"/></svg></span>
+    <p>Red Bull had been selling an energy drink for twenty years when the company opened Red Bull Media House in 2007. From then on Red Bull made its own films, series and live events.</p>
+    <p><strong>The strategy was to own the events and the footage rather than sponsor somebody else's, which is the approach Talex calls Legendeering.</strong> A sponsor pays to appear at another company's event, and when the event ends the footage belongs to whoever shot it. Red Bull built its own events instead, so the film library kept growing and stayed in house. Red Bull says it now runs more than 1,250 events a year in over 160 countries, with more than 700 athletes across more than 100 disciplines.</p>
+    <p>Red Bull Media House describes its own mission as inspiring people with &quot;beyond the ordinary&quot; stories. The films follow athletes attempting things most of us never would. Red Bull&#39;s bet was that the person who wants to watch that kind of film is the same person who buys the drink.</p>
+    <p>Red Bull Media House also produces and licenses live broadcast events for other broadcasters, so part of the output earns revenue rather than only costing money.</p>
+    <p>Red Bull bought the Jaguar Formula One team from Ford in late 2004. That team has won six constructors&#39; titles and eight drivers&#39; titles through the 2025 season. In October 2012 Red Bull sent Felix Baumgartner to the edge of space and streamed the jump live. More than eight million people watched at once, a live record for YouTube at the time.</p>
+    <div class="feature-stats">
+      <div class="feature-stat"><div class="n">12.7B</div><div class="l">Cans Sold In 2024</div></div>
+      <div class="feature-stat"><div class="n">28.7B</div><div class="l">Views, Main Channel</div></div>
+      <div class="feature-stat"><div class="n">7,045</div><div class="l">Videos Published</div></div>
+    </div>
+    <p>Red Bull sells an energy drink, and the company has spent nearly twenty years making films that people seek out on their own.</p>
+    <p class="feature-src">Red Bull &middot; <a target="_blank" rel="noopener" href="https://www.redbullmediahouse.com/en/about-us/">Red Bull Media House</a> &middot; <a target="_blank" rel="noopener" href="https://www.bnnbloomberg.ca/business/company-news/2025/01/23/red-bull-touts-record-profit-in-2024-with-revenue-growth-slowing/">2024 results</a> &middot; <a target="_blank" rel="noopener" href="https://en.wikipedia.org/wiki/Red_Bull_Racing">Red Bull Racing</a></p>
+    <p class="feature-src">The event, discipline, country and athlete counts are Red Bull&#39;s own figures. Cans sold comes from Red Bull&#39;s 2024 annual results. The YouTube figures were pulled on 14 August 2026 and cover the main Red Bull channel only.</p>
+
+    <div class="feature-example">
+      <div class="fx-eyebrow">One of the shows</div>
+      <div class="case-head">
+        <span class="case-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M2.5 15.5c2.2 0 2.2 1.8 4.4 1.8s2.2-1.8 4.4-1.8 2.2 1.8 4.4 1.8 2.2-1.8 4.4-1.8"/><path d="M2.5 19.4c2.2 0 2.2 1.8 4.4 1.8s2.2-1.8 4.4-1.8 2.2 1.8 4.4 1.8 2.2-1.8 4.4-1.8"/><path d="M16.5 11.2a4.6 4.6 0 0 0-9 .8"/><path d="M18.6 3.4l-2.1 3.6"/></svg></span>
+        <div class="case-headtext">
+          <div class="case-sector">Energy Drinks &middot; Austria</div>
+          <div class="case-name">Who Is JOB</div>
+        </div>
+      </div>
+      <dl class="spec">
+        <dt>Format</dt><dd>A professional surfer and his friends go looking for waves, and each episode follows what actually happened on the trip, including the parts that went wrong.</dd>
+        <dt>On camera</dt><dd>Jamie O'Brien and the same handful of friends every season.</dd>
+        <dt>Length</dt><dd>Long form. The median episode runs 8 minutes 59 seconds and the longest is 29 minutes.</dd>
+      </dl>
+      <div class="stat-strip">
+        <div class="stat-cell"><div class="stat-num">81</div><div class="stat-label">Episodes</div></div>
+        <div class="stat-cell"><div class="stat-num">85.2M</div><div class="stat-label">Views, Full Playlist</div></div>
+        <div class="stat-cell"><div class="stat-num">19.4M</div><div class="stat-label">Top Episode</div></div>
+      </div>
+      <div class="proj-video-embed video-facade" data-yt="NE28SNDs1qk" role="button" tabindex="0" aria-label="Play video: Who is JOB, tubing and shorebreak"><img class="vf-thumb" src="https://i.ytimg.com/vi/NE28SNDs1qk/hqdefault.jpg" alt="" loading="lazy" onerror="this.style.display='none'"/><span class="vf-play" aria-hidden="true"></span><span class="vf-title">Tubing and shorebreak &middot; Who is JOB 4.0</span></div>
+      <p class="src note">The series ran for eight seasons between 2012 and 2019, across 81 numbered episodes plus a trailer and two extras. Not one of the 84 videos in the playlist names Red Bull in its title. The episode above has 3,783,474 views on its own.</p>
+      <p class="src">Red Bull, with surfer Jamie O'Brien &middot; <a target="_blank" rel="noopener" href="https://www.youtube.com/playlist?list=PLnuf8iyXggLHI9LXsJ03H7FO1uE3IcPZ6">The full playlist</a></p>
+    </div>
+  </div>
+
+  <hr class="rule-orange"/>
+
+  <!-- ============ SECTION 03 · SHORT FORM ============ -->
+  <div class="section-intro">
+    <span class="sec-pill-orange">03</span>
+    <h2 class="section-title">Short Form</h2>
+    <p class="section-subtitle">Three shows with episodes of about a minute, including one scripted series made for phone screens. Short form works differently, so the view counts here are not comparable to the long form numbers above.</p>
+  </div>
+
+<!-- 1. VOLVO TRUCKS -->
+  <div class="case">
+    <div class="case-head">
+      <span class="case-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M2.4 6.4h10.8v9H2.4z"/><path d="M13.2 9.4h3.9l3.1 3.2v2.8h-7z"/><circle cx="6.2" cy="17.4" r="1.7"/><circle cx="16.6" cy="17.4" r="1.7"/></svg></span>
+      <div class="case-headtext">
+        <div class="case-sector">Heavy Trucks · Sweden</div>
+        <div class="case-name">Volvo Trucks Live Tests</div>
+      </div>
+    </div>
+    <dl class="spec">
+      <dt>Format</dt><dd>One truck feature, one physical test, filmed live in a single take.</dd>
+      <dt>On camera</dt><dd>Volvo's own test drivers, a hamster, a herd of bulls, and Jean-Claude Van Damme doing the splits between two reversing trucks.</dd>
+      <dt>Length</dt><dd>Short form. The median film runs 1 minute 17 seconds, and 39 of the 41 are under 5 minutes.</dd>
+    </dl>
+    <div class="stat-strip">
+      <div class="stat-cell"><div class="stat-num">44</div><div class="stat-label">Videos In The Series</div></div>
+      <div class="stat-cell"><div class="stat-num">252.2M</div><div class="stat-label">Views, All Films</div></div>
+      <div class="stat-cell"><div class="stat-num">128.0M</div><div class="stat-label">Top Film</div></div>
+    </div>
+    <div class="proj-video-embed video-facade" data-yt="M7FIvfx5J10" role="button" tabindex="0" aria-label="Play video: Volvo Trucks, The Epic Split"><img class="vf-thumb" src="https://i.ytimg.com/vi/M7FIvfx5J10/hqdefault.jpg" alt="" loading="lazy" onerror="this.style.display='none'"/><span class="vf-play" aria-hidden="true"></span><span class="vf-title">The Epic Split · Volvo Trucks</span></div>
+    <p class="src note">Volvo has been making Live Tests since 2012 and the most recent went up in 2024. The agency separately reports €126 million in earned media value and YouTube subscribers going from 3,500 to 92,000. The agency also reports that almost half of the truck drivers who saw a Live Test film said they would be more likely to buy a Volvo next time. Of the 44 films in the playlist, 41 are still public, with 252.2 million views in total.</p>
+    <p class="src">Volvo Trucks with Forsman &amp; Bodenfors · <a target="_blank" rel="noopener" href="https://www.youtube.com/playlist?list=PLKFJ3tQvdojTHq0Zw0PUYtDTjGqi93bPe">Live tests playlist</a> · <a target="_blank" rel="noopener" href="https://www.contagious.com/news-and-views/insight-strategy-live-tests">Case study and results</a></p>
+  </div>
+
+  <!-- 2. IKEA HOME TOUR -->
+  <div class="case">
+    <div class="case-head">
+      <span class="case-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M6.2 11.2V6.4a2 2 0 0 1 2-2h7.6a2 2 0 0 1 2 2v4.8"/><path d="M5 11.2h14v5.2H5z"/><path d="M7 16.4V20M17 16.4V20"/></svg></span>
+      <div class="case-headtext">
+        <div class="case-sector">Home Furnishing · United States</div>
+        <div class="case-name">IKEA Home Tour</div>
+      </div>
+    </div>
+    <dl class="spec">
+      <dt>Format</dt><dd>Five IKEA employees, the Home Tour Squad, travel the country and make over one room in a real family's home.</dd>
+      <dt>On camera</dt><dd>The family whose house it is, and the IKEA employees doing the makeover.</dd>
+      <dt>Length</dt><dd>Short form. The median video runs 49 seconds, and 230 of the 237 are under 5 minutes.</dd>
+    </dl>
+    <div class="stat-strip">
+      <div class="stat-cell"><div class="stat-num">245</div><div class="stat-label">Videos</div></div>
+      <div class="stat-cell"><div class="stat-num">59.6M</div><div class="stat-label">Playlist Views</div></div>
+      <div class="stat-cell"><div class="stat-num">+4.1%</div><div class="stat-label">Store Sales</div></div>
+    </div>
+    <div class="proj-video-embed video-facade" data-yt="9vwtjTTPbLs" role="button" tabindex="0" aria-label="Play video: IKEA Home Tour Episode 202, family bedroom makeover"><img class="vf-thumb" src="https://i.ytimg.com/vi/9vwtjTTPbLs/hqdefault.jpg" alt="" loading="lazy" onerror="this.style.display='none'"/><span class="vf-play" aria-hidden="true"></span><span class="vf-title">Family Bedroom Makeover · Episode 202</span></div>
+    <p class="src note">IKEA sent its own staff rather than a celebrity, so the rooms look like something you could actually copy. The sales figure comes from IKEA's own award entry and can't be checked independently: store sales up an average of 4.1 percent during the weeks the first season aired. The playlist lists 245 videos, 237 still public.</p>
+    <p class="src">IKEA USA · <a target="_blank" rel="noopener" href="https://www.youtube.com/playlist?list=PLk5L7f7HqQ7FseahfMCjuaixZgxZ8vX8_">Makeovers playlist</a> · <a target="_blank" rel="noopener" href="https://shortyawards.com/7th/ikea-home-tour">Case study and results</a></p>
+  </div>
+
+  <!-- RICO'S TACOS -->
+  <div class="case">
+    <div class="case-head">
+      <span class="case-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M2.6 17.2a9.4 9.4 0 0 1 18.8 0z"/><path d="M7 17.2c0-2.6 1.4-4.8 3.4-5.9"/><path d="M13.6 11.3c2 1.1 3.4 3.3 3.4 5.9"/></svg></span>
+      <div class="case-headtext">
+        <div class="case-sector">Grocery · United States</div>
+        <div class="case-name">Rico's Tacos</div>
+      </div>
+    </div>
+    <dl class="spec">
+      <dt>Format</dt><dd>A scripted family drama written to be watched on a phone or on the screens above the checkout.</dd>
+      <dt>On camera</dt><dd>A widowed father, his teenage daughter and her grandmother, starting a taco stand. They shot some episodes inside working stores with real staff.</dd>
+      <dt>Length</dt><dd>Short form. The median episode runs 49 seconds and the longest is 2 minutes 29 seconds.</dd>
+    </dl>
+    <div class="stat-strip">
+      <div class="stat-cell"><div class="stat-num">17</div><div class="stat-label">Episodes So Far</div></div>
+      <div class="stat-cell"><div class="stat-num">940K</div><div class="stat-label">Views, All Episodes</div></div>
+      <div class="stat-cell"><div class="stat-num">200K</div><div class="stat-label">Episode One</div></div>
+    </div>
+    <div class="proj-video-embed video-facade" data-yt="PeUsXJ4ccXY" role="button" tabindex="0" aria-label="Play video: Rico's Tacos Episode 1, Flavor Has a Price"><img class="vf-thumb" src="https://i.ytimg.com/vi/PeUsXJ4ccXY/hqdefault.jpg" alt="" loading="lazy" onerror="this.style.display='none'"/><span class="vf-play" aria-hidden="true"></span><span class="vf-title">Episode 1, Flavor Has a Price · Rico's Tacos</span></div>
+    <p class="src note">Albertsons and Procter &amp; Gamble launched this in June 2026 and new episodes are still coming out, with 17 of the announced 22 published so far. The series runs on Albertsons' YouTube and social channels and on the screens inside its stores, and the Albertsons app lets you buy what you just watched.</p>
+    <p class="src">Albertsons Media Collective with Procter &amp; Gamble, made by Minivela and Brilla Media · <a target="_blank" rel="noopener" href="https://www.youtube.com/playlist?list=PLD-Q2N8Wv-zLUeXnrglqit-M3zRMEO5F9">All episodes</a> · <a target="_blank" rel="noopener" href="https://www.marketingdive.com/news/pgs-latest-branded-microdrama-is-built-on-albertsons-retail-media-data/823121/">Trade coverage</a> &middot; <a target="_blank" rel="noopener" href="https://www.linkedin.com/pulse/welcome-taco-drama-tom-langan-wusce/">Tom Langan wrote about this one</a></p>
+  </div>
+
+  <!-- ============ SECTION 04 ============ -->
+  <div class="section-intro">
+    <span class="sec-pill-orange">04</span>
+    <h2 class="section-title">What They Have In Common</h2>
+  </div>
+
+  <div class="section-block">
+    <ul class="takeaways">
+      <li><strong>A format lasts longer than any single film.</strong> You can describe each show above in one sentence: a junk car made to run again, one region and one local chef, two people who fell out doing each other's makeup.</li>
+      <li><strong>The brand can play any part in the story.</strong> It can be the reason the episode exists, as with the eBay builds, or barely appear at all, as with the YETI films.</li>
+      <li><strong>A show that returns gives people a reason to come back.</strong> A single film gets one launch, while a format gets a new launch every time it returns, and the back catalog keeps earning views in between.</li>
+      <li><strong>Long and short both work.</strong> Huckberry's episodes run about half an hour, Volvo's films run about a minute, and both are returning series. Pick the length the idea needs.</li>
+      <li><strong>Small productions work too.</strong> One e.l.f. episode is two people doing each other's makeup at a table, and it drew more than two million views on YouTube by itself.</li>
+    </ul>
+  </div>
+
+  <div class="cred-row">
+    <span class="cred-chip">2x Emmy Nominated</span>
+    <span class="cred-chip">25 Years Experience</span>
+    <span class="cred-chip">100+ Hours Distributed Globally</span>
+    <span class="cred-chip">BBC · Discovery · NBC Universal</span>
+  </div>
+
+  <!-- Close -->
+  <div class="cta-block">
+    <div class="cta-eyebrow">Open Invitation</div>
+    <h2 class="disp cta-headline">Happy To Brainstorm</h2>
+    <p class="cta-sub">If any of these gave you an idea, or you want to talk one through, we are always available for that.</p>
+    <a class="cta-primary" href="https://calendly.com/d/ct7b-xvd-c9x/intro-call" target="_blank" rel="noopener">Book A Call With Our Team →</a>
+    <div class="cta-reply">Fifteen minutes, nothing to prepare, and nothing is sold on the call. If you would rather just reply by email, that works too.</div>
+  </div>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <span class="footer-brand">Talex Media</span>
+    <div class="footer-links">
+      <a href="https://www.talexmedia.com" target="_blank" rel="noopener">talexmedia.com</a>
+      <a href="mailto:solutions@talexmedia.com">solutions@talexmedia.com</a>
+    </div>
+    <div class="footer-copy">© 2026 Talex Media LLC · Episodic branded content case studies · Figures pulled from the YouTube API on 12 August 2026</div>
+  </footer>
+
+</div>
+<script>
+(function(){
+  function play(el){
+    if(el.dataset.loaded) return;
+    el.dataset.loaded = "1";
+    var id = el.getAttribute("data-yt");
+    var f = document.createElement("iframe");
+    f.setAttribute("src","https://www.youtube-nocookie.com/embed/"+id+"?autoplay=1&rel=0");
+    f.setAttribute("title", el.getAttribute("aria-label")||"Video");
+    f.setAttribute("allow","accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture");
+    f.setAttribute("allowfullscreen","");
+    el.innerHTML = "";
+    el.appendChild(f);
+  }
+  document.addEventListener("click", function(e){
+    var el = e.target.closest(".video-facade");
+    if(el) play(el);
+  });
+  document.addEventListener("keydown", function(e){
+    if(e.key !== "Enter" && e.key !== " ") return;
+    var el = e.target.closest && e.target.closest(".video-facade");
+    if(el){ e.preventDefault(); play(el); }
+  });
+})();
+</script>
+<script id="tm-edit-js">
+
+(function(){
+  var DOC_KEY = 'episodic-content-examples-868531e7';
+  var LOCAL_KEY = 'talex-edit:' + DOC_KEY;
+  // Carousel decks (tools/deck-unbundle.mjs) carry their text in inline-styled
+  // spans inside .slide sections, so the tag list below would miss most of a
+  // deck. Scoped to .slide so a bare span stays uneditable in strategy docs.
+  var EDIT_SEL = '.spec dd, .spec dt, .case-name, .case-sector, .principle-name, .feature-stat .n, .feature-stat .l, .fx-eyebrow, .vf-title, .footer-copy, .slide span, .slide em, p, li, h1, h2, h3, h4, .idea-title, .idea-desc, .idea-tag, .why-label, .why-item, .stat-num, .stat-label, .channel-name, .channel-handle, .channel-snippet, .cs-section-label, .cs-section-body, .cs-stat-num, .cs-stat-label, .cs-name, .cs-footer-meta, .cred-chip, .faq-q, .faq-a, .cta-eyebrow, .cta-headline, .cta-sub, .cta-reply, .callout p, .callout-attr, .hero-eyebrow, .hero-title, .hero-tagline, .section-title, .section-subtitle';
+  var wrap = document.querySelector('#wrap');
+  var statusEl = document.getElementById('tm-status');
+  var saveTimer = null;
+  window.__talexDocKey = DOC_KEY;
+  window.__tmSkipSave = false;
+
+  function setStatus(text, cls){
+    if(!statusEl) return;
+    statusEl.textContent = text;
+    statusEl.className = 'tm-status' + (cls ? ' ' + cls : '');
+  }
+
+  function initEdit(){
+    if(!wrap) return;
+    var els = Array.prototype.slice.call(wrap.querySelectorAll(EDIT_SEL));
+    els = els.filter(function(el){
+      return !els.some(function(p){ return p !== el && p.contains(el); });
+    });
+    els.forEach(function(el){
+      if(el.getAttribute('data-tmedit') === '1') return;
+      el.setAttribute('contenteditable', 'true');
+      el.setAttribute('data-tmedit', '1');
+      el.classList.add('tm-edit');
+    });
+    wrap.querySelectorAll('.idea-card').forEach(function(card){
+      if(card.querySelector('.tm-chip')) return;
+      card.classList.add('tm-idea');
+      var chip = document.createElement('span');
+      chip.className = 'tm-chip';
+      chip.textContent = 'EDITABLE';
+      card.appendChild(chip);
+    });
+  }
+
+  function applyDraft(html){
+    if(html && wrap && html !== wrap.innerHTML){ wrap.innerHTML = html; }
+    initEdit();
+  }
+
+  function save(){
+    if(!wrap) return Promise.resolve();
+    var html = wrap.innerHTML;
+    try { localStorage.setItem(LOCAL_KEY, html); } catch(e){}
+    setStatus('Saving…');
+    return saveDraft(html).then(function(){
+      setStatus('Saved to cloud just now', 'saved');
+    }).catch(function(){
+      setStatus('Cloud offline — kept in this browser only', 'warn');
+    });
+  }
+
+  function scheduleSave(){
+    setStatus('Saving…');
+    clearTimeout(saveTimer);
+    saveTimer = setTimeout(save, 250);
+  }
+
+  
+  function saveDraft(html){
+    return fetch(DB_URL + '/drafts/' + DOC_KEY + '.json', {
+      method: 'PUT',
+      headers: {'Content-Type': 'application/json'},
+      body: JSON.stringify(html)
+    }).then(function(r){ if(!r.ok) throw new Error('http ' + r.status); });
+  }
+  function resetDraft(){
+    try { localStorage.removeItem(LOCAL_KEY); } catch(e){}
+    return fetch(DB_URL + '/drafts/' + DOC_KEY + '.json', { method: 'DELETE' }).catch(function(){});
+  }
+
+  
+  var DB_URL = 'https://talex-media-default-rtdb.firebaseio.com';
+  var done = false;
+  function finish(html){
+    if(done) return; done = true;
+    applyDraft(html);
+    setStatus(html ? 'Saved draft restored from cloud' : 'Edits save automatically', 'saved');
+  }
+  var t = setTimeout(function(){ finish(localStorage.getItem(LOCAL_KEY)); }, 4000);
+  fetch(DB_URL + '/drafts/' + DOC_KEY + '.json')
+    .then(function(r){ if(!r.ok) throw new Error('http ' + r.status); return r.json(); })
+    .then(function(v){
+      clearTimeout(t);
+      finish((typeof v === 'string' && v) ? v : localStorage.getItem(LOCAL_KEY));
+    })
+    .catch(function(){
+      clearTimeout(t);
+      finish(localStorage.getItem(LOCAL_KEY));
+    });
+
+
+  if(wrap){
+    wrap.addEventListener('input', scheduleSave);
+    window.addEventListener('beforeunload', function(){
+      if(window.__tmSkipSave) return;
+      clearTimeout(saveTimer); save();
+    });
+  }
+
+  document.getElementById('tm-reset').addEventListener('click', function(){
+    if(!confirm('Reset this page back to the original text? All saved edits will be lost.')) return;
+    window.__tmSkipSave = true;
+    try { localStorage.removeItem(LOCAL_KEY); } catch(e){}
+    resetDraft();
+    location.reload();
+  });
+
+  // No window.print() button. Browser printing renders the page as seen —
+  // Chrome defaults "Background graphics" OFF, which turns a charcoal deck
+  // into white slides — and it prints the screen-preview zoom rather than
+  // the slide box. The real PDF comes from tools/carousel-pdf.mjs, which
+  // drives headless Chrome with printBackground + preferCSSPageSize. The
+  // Download PDF button below serves that build.
+
+  function exportFinal(){
+    var clone = document.documentElement.cloneNode(true);
+    var bar = clone.querySelector('#tm-bar'); if(bar) bar.parentNode.removeChild(bar);
+    var css = clone.querySelector('#tm-edit-css'); if(css) css.parentNode.removeChild(css);
+    var scr = clone.querySelector('#tm-edit-js'); if(scr) scr.parentNode.removeChild(scr);
+    clone.querySelectorAll('[contenteditable]').forEach(function(el){
+      el.removeAttribute('contenteditable');
+      el.removeAttribute('data-tmedit');
+      el.classList.remove('tm-edit');
+    });
+    clone.querySelectorAll('.tm-chip').forEach(function(el){ el.parentNode.removeChild(el); });
+    clone.querySelectorAll('.tm-idea').forEach(function(el){ el.classList.remove('tm-idea'); });
+    var html = '<!DOCTYPE html>\n' + clone.outerHTML;
+    var blob = new Blob([html], {type:'text/html'});
+    var a = document.createElement('a');
+    a.href = URL.createObjectURL(blob);
+    a.download = 'episodic-content-examples-strategy-FINAL.html';
+    document.body.appendChild(a);
+    a.click();
+    setTimeout(function(){ a.remove(); URL.revokeObjectURL(a.href); }, 500);
+    return html;
+  }
+  window.__talexExportFinal = exportFinal;
+
+  document.getElementById('tm-export').addEventListener('click', function(){
+    setStatus('Exporting final version…');
+    try { exportFinal(); setStatus('Final exported — check your downloads', 'saved'); }
+    catch(e){ setStatus('Export failed: ' + e.message, 'warn'); }
+  });
+
+  
+  var BANNED = ["delve into", "embark", "spearhead", "harness", "unleash", "supercharge", "trailblazing", "game-changer", "game changer", "innovative", "meticulous", "invaluable", "ingenious", "pivotal", "comprehensive", "robust", "transformative", "empower", "seamless", "synergy", "proactive", "disruptive", "visionary", "optimize", "leverage", "navigating the landscape", "tapestry", "realm", "ecosystem", "in conclusion", "in summary", "it is worth noting", "it's important to note", "a testament to", "revolutionize", "paint a picture", "dive deep into", "woven into the fabric", "end-to-end", "end to end", "fully integrated", "best-in-class", "world-class", "cutting-edge", "state-of-the-art", "at the end of the day", "in today's world", "going forward"];
+
+  function scanIssues(){
+    var raw = wrap.innerText || wrap.textContent || '';
+    var text = raw.toLowerCase();
+    var hits = [];
+    BANNED.forEach(function(term){
+      var i = text.indexOf(term);
+      if(i === -1) return;
+      hits.push({
+        term: term,
+        near: raw.slice(Math.max(0, i - 45), i + term.length + 45).replace(/\s+/g, ' ').trim()
+      });
+    });
+    if(/[\u2014\u2013]/.test(raw)) hits.push({term: 'em/en dash', near: ''});
+    return hits;
+  }
+
+  function publishLive(){
+    var issues = scanIssues();
+    var version = Date.now().toString(36);
+    var at = new Date().toISOString();
+    setStatus('Publishing to the live site\u2026');
+    return fetch(DB_URL + '/published/' + DOC_KEY + '.json', {
+      method: 'PUT',
+      headers: {'Content-Type': 'application/json'},
+      body: JSON.stringify({html: wrap.innerHTML, version: version, at: at})
+    }).then(function(r){
+      if(!r.ok) throw new Error('http ' + r.status);
+      fetch(DB_URL + '/publishlog/' + DOC_KEY + '/' + version + '.json', {
+        method: 'PUT',
+        headers: {'Content-Type': 'application/json'},
+        body: JSON.stringify({at: at, issues: issues})
+      }).catch(function(){});
+      var msg = 'Published \u2014 the live page is updated';
+      if(issues.length){
+        msg += ' (' + issues.length + ' wording note' +
+               (issues.length > 1 ? 's' : '') + ' logged for Evan)';
+      }
+      setStatus(msg, 'saved');
+    }).catch(function(e){
+      setStatus('Publish failed: ' + e.message +
+                ' \u2014 the live page did NOT change', 'warn');
+    });
+  }
+
+  document.getElementById('tm-publish').addEventListener('click', function(){
+    if(!confirm('Publish your edits to the live page?\n\nThis updates the page at the main link straight away.')) return;
+    // Flush the pending draft save FIRST, then publish. Running both at once
+    // lets the save's "Saved to cloud" message land after the publish result
+    // and overwrite it, so the click looks like it did nothing.
+    clearTimeout(saveTimer);
+    save().then(publishLive);
+  });
+
+})();
+
+</script>
+</body>
+</html>

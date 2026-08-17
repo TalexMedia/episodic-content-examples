@@ -83,6 +83,8 @@ body{background:var(--bg);min-height:100vh}
 
 /* ---- featured case ---- */
 .feature{background:#15233F;border-radius:12px;padding:1.8rem 1.6rem;margin-bottom:1rem;border-top:4px solid var(--o)}
+.feature-logo{display:inline-block;background:#fff;border-radius:8px;padding:11px 16px;margin-bottom:1.3rem;line-height:0}
+.feature-logo svg{display:block;height:24px;width:auto}
 .feature p{font-size:14.5px;line-height:1.8;color:rgba(255,255,255,0.82);margin-bottom:0.95rem}
 .feature p:last-child{margin-bottom:0}
 .feature strong{color:#fff;font-weight:500}
@@ -90,7 +92,10 @@ body{background:var(--bg);min-height:100vh}
 .feature-stat{background:#1D2E50;padding:0.9rem 0.5rem;text-align:center}
 .feature-stat .n{font-family:'Bebas Neue',sans-serif;font-size:30px;letter-spacing:0.03em;color:#FFA45C;line-height:1.1}
 .feature-stat .l{font-size:10px;letter-spacing:0.07em;text-transform:uppercase;color:rgba(255,255,255,0.68);font-family:'Oswald',sans-serif;font-weight:400;margin-top:3px;line-height:1.25}
-.feature-close{margin-top:1.35rem;padding-top:1.15rem;border-top:1px solid rgba(255,255,255,0.16);font-family:'EB Garamond',Georgia,serif;font-style:italic;font-size:15.5px;color:#fff;line-height:1.7}
+.feature-src{font-size:12.5px;line-height:1.65;color:rgba(255,255,255,0.62);margin-top:0.9rem}
+.feature-src:first-of-type{margin-top:1.35rem;padding-top:1.15rem;border-top:1px solid rgba(255,255,255,0.16)}
+.feature-src a{color:rgba(255,255,255,0.88);text-decoration:none;border-bottom:1px dotted rgba(255,255,255,0.35)}
+.feature-src a:hover{color:#FFA45C;border-bottom-color:#FFA45C}
 @media(max-width:520px){.feature-stats{grid-template-columns:1fr}}
 
 .spec{display:grid;grid-template-columns:88px 1fr;gap:6px 14px;margin-bottom:1.25rem}
@@ -369,20 +374,24 @@ body{background:var(--bg);min-height:100vh}
   <div class="section-intro">
     <span class="sec-pill-feature">02 &middot; Special Case</span>
     <h2 class="section-title">A Special Case: Red Bull</h2>
-    <p class="section-subtitle">One brand took this further than anyone else, and the story is worth knowing.</p>
+    <p class="section-subtitle">One brand built its own media company around the idea and has run it for nearly twenty years.</p>
   </div>
 
   <div class="feature">
-    <p>Red Bull started as a Thai drink. Chaleo Yoovidhya launched Krating Daeng in 1976 and sold the drink to truck drivers and factory workers. Dietrich Mateschitz tried a bottle on a trip to Thailand in 1982, and the two men founded Red Bull GmbH together in 1984. The can went on sale in Austria in 1987.</p>
-    <p><strong>Then Red Bull started making the thing people wanted to watch.</strong> Rather than only paying to appear around other people's sport, Red Bull began staging events and keeping the footage. Red Bull Media House opened in 2007 as a production company in its own right. Red Bull had already bought the Jaguar Formula One team from Ford in late 2004, and that team has since won six constructors' titles and seven drivers' titles.</p>
-    <p>In October 2012 Red Bull put Felix Baumgartner in a capsule at the edge of space and streamed the jump live. Eight million people watched at the same moment, the largest live audience YouTube had carried up to that point.</p>
+    <span class="feature-logo"><svg viewBox="0 0 145 47" role="img" aria-label="Red Bull"><path d="M117.383,20.086L117.383,31.59C117.09,36.149 110.387,36.149 110.094,31.59L110.094,20.086L103.754,20.086L103.754,32.836C103.754,37.142 108.219,40.633 113.715,40.633C119.211,40.633 123.676,37.142 123.676,32.836L123.676,20.086L117.383,20.086ZM138,6.412L138,39.892L144.375,39.892L144.375,6.412L138,6.412ZM127.176,39.892L133.551,39.892L133.551,6.412L127.176,6.412L127.176,39.892ZM95.953,22.477C97.719,20.892 98.737,18.638 98.766,16.267C98.762,14.129 97.938,12.076 96.464,10.528C94.964,8.856 92.25,7.918 88.612,7.918L77.707,7.918L77.707,39.892L91.793,39.892C97.184,39.809 101.543,35.731 101.543,30.735C101.535,27.099 100.254,24.5 95.953,22.477ZM90.612,34.322L84.512,34.322L84.512,13.431L88.762,13.431C90.671,13.52 92.171,15.106 92.151,17.017C92.151,18.888 90.632,20.403 88.762,20.399L86.55,20.399L86.55,26.145L90.612,26.145C96.085,26.145 96.085,34.349 90.612,34.349L90.612,34.322ZM21.487,17.384C21.464,14.86 20.438,12.447 18.632,10.677C16.832,8.908 14.397,7.927 11.871,7.951L0.203,7.951L0.203,39.892L6.987,39.892L6.987,13.431L10.5,13.431C12.882,13.349 14.871,15.235 14.91,17.619C14.805,20.004 12.8,21.869 10.41,21.793L8.835,21.793L8.835,29.438L15.585,39.892L23.535,39.892L14.16,26.552C18.43,25.559 21.46,21.767 21.487,17.384ZM33.352,19.259C27.565,19.415 22.957,24.149 22.957,29.934C22.957,35.724 27.565,40.457 33.352,40.615C37.8,40.615 41.266,38.602 43.059,35.455L37.875,33.059C37.125,34.576 35.565,35.52 33.878,35.481C31.569,35.582 29.621,33.787 29.535,31.477L29.535,31.258L43.589,31.258C43.632,30.832 43.651,30.408 43.647,29.977C43.746,23.047 39.18,19.259 33.352,19.259ZM29.512,27.622C29.414,25.403 31.188,23.552 33.41,23.552C35.628,23.552 37.401,25.403 37.305,27.622L29.512,27.622ZM69,39.892L69,6.412L62.617,6.412L62.617,22.258C60.921,20.547 58.612,19.58 56.203,19.567C50.953,19.567 46.664,24.24 46.664,30C46.664,35.758 50.94,40.477 56.203,40.477C58.637,40.457 60.957,39.457 62.647,37.711L62.647,39.961L69,39.892ZM58.012,35C55.434,35 53.332,32.707 53.332,29.879C53.332,27.052 55.434,24.727 58.012,24.727C60.594,24.727 62.699,27.024 62.699,29.856C62.699,32.692 60.602,35 58.012,35Z" style="fill:rgb(210,0,60);fill-rule:nonzero;"/></svg></span>
+    <p>Red Bull had been selling an energy drink for twenty years when the company opened Red Bull Media House in 2007. From then on Red Bull made its own films, series and live events.</p>
+    <p><strong>The strategy was to own the events and the footage rather than sponsor somebody else's, which is the approach Talex calls Legendeering.</strong> A sponsor pays to appear at another company's event, and when the event ends the footage belongs to whoever shot it. Red Bull built its own events instead, so the film library kept growing and stayed in house. Red Bull says it now runs more than 1,250 events a year in over 160 countries, with more than 700 athletes across more than 100 disciplines.</p>
+    <p>Red Bull Media House describes its own mission as inspiring people with &quot;beyond the ordinary&quot; stories. The films follow athletes attempting things most of us never would. Red Bull&#39;s bet was that the person who wants to watch that kind of film is the same person who buys the drink.</p>
+    <p>Red Bull Media House also produces and licenses live broadcast events for other broadcasters, so part of the output earns revenue rather than only costing money.</p>
+    <p>Red Bull bought the Jaguar Formula One team from Ford in late 2004. That team has won six constructors&#39; titles and eight drivers&#39; titles through the 2025 season. In October 2012 Red Bull sent Felix Baumgartner to the edge of space and streamed the jump live. More than eight million people watched at once, a live record for YouTube at the time.</p>
     <div class="feature-stats">
       <div class="feature-stat"><div class="n">12.7B</div><div class="l">Cans Sold In 2024</div></div>
-      <div class="feature-stat"><div class="n">28.7B</div><div class="l">Views On YouTube</div></div>
+      <div class="feature-stat"><div class="n">28.7B</div><div class="l">Views, Main Channel</div></div>
       <div class="feature-stat"><div class="n">7,045</div><div class="l">Videos Published</div></div>
     </div>
-    <p>Red Bull makes an energy drink, and the shows barely acknowledge the drink exists. Not one of the 85 <em>Who is JOB</em> episode titles mentions Red Bull. The audience came first and the product followed, which is the same bet every brand on this page made.</p>
-    <p class="feature-close">Talex calls this Legendeering: give people something worth their time, then let people decide to come to you. Red Bull is the most recognizable example of the idea working.</p>
+    <p>Red Bull sells an energy drink, and the company has spent nearly twenty years making films that people seek out on their own.</p>
+    <p class="feature-src">Red Bull &middot; <a target="_blank" rel="noopener" href="https://www.redbullmediahouse.com/en/about-us/">Red Bull Media House</a> &middot; <a target="_blank" rel="noopener" href="https://www.bnnbloomberg.ca/business/company-news/2025/01/23/red-bull-touts-record-profit-in-2024-with-revenue-growth-slowing/">2024 results</a> &middot; <a target="_blank" rel="noopener" href="https://en.wikipedia.org/wiki/Red_Bull_Racing">Red Bull Racing</a></p>
+    <p class="feature-src">The event, discipline, country and athlete counts are Red Bull&#39;s own figures. Cans sold comes from Red Bull&#39;s 2024 annual results. The YouTube figures were pulled on 14 August 2026 and cover the main Red Bull channel only.</p>
   </div>
 
   <!-- RED BULL -->
@@ -400,13 +409,13 @@ body{background:var(--bg);min-height:100vh}
       <dt>Length</dt><dd>Long form. The median episode runs 8 minutes 59 seconds and the longest is 29 minutes.</dd>
     </dl>
     <div class="stat-strip">
-      <div class="stat-cell"><div class="stat-num">85</div><div class="stat-label">Episodes</div></div>
-      <div class="stat-cell"><div class="stat-num">85.7M</div><div class="stat-label">Views, All Episodes</div></div>
+      <div class="stat-cell"><div class="stat-num">81</div><div class="stat-label">Episodes</div></div>
+      <div class="stat-cell"><div class="stat-num">85.2M</div><div class="stat-label">Views, Full Playlist</div></div>
       <div class="stat-cell"><div class="stat-num">19.4M</div><div class="stat-label">Top Episode</div></div>
     </div>
     <div class="proj-video-embed video-facade" data-yt="NE28SNDs1qk" role="button" tabindex="0" aria-label="Play video: Who is JOB, tubing and shorebreak"><img class="vf-thumb" src="https://i.ytimg.com/vi/NE28SNDs1qk/hqdefault.jpg" alt="" loading="lazy" onerror="this.style.display='none'"/><span class="vf-play" aria-hidden="true"></span><span class="vf-title">Tubing and shorebreak &middot; Who is JOB 4.0</span></div>
-    <p class="src note">The series ran for eight seasons between 2012 and 2019, and not one of the 85 episode titles names Red Bull. The episode above has 3,783,453 views on its own.</p>
-    <p class="src">Red Bull, with surfer Jamie O'Brien &middot; <a target="_blank" rel="noopener" href="https://www.youtube.com/playlist?list=PLnuf8iyXggLHI9LXsJ03H7FO1uE3IcPZ6">All 85 episodes</a></p>
+    <p class="src note">The series ran for eight seasons between 2012 and 2019, across 81 numbered episodes plus a trailer and two extras. Not one of the 84 videos in the playlist names Red Bull in its title. The episode above has 3,783,474 views on its own.</p>
+    <p class="src">Red Bull, with surfer Jamie O'Brien &middot; <a target="_blank" rel="noopener" href="https://www.youtube.com/playlist?list=PLnuf8iyXggLHI9LXsJ03H7FO1uE3IcPZ6">The full playlist</a></p>
   </div>
 
   <hr class="rule-orange"/>

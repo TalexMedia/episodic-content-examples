@@ -24,7 +24,14 @@ Ten case studies, each one a real show with a repeating format, a real person on
 | 9 | IKEA Home Tour | IKEA USA | Home furnishing | Short, median 49s |
 | 10 | Rico's Tacos | Albertsons with P&G | Grocery | Short, median 49s |
 
-Sections: `01 Long Form`, `02 Short Form`, `03 What They Have In Common`. Closes with the Talex credential row and a low-pressure intro-call CTA (`ct7b-xvd-c9x`, the team link).
+Sections: `01 Long Form`, `02 A Special Case: Red Bull`, `03 Short Form`, `04 What They Have In Common`. Closes with the Talex credential row and a low-pressure intro-call CTA (`ct7b-xvd-c9x`, the team link).
+
+**Section 02 is the Red Bull feature** (added 2026-08-14 on Evan's ask): a navy block with the Red Bull wordmark, explaining the strategy rather than listing facts. Who Is JOB sits inside this section rather than in Long Form, so Red Bull appears once. Deliberate choices there:
+
+- **The story starts in 2007, not at the founding.** Evan: "people don't care too much about the start of the company." The Krating Daeng / Mateschitz origin was cut. Do not add it back.
+- **Legendeering is named inside the strategy sentence, never as a closing tagline.** `AUDIT_VOICE_RULES.md` line 166 bans the closing-tagline construction outright. The first draft violated it and all three reviewers caught it.
+- **The feature carries its own source lines**, because four of its figures are Red Bull's own marketing numbers (1,250 events, 100+ disciplines, 160+ countries, 700 athletes) plus the 2024 cans figure. Keep them attributed.
+- **The logo is an inlined SVG**, not a hotlink, so the page does not depend on Wikimedia. Public domain, trademarked, editorial use.
 
 **The counter-example was removed 2026-08-12.** Sherwin-Williams' DIY Influencer Program was cut on Evan's call: the page is framed as inspiration, so an example of something that did not work pulled against it. He also pointed out the framing was wrong, since that program does have a repeatable idea (every creator paints with the Color of the Year); what it lacks is a series. Do not reintroduce a failure card without asking.
 
@@ -35,6 +42,8 @@ Every card uses the same anatomy: sector, show name, **Format**, **On camera**, 
 ## Rules for editing
 
 - Every number must trace to the YouTube Data API or to a named public source. Never estimate.
+- **Playlists can contain duplicates. Always dedupe before summing views.** The `Who is JOB` playlist lists 85 items but holds 84 unique videos (`-LLixi9MxV0` appears twice), so the naive sum overstated the total by 542,328 views. It also holds 81 numbered episodes plus a trailer and two extras, so "85 episodes" was wrong twice over. Sum unique ids, and separate playlist items from actual episodes.
+- **Live sports and championship counts go stale.** Red Bull Racing's drivers' title count was written as seven from a pre-2024 source; the correct figure is eight (Vettel 2010-13, Verstappen 2021-24). Anchor such counts with "through the 20XX season" and re-check before each send.
 - Self-reported figures must stay labelled as such on the card. Currently: IKEA store sales (+4.1%), eBay view total, subscriber gain, awareness lift and watch time, e.l.f. cross-platform views (7.6M), Volvo earned media (€126M), subscriber growth and the driver purchase-intent survey.
 - **The opening does not explain the long/short split in prose.** Evan cut that line 2026-08-12 as "just weird". The distinction is carried structurally instead, by the two sections and the `Length` row on every card, which satisfies the `audit_shorts_vs_longform` rule. Do not add the explanation back.
 - Tom's newsletter [Welcome to the Taco Drama](https://www.linkedin.com/pulse/welcome-taco-drama-tom-langan-wusce/) is linked from the Rico's Tacos card, because that piece is specifically about that show.

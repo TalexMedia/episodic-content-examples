@@ -61,10 +61,12 @@ body{background:var(--bg);min-height:100vh}
 
 /* ---- case-study card ---- */
 .case{background:var(--surface);border:1px solid var(--border);border-radius:12px;padding:1.5rem;margin-bottom:1rem}
-.case-head{display:flex;align-items:center;gap:13px;margin-bottom:1.15rem}
+.case-head{margin-bottom:1.15rem}
+.case-logo{display:block;height:26px;width:auto;max-width:170px;margin-bottom:0.7rem}
+.case-logo.sq{height:30px}
+.case-headtext{min-width:0}
 .case-icon{flex:none;width:40px;height:40px;border-radius:10px;background:var(--o-dim);border:1px solid var(--o-border);display:flex;align-items:center;justify-content:center;color:var(--o-text)}
 .case-icon svg{width:21px;height:21px;stroke:currentColor;fill:none;stroke-width:1.6;stroke-linecap:round;stroke-linejoin:round}
-.case-headtext{min-width:0}
 .case-company{font-family:'Oswald',sans-serif;font-weight:600;font-size:12px;letter-spacing:0.13em;text-transform:uppercase;color:var(--o-text);margin-bottom:3px}
 .case-meta{font-family:'Oswald',sans-serif;font-weight:400;font-size:10px;letter-spacing:0.1em;text-transform:uppercase;color:var(--txt3);margin-top:4px}
 .feature-example .case-company{color:#FFA45C}
@@ -250,7 +252,7 @@ body{background:var(--bg);min-height:100vh}
   <!-- HUCKBERRY DIRT -->
   <div class="case">
     <div class="case-head">
-      <span class="case-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M15.6 8.4l-2.1 5.1-5.1 2.1 2.1-5.1z"/></svg></span>
+      <img class="case-logo" src="assets/huckberry.svg" alt="Huckberry" loading="lazy" onerror="this.style.display='none'"/>
       <div class="case-headtext">
         <div class="case-company">Huckberry</div>
         <div class="case-name">DIRT</div>
@@ -275,7 +277,7 @@ body{background:var(--bg);min-height:100vh}
   <!-- 3. E.L.F. -->
   <div class="case">
     <div class="case-head">
-      <span class="case-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M9.6 21h4.8v-7.4H9.6z"/><path d="M10.6 13.6V6.3l3.1-2.3v9.6"/></svg></span>
+      <img class="case-logo sq" src="assets/elf.svg" alt="e.l.f. Cosmetics" loading="lazy" onerror="this.style.display='none'"/>
       <div class="case-headtext">
         <div class="case-company">e.l.f. Cosmetics</div>
         <div class="case-name">Make Up Over Makeup</div>
@@ -300,9 +302,9 @@ body{background:var(--bg);min-height:100vh}
   <!-- 4. ROADKILL -->
   <div class="case">
     <div class="case-head">
-      <span class="case-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M4.6 15.8v-3l1.9-4.3A2 2 0 0 1 8.3 7.2h7.4a2 2 0 0 1 1.8 1.3l1.9 4.3v3"/><path d="M4.6 15.8h14.8"/><circle cx="7.6" cy="16.6" r="1.6"/><circle cx="16.4" cy="16.6" r="1.6"/></svg></span>
+      <img class="case-logo" src="assets/dodge.svg" alt="Dodge" loading="lazy" onerror="this.style.display='none'"/>
       <div class="case-headtext">
-        <div class="case-company">MotorTrend, sponsored by Dodge</div>
+        <div class="case-company">Dodge, with MotorTrend</div>
         <div class="case-name">Roadkill</div>
         <div class="case-meta">Automotive · United States <span class="biz-tag biz-b2c">B2C</span></div>
       </div>
@@ -325,7 +327,7 @@ body{background:var(--bg);min-height:100vh}
   <!-- 5. SHOPIFY -->
   <div class="case">
     <div class="case-head">
-      <span class="case-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><rect x="3" y="4.5" width="18" height="12" rx="2"/><path d="M8.5 20h7M12 16.5V20"/></svg></span>
+      <img class="case-logo" src="assets/shopify.svg" alt="Shopify" loading="lazy" onerror="this.style.display='none'"/>
       <div class="case-headtext">
         <div class="case-company">Shopify</div>
         <div class="case-name">Make My Space Work</div>
@@ -350,7 +352,7 @@ body{background:var(--bg);min-height:100vh}
   <!-- 6. YETI -->
   <div class="case">
     <div class="case-head">
-      <span class="case-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M2.8 18.8l6.1-10.2 3.9 6 2.5-3.6 5.9 7.8z"/></svg></span>
+      <img class="case-logo" src="assets/yeti.svg" alt="YETI" loading="lazy" onerror="this.style.display='none'"/>
       <div class="case-headtext">
         <div class="case-company">YETI</div>
         <div class="case-name">YETI Presents</div>
@@ -375,7 +377,7 @@ body{background:var(--bg);min-height:100vh}
   <!-- 7. EBAY -->
   <div class="case">
     <div class="case-head">
-      <span class="case-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M3.6 11.6V4h7.6l8.8 8.8-7.6 7.6z"/><circle cx="7.6" cy="8" r="1.3"/></svg></span>
+      <img class="case-logo" src="assets/ebay.svg" alt="eBay" loading="lazy" onerror="this.style.display='none'"/>
       <div class="case-headtext">
         <div class="case-company">eBay Motors</div>
         <div class="case-name">Between 2 Rides</div>
@@ -425,10 +427,9 @@ body{background:var(--bg);min-height:100vh}
     <div class="feature-example">
       <div class="fx-eyebrow">One of the shows</div>
       <div class="case-head">
-        <span class="case-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M2.5 15.5c2.2 0 2.2 1.8 4.4 1.8s2.2-1.8 4.4-1.8 2.2 1.8 4.4 1.8 2.2-1.8 4.4-1.8"/><path d="M2.5 19.4c2.2 0 2.2 1.8 4.4 1.8s2.2-1.8 4.4-1.8 2.2 1.8 4.4 1.8 2.2-1.8 4.4-1.8"/><path d="M16.5 11.2a4.6 4.6 0 0 0-9 .8"/><path d="M18.6 3.4l-2.1 3.6"/></svg></span>
-        <div class="case-headtext">
-          <div class="case-company">Red Bull</div>
-          <div class="case-name">Who Is JOB</div>
+      <div class="case-headtext">
+        <div class="case-company">Red Bull</div>
+        <div class="case-name">Who Is JOB</div>
           <div class="case-meta">Energy Drinks &middot; Austria <span class="biz-tag biz-b2c">B2C</span></div>
         </div>
       </div>
@@ -460,7 +461,7 @@ body{background:var(--bg);min-height:100vh}
 <!-- 1. VOLVO TRUCKS -->
   <div class="case">
     <div class="case-head">
-      <span class="case-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M2.4 6.4h10.8v9H2.4z"/><path d="M13.2 9.4h3.9l3.1 3.2v2.8h-7z"/><circle cx="6.2" cy="17.4" r="1.7"/><circle cx="16.6" cy="17.4" r="1.7"/></svg></span>
+      <img class="case-logo" src="assets/volvotrucks.svg" alt="Volvo Trucks" loading="lazy" onerror="this.style.display='none'"/>
       <div class="case-headtext">
         <div class="case-company">Volvo Trucks</div>
         <div class="case-name">Volvo Trucks Live Tests</div>
@@ -485,7 +486,7 @@ body{background:var(--bg);min-height:100vh}
   <!-- 2. IKEA HOME TOUR -->
   <div class="case">
     <div class="case-head">
-      <span class="case-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M6.2 11.2V6.4a2 2 0 0 1 2-2h7.6a2 2 0 0 1 2 2v4.8"/><path d="M5 11.2h14v5.2H5z"/><path d="M7 16.4V20M17 16.4V20"/></svg></span>
+      <img class="case-logo" src="assets/ikea.svg" alt="IKEA" loading="lazy" onerror="this.style.display='none'"/>
       <div class="case-headtext">
         <div class="case-company">IKEA</div>
         <div class="case-name">IKEA Home Tour</div>
@@ -510,7 +511,7 @@ body{background:var(--bg);min-height:100vh}
   <!-- RICO'S TACOS -->
   <div class="case">
     <div class="case-head">
-      <span class="case-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M2.6 17.2a9.4 9.4 0 0 1 18.8 0z"/><path d="M7 17.2c0-2.6 1.4-4.8 3.4-5.9"/><path d="M13.6 11.3c2 1.1 3.4 3.3 3.4 5.9"/></svg></span>
+      <img class="case-logo" src="assets/albertsons.svg" alt="Albertsons" loading="lazy" onerror="this.style.display='none'"/>
       <div class="case-headtext">
         <div class="case-company">Albertsons with Procter &amp; Gamble</div>
         <div class="case-name">Rico's Tacos</div>
@@ -543,7 +544,7 @@ body{background:var(--bg);min-height:100vh}
 
   <div class="case">
     <div class="case-head">
-      <span class="case-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M3.6 17.6h16.8"/><path d="M5.4 17.6v-2.3a6.6 6.6 0 0 1 13.2 0v2.3"/><path d="M9.5 9.1V5.5a1.4 1.4 0 0 1 1.4-1.4h2.2a1.4 1.4 0 0 1 1.4 1.4v3.6"/></svg></span>
+      <img class="case-logo sq" src="assets/caterpillar.svg" alt="Caterpillar" loading="lazy" onerror="this.style.display='none'"/>
       <div class="case-headtext">
         <div class="case-company">Caterpillar</div>
         <div class="case-name">Cat Trials</div>

@@ -67,6 +67,10 @@ body{background:var(--bg);min-height:100vh}
 .case-headtext{min-width:0}
 .case-sector{font-family:'Oswald',sans-serif;font-weight:500;font-size:10px;letter-spacing:0.14em;text-transform:uppercase;color:var(--o-text);margin-bottom:2px}
 .case-name{font-family:'Bebas Neue',sans-serif;font-size:28px;letter-spacing:0.03em;line-height:1;color:var(--txt)}
+.biz-tag{display:inline-block;font-family:'Oswald',sans-serif;font-weight:600;font-size:9px;letter-spacing:0.11em;padding:2px 6px;border-radius:3px;margin-left:8px;position:relative;top:-1px}
+.biz-b2b{background:var(--o-text);color:#fff}
+.biz-b2c{background:transparent;color:var(--txt3);border:1px solid var(--border-strong)}
+.feature-example .biz-b2c{color:rgba(255,255,255,0.72);border-color:rgba(255,255,255,0.32)}
 
 /* ---- opening: lead + three principles ---- */
 .lead{font-size:17.5px;color:var(--txt2);line-height:1.7;margin:2rem 0 1.4rem}
@@ -244,7 +248,7 @@ body{background:var(--bg);min-height:100vh}
     <div class="case-head">
       <span class="case-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M15.6 8.4l-2.1 5.1-5.1 2.1 2.1-5.1z"/></svg></span>
       <div class="case-headtext">
-        <div class="case-sector">Apparel And Outdoor Gear · United States</div>
+        <div class="case-sector">Apparel And Outdoor Gear · United States<span class="biz-tag biz-b2c">B2C</span></div>
         <div class="case-name">DIRT</div>
       </div>
     </div>
@@ -268,7 +272,7 @@ body{background:var(--bg);min-height:100vh}
     <div class="case-head">
       <span class="case-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M9.6 21h4.8v-7.4H9.6z"/><path d="M10.6 13.6V6.3l3.1-2.3v9.6"/></svg></span>
       <div class="case-headtext">
-        <div class="case-sector">Beauty · United States</div>
+        <div class="case-sector">Beauty · United States<span class="biz-tag biz-b2c">B2C</span></div>
         <div class="case-name">Make Up Over Makeup</div>
       </div>
     </div>
@@ -292,7 +296,7 @@ body{background:var(--bg);min-height:100vh}
     <div class="case-head">
       <span class="case-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M4.6 15.8v-3l1.9-4.3A2 2 0 0 1 8.3 7.2h7.4a2 2 0 0 1 1.8 1.3l1.9 4.3v3"/><path d="M4.6 15.8h14.8"/><circle cx="7.6" cy="16.6" r="1.6"/><circle cx="16.4" cy="16.6" r="1.6"/></svg></span>
       <div class="case-headtext">
-        <div class="case-sector">Automotive · United States</div>
+        <div class="case-sector">Automotive · United States<span class="biz-tag biz-b2c">B2C</span></div>
         <div class="case-name">Roadkill</div>
       </div>
     </div>
@@ -316,7 +320,7 @@ body{background:var(--bg);min-height:100vh}
     <div class="case-head">
       <span class="case-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><rect x="3" y="4.5" width="18" height="12" rx="2"/><path d="M8.5 20h7M12 16.5V20"/></svg></span>
       <div class="case-headtext">
-        <div class="case-sector">Software · Canada</div>
+        <div class="case-sector">Software · Canada<span class="biz-tag biz-b2b">B2B</span></div>
         <div class="case-name">Make My Space Work</div>
       </div>
     </div>
@@ -340,7 +344,7 @@ body{background:var(--bg);min-height:100vh}
     <div class="case-head">
       <span class="case-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M2.8 18.8l6.1-10.2 3.9 6 2.5-3.6 5.9 7.8z"/></svg></span>
       <div class="case-headtext">
-        <div class="case-sector">Outdoor Gear · United States</div>
+        <div class="case-sector">Outdoor Gear · United States<span class="biz-tag biz-b2c">B2C</span></div>
         <div class="case-name">YETI Presents</div>
       </div>
     </div>
@@ -364,7 +368,7 @@ body{background:var(--bg);min-height:100vh}
     <div class="case-head">
       <span class="case-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M3.6 11.6V4h7.6l8.8 8.8-7.6 7.6z"/><circle cx="7.6" cy="8" r="1.3"/></svg></span>
       <div class="case-headtext">
-        <div class="case-sector">Online Marketplace · United States</div>
+        <div class="case-sector">Online Marketplace · United States<span class="biz-tag biz-b2c">B2C</span></div>
         <div class="case-name">Between 2 Rides</div>
       </div>
     </div>
@@ -413,7 +417,7 @@ body{background:var(--bg);min-height:100vh}
       <div class="case-head">
         <span class="case-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M2.5 15.5c2.2 0 2.2 1.8 4.4 1.8s2.2-1.8 4.4-1.8 2.2 1.8 4.4 1.8 2.2-1.8 4.4-1.8"/><path d="M2.5 19.4c2.2 0 2.2 1.8 4.4 1.8s2.2-1.8 4.4-1.8 2.2 1.8 4.4 1.8 2.2-1.8 4.4-1.8"/><path d="M16.5 11.2a4.6 4.6 0 0 0-9 .8"/><path d="M18.6 3.4l-2.1 3.6"/></svg></span>
         <div class="case-headtext">
-          <div class="case-sector">Energy Drinks &middot; Austria</div>
+          <div class="case-sector">Energy Drinks &middot; Austria<span class="biz-tag biz-b2c">B2C</span></div>
           <div class="case-name">Who Is JOB</div>
         </div>
       </div>
@@ -447,7 +451,7 @@ body{background:var(--bg);min-height:100vh}
     <div class="case-head">
       <span class="case-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M2.4 6.4h10.8v9H2.4z"/><path d="M13.2 9.4h3.9l3.1 3.2v2.8h-7z"/><circle cx="6.2" cy="17.4" r="1.7"/><circle cx="16.6" cy="17.4" r="1.7"/></svg></span>
       <div class="case-headtext">
-        <div class="case-sector">Heavy Trucks · Sweden</div>
+        <div class="case-sector">Heavy Trucks · Sweden<span class="biz-tag biz-b2b">B2B</span></div>
         <div class="case-name">Volvo Trucks Live Tests</div>
       </div>
     </div>
@@ -471,7 +475,7 @@ body{background:var(--bg);min-height:100vh}
     <div class="case-head">
       <span class="case-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M6.2 11.2V6.4a2 2 0 0 1 2-2h7.6a2 2 0 0 1 2 2v4.8"/><path d="M5 11.2h14v5.2H5z"/><path d="M7 16.4V20M17 16.4V20"/></svg></span>
       <div class="case-headtext">
-        <div class="case-sector">Home Furnishing · United States</div>
+        <div class="case-sector">Home Furnishing · United States<span class="biz-tag biz-b2c">B2C</span></div>
         <div class="case-name">IKEA Home Tour</div>
       </div>
     </div>
@@ -495,7 +499,7 @@ body{background:var(--bg);min-height:100vh}
     <div class="case-head">
       <span class="case-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M2.6 17.2a9.4 9.4 0 0 1 18.8 0z"/><path d="M7 17.2c0-2.6 1.4-4.8 3.4-5.9"/><path d="M13.6 11.3c2 1.1 3.4 3.3 3.4 5.9"/></svg></span>
       <div class="case-headtext">
-        <div class="case-sector">Grocery · United States</div>
+        <div class="case-sector">Grocery · United States<span class="biz-tag biz-b2c">B2C</span></div>
         <div class="case-name">Rico's Tacos</div>
       </div>
     </div>
@@ -520,14 +524,14 @@ body{background:var(--bg);min-height:100vh}
   <div class="section-intro">
     <span class="sec-pill-orange">04</span>
     <h2 class="section-title">And It Works In B2B</h2>
-    <p class="section-subtitle">Two of the shows above sell to businesses rather than shoppers: Volvo Trucks sells to fleet buyers, and Make My Space Work is Shopify selling software. Here is a third.</p>
+    <p class="section-subtitle">Every card above carries a B2C or B2B tag. Three of the eleven sell to businesses rather than to shoppers: Volvo Trucks sells to fleet operators, Make My Space Work is Shopify selling software, and this one sells excavators.</p>
   </div>
 
   <div class="case">
     <div class="case-head">
       <span class="case-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M3.6 17.6h16.8"/><path d="M5.4 17.6v-2.3a6.6 6.6 0 0 1 13.2 0v2.3"/><path d="M9.5 9.1V5.5a1.4 1.4 0 0 1 1.4-1.4h2.2a1.4 1.4 0 0 1 1.4 1.4v3.6"/></svg></span>
       <div class="case-headtext">
-        <div class="case-sector">Heavy Equipment &middot; United States</div>
+        <div class="case-sector">Heavy Equipment &middot; United States<span class="biz-tag biz-b2b">B2B</span></div>
         <div class="case-name">Cat Trials</div>
       </div>
     </div>

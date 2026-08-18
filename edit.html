@@ -4,7 +4,7 @@
 <meta charset="UTF-8"/>
 <meta name="viewport" content="width=device-width,initial-scale=1.0"/>
 <meta name="robots" content="noindex"/>
-<title>Episodic Branded Content · Ten Case Studies · Talex Media</title>
+<title>Episodic Branded Content · Eleven Case Studies · Talex Media</title>
 <link rel="icon" type="image/png" sizes="192x192" href="https://static.wixstatic.com/media/3c6878_9a68ae0b3ff84e198fdd43fac493e294~mv2_d_1500_1500_s_2.png/v1/fill/w_192,h_192,lg_1,usm_0.66_1.00_0.01/3c6878_9a68ae0b3ff84e198fdd43fac493e294~mv2_d_1500_1500_s_2.png"/>
 <link rel="shortcut icon" href="https://static.wixstatic.com/media/3c6878_9a68ae0b3ff84e198fdd43fac493e294~mv2_d_1500_1500_s_2.png/v1/fill/w_32,h_32,lg_1,usm_0.66_1.00_0.01/3c6878_9a68ae0b3ff84e198fdd43fac493e294~mv2_d_1500_1500_s_2.png" type="image/png"/>
 <link rel="apple-touch-icon" href="https://static.wixstatic.com/media/3c6878_9a68ae0b3ff84e198fdd43fac493e294~mv2_d_1500_1500_s_2.png/v1/fill/w_180,h_180,lg_1,usm_0.66_1.00_0.01/3c6878_9a68ae0b3ff84e198fdd43fac493e294~mv2_d_1500_1500_s_2.png"/>
@@ -67,6 +67,10 @@ body{background:var(--bg);min-height:100vh}
 .case-headtext{min-width:0}
 .case-sector{font-family:'Oswald',sans-serif;font-weight:500;font-size:10px;letter-spacing:0.14em;text-transform:uppercase;color:var(--o-text);margin-bottom:2px}
 .case-name{font-family:'Bebas Neue',sans-serif;font-size:28px;letter-spacing:0.03em;line-height:1;color:var(--txt)}
+.biz-tag{display:inline-block;font-family:'Oswald',sans-serif;font-weight:600;font-size:9px;letter-spacing:0.11em;padding:2px 6px;border-radius:3px;margin-left:8px;position:relative;top:-1px}
+.biz-b2b{background:var(--o-text);color:#fff}
+.biz-b2c{background:transparent;color:var(--txt3);border:1px solid var(--border-strong)}
+.feature-example .biz-b2c{color:rgba(255,255,255,0.72);border-color:rgba(255,255,255,0.32)}
 
 /* ---- opening: lead + three principles ---- */
 .lead{font-size:17.5px;color:var(--txt2);line-height:1.7;margin:2rem 0 1.4rem}
@@ -188,9 +192,10 @@ body{background:var(--bg);min-height:100vh}
   <span class="tm-pill">DRAFT v1 · EDITABLE</span>
   <span class="tm-status" id="tm-status">Loading…</span>
   <button id="tm-reset">Reset</button>
+  <button id="tm-pdf">Download PDF</button>
   <button id="tm-export">Export Final Version</button>
   <button id="tm-publish" class="tm-primary">Publish To Live Site</button>
-  <div class="tm-note">Edits save automatically as you type. When the page is ready, click <b>Publish To Live Site</b> and the main link updates straight away. <b>Export Final Version</b> downloads a locked copy if you want the file.</div>
+  <div class="tm-note">Edits save automatically as you type. When the page is ready, click <b>Publish To Live Site</b> and the main link updates straight away. <b>Export Final Version</b> downloads a locked copy if you want the file. <b>Download PDF</b> exports the deck exactly as you see it — choose "Save as PDF" as the destination.</div>
 </div>
 
 <style id="tm-edit-css">
@@ -211,7 +216,17 @@ body{background:var(--bg);min-height:100vh}
 #tm-bar .tm-btn{text-decoration:none;display:inline-block;line-height:1.35}
 #tm-bar button.tm-primary{background:#E85A0C;border-color:#E85A0C;color:#fff;font-weight:600}
 #tm-bar button.tm-primary:hover{background:#c94d08}
-@media print{#tm-bar{display:none!important}}
+@media print{
+  #tm-bar{display:none!important}
+  /* Chrome's print dialog defaults "Background graphics" OFF, which strips a
+     charcoal deck to white slides. This overrides the checkbox so the export
+     is correct no matter what the reviewer's dialog is set to. */
+  .slide{print-color-adjust:exact;-webkit-print-color-adjust:exact}
+  /* Editing affordances must never reach the PDF. */
+  .tm-edit{outline:none!important;background:transparent!important}
+  .tm-chip{display:none!important}
+  .idea-card.tm-idea{border:inherit!important;background:inherit!important}
+}
 .tm-edit{cursor:text;border-radius:2px;outline:1px dashed transparent;outline-offset:3px;
   transition:outline-color 0.12s,background 0.12s}
 .tm-edit:hover{outline-color:rgba(232,90,12,0.35)}
@@ -241,11 +256,11 @@ body{background:var(--bg);min-height:100vh}
   <!-- Hero -->
   <header class="hero">
     <h1 class="disp hero-title">Episodic Branded Content</h1>
-    <div class="italic hero-tagline">Ten brands that invested in episodic video, and what they got back.</div>
+    <div class="italic hero-tagline">Eleven brands that invested in episodic video, and what they got back.</div>
   </header>
 
   <!-- Opening -->
-  <p class="lead"><strong>Here are ten shows worth taking inspiration from.</strong> Brands invested in making each show for an audience first, and people chose to watch.</p>
+  <p class="lead"><strong>Here are eleven shows worth taking inspiration from.</strong> Brands invested in making each show for an audience first, and people chose to watch.</p>
 
   <p class="lead-sub">Brands paid for these shows, but none of them feel like ads. They were made the way regular TV is made: good enough that people choose to watch, with the brand present without interrupting. Watch any of them without knowing who paid, and you'd still enjoy it.</p>
 
@@ -267,7 +282,7 @@ body{background:var(--bg);min-height:100vh}
     </div>
   </div>
 
-  <p class="opening-prompt">Take a look through the ten below, seven long form and three short form, and think about what your own version would look like.</p>
+  <p class="opening-prompt">Take a look through the eleven below, seven long form and four short form, and think about what your own version would look like.</p>
 
   <p class="opening-foot">Figures pulled from the YouTube API on 12 August 2026. Any number that comes from a brand's or an agency's own award entry is labeled on the card.</p>
 
@@ -285,7 +300,7 @@ body{background:var(--bg);min-height:100vh}
     <div class="case-head">
       <span class="case-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M15.6 8.4l-2.1 5.1-5.1 2.1 2.1-5.1z"/></svg></span>
       <div class="case-headtext">
-        <div class="case-sector">Apparel And Outdoor Gear · United States</div>
+        <div class="case-sector">Apparel And Outdoor Gear · United States<span class="biz-tag biz-b2c">B2C</span></div>
         <div class="case-name">DIRT</div>
       </div>
     </div>
@@ -309,7 +324,7 @@ body{background:var(--bg);min-height:100vh}
     <div class="case-head">
       <span class="case-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M9.6 21h4.8v-7.4H9.6z"/><path d="M10.6 13.6V6.3l3.1-2.3v9.6"/></svg></span>
       <div class="case-headtext">
-        <div class="case-sector">Beauty · United States</div>
+        <div class="case-sector">Beauty · United States<span class="biz-tag biz-b2c">B2C</span></div>
         <div class="case-name">Make Up Over Makeup</div>
       </div>
     </div>
@@ -333,7 +348,7 @@ body{background:var(--bg);min-height:100vh}
     <div class="case-head">
       <span class="case-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M4.6 15.8v-3l1.9-4.3A2 2 0 0 1 8.3 7.2h7.4a2 2 0 0 1 1.8 1.3l1.9 4.3v3"/><path d="M4.6 15.8h14.8"/><circle cx="7.6" cy="16.6" r="1.6"/><circle cx="16.4" cy="16.6" r="1.6"/></svg></span>
       <div class="case-headtext">
-        <div class="case-sector">Automotive · United States</div>
+        <div class="case-sector">Automotive · United States<span class="biz-tag biz-b2c">B2C</span></div>
         <div class="case-name">Roadkill</div>
       </div>
     </div>
@@ -357,7 +372,7 @@ body{background:var(--bg);min-height:100vh}
     <div class="case-head">
       <span class="case-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><rect x="3" y="4.5" width="18" height="12" rx="2"/><path d="M8.5 20h7M12 16.5V20"/></svg></span>
       <div class="case-headtext">
-        <div class="case-sector">Software · Canada</div>
+        <div class="case-sector">Software · Canada<span class="biz-tag biz-b2b">B2B</span></div>
         <div class="case-name">Make My Space Work</div>
       </div>
     </div>
@@ -381,7 +396,7 @@ body{background:var(--bg);min-height:100vh}
     <div class="case-head">
       <span class="case-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M2.8 18.8l6.1-10.2 3.9 6 2.5-3.6 5.9 7.8z"/></svg></span>
       <div class="case-headtext">
-        <div class="case-sector">Outdoor Gear · United States</div>
+        <div class="case-sector">Outdoor Gear · United States<span class="biz-tag biz-b2c">B2C</span></div>
         <div class="case-name">YETI Presents</div>
       </div>
     </div>
@@ -405,7 +420,7 @@ body{background:var(--bg);min-height:100vh}
     <div class="case-head">
       <span class="case-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M3.6 11.6V4h7.6l8.8 8.8-7.6 7.6z"/><circle cx="7.6" cy="8" r="1.3"/></svg></span>
       <div class="case-headtext">
-        <div class="case-sector">Online Marketplace · United States</div>
+        <div class="case-sector">Online Marketplace · United States<span class="biz-tag biz-b2c">B2C</span></div>
         <div class="case-name">Between 2 Rides</div>
       </div>
     </div>
@@ -454,7 +469,7 @@ body{background:var(--bg);min-height:100vh}
       <div class="case-head">
         <span class="case-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M2.5 15.5c2.2 0 2.2 1.8 4.4 1.8s2.2-1.8 4.4-1.8 2.2 1.8 4.4 1.8 2.2-1.8 4.4-1.8"/><path d="M2.5 19.4c2.2 0 2.2 1.8 4.4 1.8s2.2-1.8 4.4-1.8 2.2 1.8 4.4 1.8 2.2-1.8 4.4-1.8"/><path d="M16.5 11.2a4.6 4.6 0 0 0-9 .8"/><path d="M18.6 3.4l-2.1 3.6"/></svg></span>
         <div class="case-headtext">
-          <div class="case-sector">Energy Drinks &middot; Austria</div>
+          <div class="case-sector">Energy Drinks &middot; Austria<span class="biz-tag biz-b2c">B2C</span></div>
           <div class="case-name">Who Is JOB</div>
         </div>
       </div>
@@ -488,7 +503,7 @@ body{background:var(--bg);min-height:100vh}
     <div class="case-head">
       <span class="case-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M2.4 6.4h10.8v9H2.4z"/><path d="M13.2 9.4h3.9l3.1 3.2v2.8h-7z"/><circle cx="6.2" cy="17.4" r="1.7"/><circle cx="16.6" cy="17.4" r="1.7"/></svg></span>
       <div class="case-headtext">
-        <div class="case-sector">Heavy Trucks · Sweden</div>
+        <div class="case-sector">Heavy Trucks · Sweden<span class="biz-tag biz-b2b">B2B</span></div>
         <div class="case-name">Volvo Trucks Live Tests</div>
       </div>
     </div>
@@ -512,7 +527,7 @@ body{background:var(--bg);min-height:100vh}
     <div class="case-head">
       <span class="case-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M6.2 11.2V6.4a2 2 0 0 1 2-2h7.6a2 2 0 0 1 2 2v4.8"/><path d="M5 11.2h14v5.2H5z"/><path d="M7 16.4V20M17 16.4V20"/></svg></span>
       <div class="case-headtext">
-        <div class="case-sector">Home Furnishing · United States</div>
+        <div class="case-sector">Home Furnishing · United States<span class="biz-tag biz-b2c">B2C</span></div>
         <div class="case-name">IKEA Home Tour</div>
       </div>
     </div>
@@ -536,7 +551,7 @@ body{background:var(--bg);min-height:100vh}
     <div class="case-head">
       <span class="case-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M2.6 17.2a9.4 9.4 0 0 1 18.8 0z"/><path d="M7 17.2c0-2.6 1.4-4.8 3.4-5.9"/><path d="M13.6 11.3c2 1.1 3.4 3.3 3.4 5.9"/></svg></span>
       <div class="case-headtext">
-        <div class="case-sector">Grocery · United States</div>
+        <div class="case-sector">Grocery · United States<span class="biz-tag biz-b2c">B2C</span></div>
         <div class="case-name">Rico's Tacos</div>
       </div>
     </div>
@@ -555,9 +570,41 @@ body{background:var(--bg);min-height:100vh}
     <p class="src">Albertsons Media Collective with Procter &amp; Gamble, made by Minivela and Brilla Media · <a target="_blank" rel="noopener" href="https://www.youtube.com/playlist?list=PLD-Q2N8Wv-zLUeXnrglqit-M3zRMEO5F9">All episodes</a> · <a target="_blank" rel="noopener" href="https://www.marketingdive.com/news/pgs-latest-branded-microdrama-is-built-on-albertsons-retail-media-data/823121/">Trade coverage</a> &middot; <a target="_blank" rel="noopener" href="https://www.linkedin.com/pulse/welcome-taco-drama-tom-langan-wusce/">Tom Langan wrote about this one</a></p>
   </div>
 
-  <!-- ============ SECTION 04 ============ -->
+  <hr class="rule-orange"/>
+
+  <!-- ============ SECTION 04 · B2B ============ -->
   <div class="section-intro">
     <span class="sec-pill-orange">04</span>
+    <h2 class="section-title">And It Works In B2B</h2>
+    <p class="section-subtitle">Every card above carries a B2C or B2B tag. Three of the eleven sell to businesses rather than to shoppers: Volvo Trucks sells to fleet operators, Make My Space Work is Shopify selling software, and this one sells excavators.</p>
+  </div>
+
+  <div class="case">
+    <div class="case-head">
+      <span class="case-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M3.6 17.6h16.8"/><path d="M5.4 17.6v-2.3a6.6 6.6 0 0 1 13.2 0v2.3"/><path d="M9.5 9.1V5.5a1.4 1.4 0 0 1 1.4-1.4h2.2a1.4 1.4 0 0 1 1.4 1.4v3.6"/></svg></span>
+      <div class="case-headtext">
+        <div class="case-sector">Heavy Equipment &middot; United States<span class="biz-tag biz-b2b">B2B</span></div>
+        <div class="case-name">Cat Trials</div>
+      </div>
+    </div>
+    <dl class="spec">
+      <dt>Format</dt><dd>One machine and one task that looks impossible, attempted for real. Five excavators play a giant game of Jenga, a mini excavator threads a shop full of glassware, a loader builds a sand castle.</dd>
+      <dt>On camera</dt><dd>The operators who run the machines, doing the work themselves.</dd>
+      <dt>Length</dt><dd>Short form. The median video runs 2 minutes 7 seconds, and 39 of the 44 are under five minutes.</dd>
+    </dl>
+    <div class="stat-strip">
+      <div class="stat-cell"><div class="stat-num">44</div><div class="stat-label">Videos</div></div>
+      <div class="stat-cell"><div class="stat-num">26.3M</div><div class="stat-label">Views, All Videos</div></div>
+      <div class="stat-cell"><div class="stat-num">11</div><div class="stat-label">Years Running</div></div>
+    </div>
+    <div class="proj-video-embed video-facade" data-yt="DWc8dUl7Xfo" role="button" tabindex="0" aria-label="Play video: Cat Trials, Stack, excavators playing Jenga"><img class="vf-thumb" src="https://i.ytimg.com/vi/DWc8dUl7Xfo/hqdefault.jpg" alt="" loading="lazy" onerror="this.style.display='none'"/><span class="vf-play" aria-hidden="true"></span><span class="vf-title">Stack &middot; Cat Trials</span></div>
+    <p class="src note">Caterpillar sells excavators and loaders to construction firms, which is about as considered a purchase as buying gets. The first trial went up in April 2014 and the most recent in April 2025. The Jenga film above has 9,345,508 views on its own.</p>
+    <p class="src">Caterpillar &middot; <a target="_blank" rel="noopener" href="https://www.youtube.com/playlist?list=PLjMeT-rwp70gB5cOPRp9vc4g6HcQRGQpx">Cat Trials playlist</a></p>
+  </div>
+
+  <!-- ============ SECTION 05 ============ -->
+  <div class="section-intro">
+    <span class="sec-pill-orange">05</span>
     <h2 class="section-title">What They Have In Common</h2>
   </div>
 
@@ -631,7 +678,7 @@ body{background:var(--bg);min-height:100vh}
   // Carousel decks (tools/deck-unbundle.mjs) carry their text in inline-styled
   // spans inside .slide sections, so the tag list below would miss most of a
   // deck. Scoped to .slide so a bare span stays uneditable in strategy docs.
-  var EDIT_SEL = '.spec dd, .spec dt, .case-name, .case-sector, .principle-name, .feature-stat .n, .feature-stat .l, .fx-eyebrow, .vf-title, .footer-copy, .slide span, .slide em, p, li, h1, h2, h3, h4, .idea-title, .idea-desc, .idea-tag, .why-label, .why-item, .stat-num, .stat-label, .channel-name, .channel-handle, .channel-snippet, .cs-section-label, .cs-section-body, .cs-stat-num, .cs-stat-label, .cs-name, .cs-footer-meta, .cred-chip, .faq-q, .faq-a, .cta-eyebrow, .cta-headline, .cta-sub, .cta-reply, .callout p, .callout-attr, .hero-eyebrow, .hero-title, .hero-tagline, .section-title, .section-subtitle';
+  var EDIT_SEL = '.spec dd, .spec dt, .case-name, .case-sector, .principle-name, .feature-stat .n, .feature-stat .l, .fx-eyebrow, .vf-title, .biz-tag, .footer-copy, .slide span, .slide em, p, li, h1, h2, h3, h4, .idea-title, .idea-desc, .idea-tag, .why-label, .why-item, .stat-num, .stat-label, .channel-name, .channel-handle, .channel-snippet, .cs-section-label, .cs-section-body, .cs-stat-num, .cs-stat-label, .cs-name, .cs-footer-meta, .cred-chip, .faq-q, .faq-a, .cta-eyebrow, .cta-headline, .cta-sub, .cta-reply, .callout p, .callout-attr, .hero-eyebrow, .hero-title, .hero-tagline, .section-title, .section-subtitle';
   var wrap = document.querySelector('#wrap');
   var statusEl = document.getElementById('tm-status');
   var saveTimer = null;
@@ -739,12 +786,20 @@ body{background:var(--bg);min-height:100vh}
     location.reload();
   });
 
-  // No window.print() button. Browser printing renders the page as seen —
-  // Chrome defaults "Background graphics" OFF, which turns a charcoal deck
-  // into white slides — and it prints the screen-preview zoom rather than
-  // the slide box. The real PDF comes from tools/carousel-pdf.mjs, which
-  // drives headless Chrome with printBackground + preferCSSPageSize. The
-  // Download PDF button below serves that build.
+  // Print the CURRENT DOM, so unsaved edits are in the PDF too. The page's
+  // own print CSS handles page size, margins, the toolbar and (via
+  // print-color-adjust:exact) the backgrounds Chrome would otherwise drop.
+  var pdfBtn = document.getElementById('tm-pdf');
+  if(pdfBtn){
+    pdfBtn.addEventListener('click', function(){
+      // Flush any pending debounce first so the cloud copy matches the PDF.
+      clearTimeout(saveTimer);
+      Promise.resolve(save()).then(function(){
+        setStatus('Choose "Save as PDF" as the destination', 'saved');
+        window.print();
+      });
+    });
+  }
 
   function exportFinal(){
     var clone = document.documentElement.cloneNode(true);

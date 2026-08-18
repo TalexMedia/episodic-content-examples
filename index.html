@@ -92,10 +92,12 @@ body{background:var(--bg);min-height:100vh}
 .opening-foot{font-size:12.5px;color:var(--txt3);line-height:1.7}
 
 /* ---- featured case ---- */
-.feature{background:#15233F;border-radius:12px;padding:1.8rem 1.6rem;margin-bottom:1rem;border-top:4px solid var(--o)}
+.feature{background:#15233F;border-radius:12px;padding:1.8rem 1.6rem;margin-bottom:1rem;border-top:4px solid var(--o);color:rgba(255,255,255,0.82)}
+.feature *{color:inherit}
+.feature [contenteditable]:focus{outline:2px solid #FFA45C;outline-offset:3px;background:rgba(255,255,255,0.06)}
 .feature-logo{display:inline-block;background:#fff;border-radius:8px;padding:11px 16px;margin-bottom:1.3rem;line-height:0}
 .feature-logo svg{display:block;height:24px;width:auto}
-.feature p{font-size:14.5px;line-height:1.8;color:rgba(255,255,255,0.82);margin-bottom:0.95rem}
+.feature p{font-size:14.5px;line-height:1.8;margin-bottom:0.95rem}
 .feature p:last-child{margin-bottom:0}
 .feature strong{color:#fff;font-weight:500}
 .feature-stats{display:grid;grid-template-columns:repeat(3,1fr);gap:1px;background:rgba(255,255,255,0.16);border-radius:8px;overflow:hidden;margin:1.35rem 0}
@@ -106,6 +108,18 @@ body{background:var(--bg);min-height:100vh}
 .feature-src:first-of-type{margin-top:1.35rem;padding-top:1.15rem;border-top:1px solid rgba(255,255,255,0.16)}
 .feature-src a{color:rgba(255,255,255,0.88);text-decoration:none;border-bottom:1px dotted rgba(255,255,255,0.35)}
 .feature-src a:hover{color:#FFA45C;border-bottom-color:#FFA45C}
+.feature strong{color:#fff}
+.feature .feature-stat .n{color:#FFA45C}
+.feature .feature-stat .l{color:rgba(255,255,255,0.68)}
+.feature .fx-eyebrow{color:#FFA45C}
+.feature .case-company{color:#FFA45C}
+.feature .case-name{color:#fff}
+.feature .case-meta{color:rgba(255,255,255,0.62)}
+.feature .spec dt{color:rgba(255,255,255,0.55)}
+.feature .src{color:rgba(255,255,255,0.74)}
+.feature .src a{color:rgba(255,255,255,0.88)}
+.feature .feature-src{color:rgba(255,255,255,0.74)}
+.feature .feature-src a{color:rgba(255,255,255,0.88)}
 .feature-example{margin-top:1.6rem;padding-top:1.5rem;border-top:1px solid rgba(255,255,255,0.16)}
 .fx-eyebrow{font-family:'Oswald',sans-serif;font-weight:600;font-size:10px;letter-spacing:0.14em;text-transform:uppercase;color:#FFA45C;margin-bottom:0.9rem}
 .feature-example .case-icon{background:rgba(255,255,255,0.10);border-color:rgba(255,255,255,0.24);color:#FFA45C}
@@ -198,11 +212,7 @@ body{background:var(--bg);min-height:100vh}
   <!-- LOCKED · topbar. Do not edit. -->
   <nav class="topbar">
     <a class="topbar-brand" href="https://www.talexmedia.com" target="_blank" rel="noopener">
-      <img class="topbar-logo"
-        src="https://static.wixstatic.com/media/3c6878_456d81e9cdb84e6c8bb3260ebfcc0523~mv2.png"
-        alt="Talex Media"
-        onerror="this.style.display='none'; this.nextElementSibling.style.display='inline'"
-      />
+      <img class="topbar-logo" src="https://static.wixstatic.com/media/3c6878_456d81e9cdb84e6c8bb3260ebfcc0523~mv2.png" alt="Talex Media" onerror="this.style.display='none'; this.nextElementSibling.style.display='inline'">
       <span class="topbar-name" style="display:none">TALEX MEDIA</span>
     </a>
   </nav>
@@ -210,7 +220,7 @@ body{background:var(--bg);min-height:100vh}
   <!-- Hero -->
   <header class="hero">
     <h1 class="disp hero-title">Episodic Branded Content</h1>
-    <div class="italic hero-tagline">Eleven brands that invested in creating series and the results they generated.</div>
+    <div class="italic hero-tagline">Eleven brands that invested in creating online series for their potential customers and the results they generated.</div>
   </header>
 
   <!-- Opening -->
@@ -220,17 +230,17 @@ body{background:var(--bg);min-height:100vh}
 
   <div class="principles">
     <div class="principle">
-      <span class="principle-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><circle cx="9.2" cy="8" r="3.1"/><path d="M3.2 19.2c0-3.3 2.7-5.1 6-5.1s6 1.8 6 5.1"/><path d="M16.2 6.3a3 3 0 0 1 0 5.5"/><path d="M18.4 19.2c0-2.5-.9-4-2.4-4.7"/></svg></span>
+      <span class="principle-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><circle cx="9.2" cy="8" r="3.1"></circle><path d="M3.2 19.2c0-3.3 2.7-5.1 6-5.1s6 1.8 6 5.1"></path><path d="M16.2 6.3a3 3 0 0 1 0 5.5"></path><path d="M18.4 19.2c0-2.5-.9-4-2.4-4.7"></path></svg></span>
       <div class="principle-name">Made for the audience</div>
       <p class="principle-text">Every show here was made for the people watching first, not for the brand.</p>
     </div>
     <div class="principle">
-      <span class="principle-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><rect x="3.2" y="9.2" width="17.6" height="10.8" rx="1.6"/><path d="M3.2 13.2h17.6M12 9.2V20"/><path d="M12 9.2S10.6 4.8 8.4 5.5 8.2 9.2 12 9.2z"/><path d="M12 9.2s1.4-4.4 3.6-3.7S15.8 9.2 12 9.2z"/></svg></span>
+      <span class="principle-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><rect x="3.2" y="9.2" width="17.6" height="10.8" rx="1.6"></rect><path d="M3.2 13.2h17.6M12 9.2V20"></path><path d="M12 9.2S10.6 4.8 8.4 5.5 8.2 9.2 12 9.2z"></path><path d="M12 9.2s1.4-4.4 3.6-3.7S15.8 9.2 12 9.2z"></path></svg></span>
       <div class="principle-name">Free to watch</div>
       <p class="principle-text">Each show is worth your time whether or not you ever buy anything from the business.</p>
     </div>
     <div class="principle">
-      <span class="principle-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M4.2 10.2A7.9 7.9 0 0 1 17.7 5L20 7.2"/><path d="M20 3.7v3.5h-3.5"/><path d="M19.8 13.8a7.9 7.9 0 0 1-13.5 5.2L4 16.8"/><path d="M4 20.3v-3.5h3.5"/></svg></span>
+      <span class="principle-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M4.2 10.2A7.9 7.9 0 0 1 17.7 5L20 7.2"></path><path d="M20 3.7v3.5h-3.5"></path><path d="M19.8 13.8a7.9 7.9 0 0 1-13.5 5.2L4 16.8"></path><path d="M4 20.3v-3.5h3.5"></path></svg></span>
       <div class="principle-name">Built to come back to</div>
       <p class="principle-text">One format repeats episode after episode, so watching becomes a habit.</p>
     </div>
@@ -240,19 +250,19 @@ body{background:var(--bg);min-height:100vh}
 
   <p class="opening-foot">Figures pulled from the YouTube API on 12 August 2026. Any number that comes from a brand's or an agency's own award entry is labeled on the card.</p>
 
-  <hr class="rule-orange"/>
+  <hr class="rule-orange">
 
   <!-- ============ SECTION 01 ============ -->
   <div class="section-intro">
     <span class="sec-pill-orange">01</span>
     <h2 class="section-title">Long Form</h2>
-    <p class="section-subtitle">Six shows with longer episodes, and each card gives its own running time.</p>
+    <p class="section-subtitle">Five shows with longer episodes, all selling to consumers.</p>
   </div>
 
   <!-- HUCKBERRY DIRT -->
   <div class="case">
     <div class="case-head">
-      <img class="case-logo" src="assets/huckberry.svg" alt="Huckberry" loading="lazy" onerror="this.style.display='none'"/>
+      <img class="case-logo" src="assets/huckberry.svg" alt="Huckberry" loading="lazy" onerror="this.style.display='none'">
       <div class="case-headtext">
         <div class="case-company">Huckberry</div>
         <div class="case-name">DIRT</div>
@@ -262,14 +272,14 @@ body{background:var(--bg);min-height:100vh}
     <dl class="spec">
       <dt>Format</dt><dd>One region per episode. The host finds a local chef, they source ingredients from nearby farmers, fishermen and foragers, and they cook a meal from that region.</dd>
       <dt>On camera</dt><dd>Josh Rosen, a former professional snowboarder and surfer, and the chefs and fishermen he cooks with.</dd>
-      <dt>Length</dt><dd>Long form. The median episode runs 32 minutes 36 seconds, and all 18 episodes run over 12 minutes.</dd>
+      <dt>Length</dt><dd>The median episode runs 32 minutes 36 seconds, and all 18 episodes run over 12 minutes.</dd>
     </dl>
     <div class="stat-strip">
       <div class="stat-cell"><div class="stat-num">18</div><div class="stat-label">Episodes</div></div>
       <div class="stat-cell"><div class="stat-num">22.3M</div><div class="stat-label">Views, All Episodes</div></div>
       <div class="stat-cell"><div class="stat-num">3.5M</div><div class="stat-label">Top Episode</div></div>
     </div>
-    <div class="proj-video-embed video-facade" data-yt="3gNph25gxhw" role="button" tabindex="0" aria-label="Play video: DIRT, New York City episode"><img class="vf-thumb" src="https://i.ytimg.com/vi/3gNph25gxhw/hqdefault.jpg" alt="" loading="lazy" onerror="this.style.display='none'"/><span class="vf-play" aria-hidden="true"></span><span class="vf-title">New York City · DIRT</span></div>
+    <div class="proj-video-embed video-facade" data-yt="3gNph25gxhw" role="button" tabindex="0" aria-label="Play video: DIRT, New York City episode"><img class="vf-thumb" src="https://i.ytimg.com/vi/3gNph25gxhw/hqdefault.jpg" alt="" loading="lazy" onerror="this.style.display='none'"><span class="vf-play" aria-hidden="true"></span><span class="vf-title">New York City · DIRT</span></div>
     <p class="src note">DIRT is a travel documentary, close to <em>Parts Unknown</em> (the Anthony Bourdain series that visited one place per episode to eat and talk with the people there). The series has been running since 2022 and the most recent episode went up in May 2026. Huckberry's channel has 506,000 subscribers and 54.4 million views across everything it has ever posted, so the 18 episodes account for about 41 percent of the channel's lifetime views.</p>
     <p class="src">Huckberry, hosted by Josh Rosen · <a target="_blank" rel="noopener" href="https://www.youtube.com/playlist?list=PLArn8wzOPwPY">DIRT playlist</a> · <a target="_blank" rel="noopener" href="https://www.session-magazine.com/issues/dirt--huckberrys-leap-into-food-and-adventure-travel.html">How they make it</a></p>
   </div>
@@ -277,7 +287,7 @@ body{background:var(--bg);min-height:100vh}
   <!-- 3. E.L.F. -->
   <div class="case">
     <div class="case-head">
-      <img class="case-logo sq" src="assets/elf.svg" alt="e.l.f. Cosmetics" loading="lazy" onerror="this.style.display='none'"/>
+      <img class="case-logo sq" src="assets/elf.svg" alt="e.l.f. Cosmetics" loading="lazy" onerror="this.style.display='none'">
       <div class="case-headtext">
         <div class="case-company">e.l.f. Cosmetics</div>
         <div class="case-name">Make Up Over Makeup</div>
@@ -286,23 +296,23 @@ body{background:var(--bg);min-height:100vh}
     </div>
     <dl class="spec">
       <dt>Format</dt><dd>Two people who fell out in public do each other's makeup and talk through what went wrong.</dd>
-      <dt>On camera</dt><dd>One pair per episode, sitting inches apart: two creators who dated and broke up, two castmates who had stopped speaking, and an engaged couple whose wedding never happened.</dd>
-      <dt>Length</dt><dd>Long form. The three episodes run 9, 15 and 15 minutes.</dd>
+      <dt>On camera</dt><dd> One pair per episode, sitting inches apart: two creators who dated and broke up, two castmates who had stopped speaking, and an engaged couple whose wedding never happened.</dd>
+      <dt>Length</dt><dd>The three episodes run 9, 15 and 15 minutes.</dd>
     </dl>
     <div class="stat-strip">
       <div class="stat-cell"><div class="stat-num">3</div><div class="stat-label">Episodes</div></div>
       <div class="stat-cell"><div class="stat-num">2.6M</div><div class="stat-label">Views On YouTube</div></div>
       <div class="stat-cell"><div class="stat-num">7.6M</div><div class="stat-label">Episode 1, All Platforms</div></div>
     </div>
-    <div class="proj-video-embed video-facade" data-yt="BbB4t_ibVHo" role="button" tabindex="0" aria-label="Play video: Make Up Over Makeup, the most watched episode"><img class="vf-thumb" src="https://i.ytimg.com/vi/BbB4t_ibVHo/hqdefault.jpg" alt="" loading="lazy" onerror="this.style.display='none'"/><span class="vf-play" aria-hidden="true"></span><span class="vf-title">The most watched of the three · Make Up Over Makeup</span></div>
-    <p class="src note">There's no script. The whole thing rests on putting two people who stopped speaking back in front of each other. On YouTube the three episodes drew 484,006, 125,336 and 2,016,681 views. The third did four times the first and sixteen times the second, and it paired the couple from <em>Love Is Blind</em> (the Netflix series where couples get engaged before meeting in person). The 7.6 million figure is for episode one, counts every platform, and comes from e.l.f.'s own award entry.</p>
+    <div class="proj-video-embed video-facade" data-yt="BbB4t_ibVHo" role="button" tabindex="0" aria-label="Play video: Make Up Over Makeup, the most watched episode" data-loaded="1"><iframe src="https://www.youtube-nocookie.com/embed/BbB4t_ibVHo?autoplay=1&amp;rel=0" title="Play video: Make Up Over Makeup, the most watched episode" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe></div>
+    <p class="src note">The show rests on putting two people who had stopped speaking back in front of each other. On YouTube the three episodes drew 484,006, 125,336 and 2,016,681 views. The most watched, third episode featured a couple from <em>Love Is Blind</em> (the Netflix series where couples get engaged before meeting in person).&nbsp;</p>
     <p class="src">e.l.f. Cosmetics · <a target="_blank" rel="noopener" href="https://www.youtube.com/playlist?list=PLYuNnWe8A-TX83tp4sgv_zomPQ1ri9kjB">All three episodes</a> · <a target="_blank" rel="noopener" href="https://shortyawards.com/16th/make-up-over-makeup">Case study and results</a></p>
   </div>
 
   <!-- 4. ROADKILL -->
   <div class="case">
     <div class="case-head">
-      <img class="case-logo" src="assets/dodge.svg" alt="Dodge" loading="lazy" onerror="this.style.display='none'"/>
+      <img class="case-logo" src="assets/dodge.svg" alt="Dodge" loading="lazy" onerror="this.style.display='none'">
       <div class="case-headtext">
         <div class="case-company">Dodge, with MotorTrend</div>
         <div class="case-name">Roadkill</div>
@@ -311,23 +321,192 @@ body{background:var(--bg);min-height:100vh}
     </div>
     <dl class="spec">
       <dt>Format</dt><dd>Buy a junk car, get it running again on camera, then drive it somewhere far away.</dd>
-      <dt>On camera</dt><dd>Two former car-magazine editors do the repairs themselves, and when one fails, the failure stays in the episode.</dd>
-      <dt>Length</dt><dd>Long form. The median episode runs 7 minutes 39 seconds and 24 episodes run over 20 minutes.</dd>
+      <dt>On camera</dt><dd><div>Two former car-magazine editors who do the repairs on camera, including the ones that go wrong.</div></dd>
+      <dt>Length</dt><dd>The median episode runs 7 minutes 39 seconds and 24 episodes run over 20 minutes.</dd>
     </dl>
     <div class="stat-strip">
       <div class="stat-cell"><div class="stat-num">142</div><div class="stat-label">Videos</div></div>
       <div class="stat-cell"><div class="stat-num">187.7M</div><div class="stat-label">Views Across The Run</div></div>
       <div class="stat-cell"><div class="stat-num">11</div><div class="stat-label">Years Sponsored</div></div>
     </div>
-    <div class="proj-video-embed video-facade" data-yt="wOQe1hWvX_c" role="button" tabindex="0" aria-label="Play video: Roadkill Episode 38, the Dodge sponsorship launch"><img class="vf-thumb" src="https://i.ytimg.com/vi/wOQe1hWvX_c/hqdefault.jpg" alt="" loading="lazy" onerror="this.style.display='none'"/><span class="vf-play" aria-hidden="true"></span><span class="vf-title">The sponsorship launch episode · Roadkill Ep. 38</span></div>
-    <p class="src note">Dodge put its name on the show once, in the 2015 launch episode above, and then got out of the way. Only 8 titles across the run name Dodge or one of its models, and the rest are junk cars from other makers. The playlist holds 142 videos, 140 still public.</p>
+    <div class="proj-video-embed video-facade" data-yt="wOQe1hWvX_c" role="button" tabindex="0" aria-label="Play video: Roadkill Episode 38, the Dodge sponsorship launch"><img class="vf-thumb" src="https://i.ytimg.com/vi/wOQe1hWvX_c/hqdefault.jpg" alt="" loading="lazy" onerror="this.style.display='none'"><span class="vf-play" aria-hidden="true"></span><span class="vf-title">The sponsorship launch episode · Roadkill Ep. 38</span></div>
+    <p class="src note">Dodge has backed Roadkill since 2015, and MotorTrend files all 142 videos in a playlist called Roadkill, Powered by Dodge. The sponsorship also spawned a live event still running eleven years later.</p>
     <p class="src">MotorTrend, sponsored by Dodge · <a target="_blank" rel="noopener" href="https://www.youtube.com/playlist?list=PL12C0C916CECEA3BC">Roadkill, Powered by Dodge</a> · <a target="_blank" rel="noopener" href="https://en.wikipedia.org/wiki/Roadkill_(web_series)">Background</a></p>
   </div>
 
   <!-- 5. SHOPIFY -->
+    <!-- 6. YETI -->
   <div class="case">
     <div class="case-head">
-      <img class="case-logo" src="assets/shopify.svg" alt="Shopify" loading="lazy" onerror="this.style.display='none'"/>
+      <img class="case-logo" src="assets/yeti.svg" alt="YETI" loading="lazy" onerror="this.style.display='none'">
+      <div class="case-headtext">
+        <div class="case-company">YETI</div>
+        <div class="case-name">YETI Presents</div>
+        <div class="case-meta">Outdoor Gear · United States <span class="biz-tag biz-b2c">B2C</span></div>
+      </div>
+    </div>
+    <dl class="spec">
+      <dt>Format</dt><dd><blockquote dir="ltr"><p dir="ltr">One person per film and a story from their life that is told as a short documentary.</p></blockquote><p dir="ltr"></p></dd>
+      <dt>On camera</dt><dd>Anglers, hunters, cooks, surfers and rodeo riders, telling their own stories.</dd>
+      <dt>Length</dt><dd>The median film runs 8 minutes 17 seconds, 32 of the 90 run over 10 minutes, and the longest is 34 minutes.</dd>
+    </dl>
+    <div class="stat-strip">
+      <div class="stat-cell"><div class="stat-num">90</div><div class="stat-label">Films In The Library</div></div>
+      <div class="stat-cell"><div class="stat-num">37.6M</div><div class="stat-label">Library Views</div></div>
+      <div class="stat-cell"><div class="stat-num">1.3M</div><div class="stat-label">Top Film</div></div>
+    </div>
+    <div class="proj-video-embed video-facade" data-yt="OmrufRLGdAk" role="button" tabindex="0" aria-label="Play video: YETI Presents, A Thousand Casts"><img class="vf-thumb" src="https://i.ytimg.com/vi/OmrufRLGdAk/hqdefault.jpg" alt="" loading="lazy" onerror="this.style.display='none'"><span class="vf-play" aria-hidden="true"></span><span class="vf-title">A Thousand Casts · YETI Presents</span></div>
+    <p class="src note"><blockquote dir="ltr"><p dir="ltr">YETI's films are about the people who use their gear. The episode above runs 28 minutes and is the most watched of all 90.</p></blockquote><p dir="ltr"></p></p>
+    <p class="src">YETI · <a target="_blank" rel="noopener" href="https://www.youtube.com/playlist?list=PLT6IyUkzp1o2G2YHBFRsUDP_NLg_jh3QV">Film library</a></p>
+  </div>
+
+  <!-- 7. EBAY -->
+  <div class="case">
+    <div class="case-head">
+      <img class="case-logo" src="assets/ebay.svg" alt="eBay" loading="lazy" onerror="this.style.display='none'">
+      <div class="case-headtext">
+        <div class="case-company">eBay Motors</div>
+        <div class="case-name">Between 2 Rides</div>
+        <div class="case-meta">Online Marketplace · United States <span class="biz-tag biz-b2c">B2C</span></div>
+      </div>
+    </div>
+    <dl class="spec">
+      <dt>Format</dt><dd>Two versions of the same car, one straight from the factory and one built with parts from eBay, then tested against each other.</dd>
+      <dt>On camera</dt><dd>Seven YouTube car builders and creators who construct the cars from parts and drive the finished product.</dd>
+      <dt>Length</dt><dd>Five episodes of 8 to 12 minutes, plus a trailer and a 15-minute behind-the-scenes cut.</dd>
+    </dl>
+    <div class="stat-strip">
+      <div class="stat-cell"><div class="stat-num">22.9M</div><div class="stat-label">Views Across The Series</div></div>
+      <div class="stat-cell"><div class="stat-num">222K</div><div class="stat-label">New Subscribers</div></div>
+      <div class="stat-cell"><div class="stat-num">200+</div><div class="stat-label">Social Cuts</div></div>
+    </div>
+    <div class="proj-video-embed video-facade" data-yt="jEe7yZQlhvM" role="button" tabindex="0" aria-label="Play video: Between 2 Rides, drift test"><img class="vf-thumb" src="https://i.ytimg.com/vi/jEe7yZQlhvM/hqdefault.jpg" alt="" loading="lazy" onerror="this.style.display='none'"><span class="vf-play" aria-hidden="true"></span><span class="vf-title">Drift test · Between 2 Rides</span></div>
+    <p class="src note">The entire show centres around the build from parts that come from eBay, so nobody has to explain the product in a voiceover. eBay's own award entry is the source for the view total, the subscriber gain, the 200 social cuts, the 4.6 point lift in brand awareness, and the average watch time of 4 minutes 49 seconds.</p>
+    <p class="src">eBay Motors with agency The Many · <a target="_blank" rel="noopener" href="https://shortyawards.com/16th/between-2-rides">Case study and results</a></p>
+  </div>
+
+  <hr class="rule-orange">
+
+  <!-- ============ SECTION 02 · RED BULL ============ -->
+  <div class="section-intro">
+    <span class="sec-pill-feature">02 · Special Case</span>
+    <h2 class="section-title">A Special Case: Red Bull</h2>
+    <p class="section-subtitle">One brand built its own media company around the idea and has run it for nearly twenty years.</p>
+  </div>
+
+  <div class="feature">
+    <span class="feature-logo"><svg viewBox="0 0 145 47" role="img" aria-label="Red Bull"><path d="M117.383,20.086L117.383,31.59C117.09,36.149 110.387,36.149 110.094,31.59L110.094,20.086L103.754,20.086L103.754,32.836C103.754,37.142 108.219,40.633 113.715,40.633C119.211,40.633 123.676,37.142 123.676,32.836L123.676,20.086L117.383,20.086ZM138,6.412L138,39.892L144.375,39.892L144.375,6.412L138,6.412ZM127.176,39.892L133.551,39.892L133.551,6.412L127.176,6.412L127.176,39.892ZM95.953,22.477C97.719,20.892 98.737,18.638 98.766,16.267C98.762,14.129 97.938,12.076 96.464,10.528C94.964,8.856 92.25,7.918 88.612,7.918L77.707,7.918L77.707,39.892L91.793,39.892C97.184,39.809 101.543,35.731 101.543,30.735C101.535,27.099 100.254,24.5 95.953,22.477ZM90.612,34.322L84.512,34.322L84.512,13.431L88.762,13.431C90.671,13.52 92.171,15.106 92.151,17.017C92.151,18.888 90.632,20.403 88.762,20.399L86.55,20.399L86.55,26.145L90.612,26.145C96.085,26.145 96.085,34.349 90.612,34.349L90.612,34.322ZM21.487,17.384C21.464,14.86 20.438,12.447 18.632,10.677C16.832,8.908 14.397,7.927 11.871,7.951L0.203,7.951L0.203,39.892L6.987,39.892L6.987,13.431L10.5,13.431C12.882,13.349 14.871,15.235 14.91,17.619C14.805,20.004 12.8,21.869 10.41,21.793L8.835,21.793L8.835,29.438L15.585,39.892L23.535,39.892L14.16,26.552C18.43,25.559 21.46,21.767 21.487,17.384ZM33.352,19.259C27.565,19.415 22.957,24.149 22.957,29.934C22.957,35.724 27.565,40.457 33.352,40.615C37.8,40.615 41.266,38.602 43.059,35.455L37.875,33.059C37.125,34.576 35.565,35.52 33.878,35.481C31.569,35.582 29.621,33.787 29.535,31.477L29.535,31.258L43.589,31.258C43.632,30.832 43.651,30.408 43.647,29.977C43.746,23.047 39.18,19.259 33.352,19.259ZM29.512,27.622C29.414,25.403 31.188,23.552 33.41,23.552C35.628,23.552 37.401,25.403 37.305,27.622L29.512,27.622ZM69,39.892L69,6.412L62.617,6.412L62.617,22.258C60.921,20.547 58.612,19.58 56.203,19.567C50.953,19.567 46.664,24.24 46.664,30C46.664,35.758 50.94,40.477 56.203,40.477C58.637,40.457 60.957,39.457 62.647,37.711L62.647,39.961L69,39.892ZM58.012,35C55.434,35 53.332,32.707 53.332,29.879C53.332,27.052 55.434,24.727 58.012,24.727C60.594,24.727 62.699,27.024 62.699,29.856C62.699,32.692 60.602,35 58.012,35Z" style="fill:rgb(210,0,60);fill-rule:nonzero;"></path></svg></span>
+    <p>Red Bull had been selling an energy drink for twenty years when the company opened Red Bull Media House in 2007. From then on Red Bull started making its own films, series and live events.</p>
+    <p><span style="font-size: 11pt; font-family: &quot;Google Sans Text&quot;; color: rgb(0, 0, 0); background-color: transparent; font-variant: normal; vertical-align: baseline; white-space: pre-wrap;">The strategy they had decided to implement was to own the events and the footage themselves instead of sponsoring somebody else's. This is the approach Talex calls Legendeering. Sponsors who pay to appear at another company's event are often left with no footage at the ends and it belongs to whoever shot it. </span><span style="font-size: 11pt; font-family: &quot;Google Sans Text&quot;; color: rgb(0, 0, 0); background-color: transparent; font-variant: normal; vertical-align: baseline; white-space: pre-wrap;">So Red Bull decided to produce their own events and then film them. The library has kept growing over the years and Red Bull says it now runs more than 1,250 events a year in over 160 countries, with more than 700 athletes across more than 100 disciplines. </span></p>
+    <p><span style="font-size: 11pt; font-family: &quot;Google Sans Text&quot;; color: rgb(0, 0, 0); background-color: transparent; font-variant: normal; vertical-align: baseline; white-space: pre-wrap;">Red Bull Media House describes its own mission as inspiring people with "beyond the ordinary" stories. The films follow athletes attempting things that are incredibly daring and impressive. Red Bull's successful bet was that the same type of person who wants to watch that kind of stunt would also be interested in an energy drink. </span></p>
+    <p>Red Bull Media House also produces and licenses live broadcast events for other broadcasters, so part of the output earns revenue rather than only costing them money.</p>
+    <p><span style="font-size: 11pt; font-family: &quot;Google Sans Text&quot;; color: rgb(0, 0, 0); background-color: transparent; font-variant: normal; vertical-align: baseline; white-space: pre-wrap;">Red Bull bought the Jaguar Formula One team from Ford in late 2004. That team has gone on to win six constructors' titles and eight drivers' titles up until the 2025 season. In October 2012 Red Bull sent Felix Baumgartner to the edge of space and streamed the jump live; more than eight million people tuned in to watch it live on YouTube, a record at the time. </span></p>
+    <div class="feature-stats">
+      <div class="feature-stat"><div class="n">12.7B</div><div class="l">Cans Sold In 2024</div></div>
+      <div class="feature-stat"><div class="n">28.7B</div><div class="l">Views, Main Channel</div></div>
+      <div class="feature-stat"><div class="n">7,045</div><div class="l">Videos Published</div></div>
+    </div>
+    <p>Red Bull sells an energy drink, and the company has spent nearly twenty years making films that people seek out on their own.</p>
+    <p class="feature-src">Red Bull · <a target="_blank" rel="noopener" href="https://www.redbullmediahouse.com/en/about-us/">Red Bull Media House</a> · <a target="_blank" rel="noopener" href="https://www.bnnbloomberg.ca/business/company-news/2025/01/23/red-bull-touts-record-profit-in-2024-with-revenue-growth-slowing/">2024 results</a> · <a target="_blank" rel="noopener" href="https://en.wikipedia.org/wiki/Red_Bull_Racing">Red Bull Racing</a></p>
+    <p class="feature-src"><br></p>
+
+    <div class="feature-example">
+      <div class="fx-eyebrow">One of the shows</div>
+      <div class="case-head">
+      <div class="case-headtext">
+        <div class="case-company">Red Bull</div>
+        <div class="case-name">Who Is JOB</div>
+          <div class="case-meta">Energy Drinks · Austria <span class="biz-tag biz-b2c">B2C</span></div>
+        </div>
+      </div>
+      <dl class="spec">
+        <dt>Format</dt><dd>A professional surfer and his friends go looking for waves, and each episode follows them.</dd>
+        <dt>On camera</dt><dd>Jamie O'Brien (JOB) and the same handful of friends every season.</dd>
+        <dt>Length</dt><dd>The median episode runs 8 minutes 59 seconds and the longest is 29 minutes.</dd>
+      </dl>
+      <div class="stat-strip">
+        <div class="stat-cell"><div class="stat-num">81</div><div class="stat-label">Episodes</div></div>
+        <div class="stat-cell"><div class="stat-num">85.2M</div><div class="stat-label">Views, Full Playlist</div></div>
+        <div class="stat-cell"><div class="stat-num">19.4M</div><div class="stat-label">Top Episode</div></div>
+      </div>
+      <div class="proj-video-embed video-facade" data-yt="NE28SNDs1qk" role="button" tabindex="0" aria-label="Play video: Who is JOB, tubing and shorebreak"><img class="vf-thumb" src="https://i.ytimg.com/vi/NE28SNDs1qk/hqdefault.jpg" alt="" loading="lazy" onerror="this.style.display='none'"><span class="vf-play" aria-hidden="true"></span><span class="vf-title">Tubing and shorebreak · Who is JOB 4.0</span></div>
+      <p class="src note">The series ran for eight seasons between 2012 and 2019, across 81 numbered episodes plus a trailer and two extras. Not one of the 84 videos in the playlist names Red Bull in its title. The episode above has 3,783,474 views on its own.</p>
+      <p class="src">Red Bull, with surfer Jamie O'Brien · <a target="_blank" rel="noopener" href="https://www.youtube.com/playlist?list=PLnuf8iyXggLHI9LXsJ03H7FO1uE3IcPZ6">The full playlist</a></p>
+    </div>
+  </div>
+
+  <hr class="rule-orange">
+
+  <!-- ============ SECTION 03 · SHORT FORM ============ -->
+  <div class="section-intro">
+    <span class="sec-pill-orange">03</span>
+    <h2 class="section-title">Short Form</h2>
+    <p class="section-subtitle">Two shows with episodes of a minute or so, including one scripted series made for phone screens. Short form works differently, so the view counts here are not comparable to the long form numbers above.</p>
+  </div>
+
+<!-- 1. VOLVO TRUCKS -->
+    <!-- 2. IKEA HOME TOUR -->
+  <div class="case">
+    <div class="case-head">
+      <img class="case-logo" src="assets/ikea.svg" alt="IKEA" loading="lazy" onerror="this.style.display='none'">
+      <div class="case-headtext">
+        <div class="case-company">IKEA</div>
+        <div class="case-name">IKEA Home Tour</div>
+        <div class="case-meta">Home Furnishing · United States <span class="biz-tag biz-b2c">B2C</span></div>
+      </div>
+    </div>
+    <dl class="spec">
+      <dt>Format</dt><dd>Five IKEA employees, the Home Tour Squad, travel the country and do a room make over in a real family's home.</dd>
+      <dt>On camera</dt><dd>The family whose house it is, and the IKEA employees doing the makeover.</dd>
+      <dt>Length</dt><dd>The median video runs 49 seconds, and 230 of the 237 are under 5 minutes.</dd>
+    </dl>
+    <div class="stat-strip">
+      <div class="stat-cell"><div class="stat-num">245</div><div class="stat-label">Videos</div></div>
+      <div class="stat-cell"><div class="stat-num">59.6M</div><div class="stat-label">Playlist Views</div></div>
+      <div class="stat-cell"><div class="stat-num">+4.1%</div><div class="stat-label">Store Sales</div></div>
+    </div>
+    <div class="proj-video-embed video-facade" data-yt="9vwtjTTPbLs" role="button" tabindex="0" aria-label="Play video: IKEA Home Tour Episode 202, family bedroom makeover"><img class="vf-thumb" src="https://i.ytimg.com/vi/9vwtjTTPbLs/hqdefault.jpg" alt="" loading="lazy" onerror="this.style.display='none'"><span class="vf-play" aria-hidden="true"></span><span class="vf-title">Family Bedroom Makeover · Episode 202</span></div>
+    <p class="src note">IKEA sent its own staff rather than a celebrity or influencer, so the rooms end up looking like something you could actually copy and implement yourself. The sales figure comes from IKEA's own award entry and can't be checked independently: store sales up an average of 4.1 percent during the weeks the first season aired. The playlist lists 245 videos and counting.</p>
+    <p class="src">IKEA USA · <a target="_blank" rel="noopener" href="https://www.youtube.com/playlist?list=PLk5L7f7HqQ7FseahfMCjuaixZgxZ8vX8_">Makeovers playlist</a> · <a target="_blank" rel="noopener" href="https://shortyawards.com/7th/ikea-home-tour">Case study and results</a></p>
+  </div>
+
+  <!-- RICO'S TACOS -->
+  <div class="case">
+    <div class="case-head">
+      <img class="case-logo" src="assets/albertsons.svg" alt="Albertsons" loading="lazy" onerror="this.style.display='none'">
+      <div class="case-headtext">
+        <div class="case-company">Albertsons with Procter &amp; Gamble</div>
+        <div class="case-name">Rico's Tacos</div>
+        <div class="case-meta">Grocery · United States <span class="biz-tag biz-b2c">B2C</span></div>
+      </div>
+    </div>
+    <dl class="spec">
+      <dt>Format</dt><dd>A scripted family drama written to be watched on a phone or on the screens above the checkout.</dd>
+      <dt>On camera</dt><dd>A widowed father, his teenage daughter and her grandmother, starting a taco stand. Some episodes were shot inside working stores with real staff.</dd>
+      <dt>Length</dt><dd>The median episode runs 49 seconds and the longest is 2 minutes 29 seconds.</dd>
+    </dl>
+    <div class="stat-strip">
+      <div class="stat-cell"><div class="stat-num">17</div><div class="stat-label">Episodes So Far</div></div>
+      <div class="stat-cell"><div class="stat-num">940K</div><div class="stat-label">Views, All Episodes</div></div>
+      <div class="stat-cell"><div class="stat-num">200K</div><div class="stat-label">Episode One</div></div>
+    </div>
+    <div class="proj-video-embed video-facade" data-yt="PeUsXJ4ccXY" role="button" tabindex="0" aria-label="Play video: Rico's Tacos Episode 1, Flavor Has a Price"><img class="vf-thumb" src="https://i.ytimg.com/vi/PeUsXJ4ccXY/hqdefault.jpg" alt="" loading="lazy" onerror="this.style.display='none'"><span class="vf-play" aria-hidden="true"></span><span class="vf-title">Episode 1, Flavor Has a Price · Rico's Tacos</span></div>
+    <p class="src note">Albertsons and Procter &amp; Gamble launched this in June 2026 and new episodes are still coming out, with 17 of the announced 22 published so far. The series runs on Albertsons' YouTube and social channels and on the screens inside its stores, and the Albertsons app lets you buy what you just watched.</p>
+    <p class="src">Albertsons Media Collective with Procter &amp; Gamble, made by Minivela and Brilla Media · <a target="_blank" rel="noopener" href="https://www.youtube.com/playlist?list=PLD-Q2N8Wv-zLUeXnrglqit-M3zRMEO5F9">All episodes</a> · <a target="_blank" rel="noopener" href="https://www.marketingdive.com/news/pgs-latest-branded-microdrama-is-built-on-albertsons-retail-media-data/823121/">Trade coverage</a> · Talex Media Founder,&nbsp;<a target="_blank" rel="noopener" href="https://www.linkedin.com/pulse/welcome-taco-drama-tom-langan-wusce/">Tom Langan, wrote about this series in his newsletter here</a></p>
+  </div>
+
+  <hr class="rule-orange">
+
+  <!-- ============ SECTION 04 · B2B ============ -->
+  <div class="section-intro">
+    <span class="sec-pill-orange">04</span>
+    <h2 class="section-title">And It Works In B2B</h2>
+    <p class="section-subtitle">These three sell to other businesses rather than to shoppers. The buyer is a shop owner, a fleet manager or a construction firm, and every one of these shows still had to earn the view.</p>
+  </div>
+
+<div class="case">
+    <div class="case-head">
+      <img class="case-logo" src="assets/shopify.svg" alt="Shopify" loading="lazy" onerror="this.style.display='none'">
       <div class="case-headtext">
         <div class="case-company">Shopify</div>
         <div class="case-name">Make My Space Work</div>
@@ -344,124 +523,14 @@ body{background:var(--bg);min-height:100vh}
       <div class="stat-cell"><div class="stat-num">5.0M</div><div class="stat-label">Channel Views</div></div>
       <div class="stat-cell"><div class="stat-num">61.2K</div><div class="stat-label">Subscribers</div></div>
     </div>
-    <div class="proj-video-embed video-facade" data-yt="cJ7QmsUON7U" role="button" tabindex="0" aria-label="Play video: Make My Space Work, rental live-work transformation"><img class="vf-thumb" src="https://i.ytimg.com/vi/cJ7QmsUON7U/hqdefault.jpg" alt="" loading="lazy" onerror="this.style.display='none'"/><span class="vf-play" aria-hidden="true"></span><span class="vf-title">Rental live-work transformation · Make My Space Work</span></div>
-    <p class="src note">Shopify pointed the camera at its customers instead of its software. The series runs on its own channel, separate from Shopify's, and that channel has five million views and 61,200 subscribers.</p>
+    <div class="proj-video-embed video-facade" data-yt="cJ7QmsUON7U" role="button" tabindex="0" aria-label="Play video: Make My Space Work, rental live-work transformation"><img class="vf-thumb" src="https://i.ytimg.com/vi/cJ7QmsUON7U/hqdefault.jpg" alt="" loading="lazy" onerror="this.style.display='none'"><span class="vf-play" aria-hidden="true"></span><span class="vf-title">Rental live-work transformation · Make My Space Work</span></div>
+    <p class="src note">Shopify pointed the camera towards its customers instead of its software. The series runs on its own dedicated channel, separate from Shopify's, and it has managed to accumulate five million views and 61,200 subscribers.</p>
     <p class="src">Shopify Studios with Alexandra Gater · <a target="_blank" rel="noopener" href="https://www.youtube.com/c/makemyspacework/featured">Series channel</a></p>
   </div>
 
-  <!-- 6. YETI -->
-  <div class="case">
+<div class="case">
     <div class="case-head">
-      <img class="case-logo" src="assets/yeti.svg" alt="YETI" loading="lazy" onerror="this.style.display='none'"/>
-      <div class="case-headtext">
-        <div class="case-company">YETI</div>
-        <div class="case-name">YETI Presents</div>
-        <div class="case-meta">Outdoor Gear · United States <span class="biz-tag biz-b2c">B2C</span></div>
-      </div>
-    </div>
-    <dl class="spec">
-      <dt>Format</dt><dd>Short documentaries about one person, sorted into collections by activity such as fishing, hunting and surfing, rather than by release date.</dd>
-      <dt>On camera</dt><dd>Anglers, hunters, cooks, surfers and rodeo riders, telling their own stories.</dd>
-      <dt>Length</dt><dd>Long form. The median film runs 8 minutes 17 seconds, 32 of the 90 run over 10 minutes, and the longest is 34 minutes.</dd>
-    </dl>
-    <div class="stat-strip">
-      <div class="stat-cell"><div class="stat-num">90</div><div class="stat-label">Films In The Library</div></div>
-      <div class="stat-cell"><div class="stat-num">37.6M</div><div class="stat-label">Library Views</div></div>
-      <div class="stat-cell"><div class="stat-num">1.3M</div><div class="stat-label">Top Film</div></div>
-    </div>
-    <div class="proj-video-embed video-facade" data-yt="OmrufRLGdAk" role="button" tabindex="0" aria-label="Play video: YETI Presents, A Thousand Casts"><img class="vf-thumb" src="https://i.ytimg.com/vi/OmrufRLGdAk/hqdefault.jpg" alt="" loading="lazy" onerror="this.style.display='none'"/><span class="vf-play" aria-hidden="true"></span><span class="vf-title">A Thousand Casts · YETI Presents</span></div>
-    <p class="src note">YETI's films are about the people, not about the coolers, and the one above runs 28 minutes and is the most watched of all 90.</p>
-    <p class="src">YETI · <a target="_blank" rel="noopener" href="https://www.youtube.com/playlist?list=PLT6IyUkzp1o2G2YHBFRsUDP_NLg_jh3QV">Film library</a></p>
-  </div>
-
-  <!-- 7. EBAY -->
-  <div class="case">
-    <div class="case-head">
-      <img class="case-logo" src="assets/ebay.svg" alt="eBay" loading="lazy" onerror="this.style.display='none'"/>
-      <div class="case-headtext">
-        <div class="case-company">eBay Motors</div>
-        <div class="case-name">Between 2 Rides</div>
-        <div class="case-meta">Online Marketplace · United States <span class="biz-tag biz-b2c">B2C</span></div>
-      </div>
-    </div>
-    <dl class="spec">
-      <dt>Format</dt><dd>Two versions of the same car, one straight from the factory and one built with parts from eBay, then tested against each other.</dd>
-      <dt>On camera</dt><dd>Seven YouTube car builders and creators, who do the builds and drive the finished cars.</dd>
-      <dt>Length</dt><dd>Long form. Five episodes of 8 to 12 minutes, plus a trailer and a 15-minute behind-the-scenes cut.</dd>
-    </dl>
-    <div class="stat-strip">
-      <div class="stat-cell"><div class="stat-num">22.9M</div><div class="stat-label">Views Across The Series</div></div>
-      <div class="stat-cell"><div class="stat-num">222K</div><div class="stat-label">New Subscribers</div></div>
-      <div class="stat-cell"><div class="stat-num">200+</div><div class="stat-label">Social Cuts</div></div>
-    </div>
-    <div class="proj-video-embed video-facade" data-yt="jEe7yZQlhvM" role="button" tabindex="0" aria-label="Play video: Between 2 Rides, drift test"><img class="vf-thumb" src="https://i.ytimg.com/vi/jEe7yZQlhvM/hqdefault.jpg" alt="" loading="lazy" onerror="this.style.display='none'"/><span class="vf-play" aria-hidden="true"></span><span class="vf-title">Drift test · Between 2 Rides</span></div>
-    <p class="src note">The build is the show, and the parts that make the difference come from eBay, so nobody has to explain the product in a voiceover. eBay's own award entry is the source for the view total, the subscriber gain, the 200 social cuts, the 4.6 point lift in brand awareness, and the average watch time of 4 minutes 49 seconds.</p>
-    <p class="src">eBay Motors with agency The Many · <a target="_blank" rel="noopener" href="https://shortyawards.com/16th/between-2-rides">Case study and results</a></p>
-  </div>
-
-  <hr class="rule-orange"/>
-
-  <!-- ============ SECTION 02 · RED BULL ============ -->
-  <div class="section-intro">
-    <span class="sec-pill-feature">02 &middot; Special Case</span>
-    <h2 class="section-title">A Special Case: Red Bull</h2>
-    <p class="section-subtitle">One brand built its own media company around the idea and has run it for nearly twenty years.</p>
-  </div>
-
-  <div class="feature">
-    <span class="feature-logo"><svg viewBox="0 0 145 47" role="img" aria-label="Red Bull"><path d="M117.383,20.086L117.383,31.59C117.09,36.149 110.387,36.149 110.094,31.59L110.094,20.086L103.754,20.086L103.754,32.836C103.754,37.142 108.219,40.633 113.715,40.633C119.211,40.633 123.676,37.142 123.676,32.836L123.676,20.086L117.383,20.086ZM138,6.412L138,39.892L144.375,39.892L144.375,6.412L138,6.412ZM127.176,39.892L133.551,39.892L133.551,6.412L127.176,6.412L127.176,39.892ZM95.953,22.477C97.719,20.892 98.737,18.638 98.766,16.267C98.762,14.129 97.938,12.076 96.464,10.528C94.964,8.856 92.25,7.918 88.612,7.918L77.707,7.918L77.707,39.892L91.793,39.892C97.184,39.809 101.543,35.731 101.543,30.735C101.535,27.099 100.254,24.5 95.953,22.477ZM90.612,34.322L84.512,34.322L84.512,13.431L88.762,13.431C90.671,13.52 92.171,15.106 92.151,17.017C92.151,18.888 90.632,20.403 88.762,20.399L86.55,20.399L86.55,26.145L90.612,26.145C96.085,26.145 96.085,34.349 90.612,34.349L90.612,34.322ZM21.487,17.384C21.464,14.86 20.438,12.447 18.632,10.677C16.832,8.908 14.397,7.927 11.871,7.951L0.203,7.951L0.203,39.892L6.987,39.892L6.987,13.431L10.5,13.431C12.882,13.349 14.871,15.235 14.91,17.619C14.805,20.004 12.8,21.869 10.41,21.793L8.835,21.793L8.835,29.438L15.585,39.892L23.535,39.892L14.16,26.552C18.43,25.559 21.46,21.767 21.487,17.384ZM33.352,19.259C27.565,19.415 22.957,24.149 22.957,29.934C22.957,35.724 27.565,40.457 33.352,40.615C37.8,40.615 41.266,38.602 43.059,35.455L37.875,33.059C37.125,34.576 35.565,35.52 33.878,35.481C31.569,35.582 29.621,33.787 29.535,31.477L29.535,31.258L43.589,31.258C43.632,30.832 43.651,30.408 43.647,29.977C43.746,23.047 39.18,19.259 33.352,19.259ZM29.512,27.622C29.414,25.403 31.188,23.552 33.41,23.552C35.628,23.552 37.401,25.403 37.305,27.622L29.512,27.622ZM69,39.892L69,6.412L62.617,6.412L62.617,22.258C60.921,20.547 58.612,19.58 56.203,19.567C50.953,19.567 46.664,24.24 46.664,30C46.664,35.758 50.94,40.477 56.203,40.477C58.637,40.457 60.957,39.457 62.647,37.711L62.647,39.961L69,39.892ZM58.012,35C55.434,35 53.332,32.707 53.332,29.879C53.332,27.052 55.434,24.727 58.012,24.727C60.594,24.727 62.699,27.024 62.699,29.856C62.699,32.692 60.602,35 58.012,35Z" style="fill:rgb(210,0,60);fill-rule:nonzero;"/></svg></span>
-    <p>Red Bull had been selling an energy drink for twenty years when the company opened Red Bull Media House in 2007. From then on Red Bull made its own films, series and live events.</p>
-    <p><strong>The strategy was to own the events and the footage rather than sponsor somebody else's, which is the approach Talex calls Legendeering.</strong> A sponsor pays to appear at another company's event, and when the event ends the footage belongs to whoever shot it. Red Bull built its own events instead, so the film library kept growing and stayed in house. Red Bull says it now runs more than 1,250 events a year in over 160 countries, with more than 700 athletes across more than 100 disciplines.</p>
-    <p>Red Bull Media House describes its own mission as inspiring people with &quot;beyond the ordinary&quot; stories. The films follow athletes attempting things most of us never would. Red Bull&#39;s bet was that the person who wants to watch that kind of film is the same person who buys the drink.</p>
-    <p>Red Bull Media House also produces and licenses live broadcast events for other broadcasters, so part of the output earns revenue rather than only costing money.</p>
-    <p>Red Bull bought the Jaguar Formula One team from Ford in late 2004. That team has won six constructors&#39; titles and eight drivers&#39; titles through the 2025 season. In October 2012 Red Bull sent Felix Baumgartner to the edge of space and streamed the jump live. More than eight million people watched at once, a live record for YouTube at the time.</p>
-    <div class="feature-stats">
-      <div class="feature-stat"><div class="n">12.7B</div><div class="l">Cans Sold In 2024</div></div>
-      <div class="feature-stat"><div class="n">28.7B</div><div class="l">Views, Main Channel</div></div>
-      <div class="feature-stat"><div class="n">7,045</div><div class="l">Videos Published</div></div>
-    </div>
-    <p>Red Bull sells an energy drink, and the company has spent nearly twenty years making films that people seek out on their own.</p>
-    <p class="feature-src">Red Bull &middot; <a target="_blank" rel="noopener" href="https://www.redbullmediahouse.com/en/about-us/">Red Bull Media House</a> &middot; <a target="_blank" rel="noopener" href="https://www.bnnbloomberg.ca/business/company-news/2025/01/23/red-bull-touts-record-profit-in-2024-with-revenue-growth-slowing/">2024 results</a> &middot; <a target="_blank" rel="noopener" href="https://en.wikipedia.org/wiki/Red_Bull_Racing">Red Bull Racing</a></p>
-    <p class="feature-src">The event, discipline, country and athlete counts are Red Bull&#39;s own figures. Cans sold comes from Red Bull&#39;s 2024 annual results. The YouTube figures were pulled on 14 August 2026 and cover the main Red Bull channel only.</p>
-
-    <div class="feature-example">
-      <div class="fx-eyebrow">One of the shows</div>
-      <div class="case-head">
-      <div class="case-headtext">
-        <div class="case-company">Red Bull</div>
-        <div class="case-name">Who Is JOB</div>
-          <div class="case-meta">Energy Drinks &middot; Austria <span class="biz-tag biz-b2c">B2C</span></div>
-        </div>
-      </div>
-      <dl class="spec">
-        <dt>Format</dt><dd>A professional surfer and his friends go looking for waves, and each episode follows what actually happened on the trip, including the parts that went wrong.</dd>
-        <dt>On camera</dt><dd>Jamie O'Brien and the same handful of friends every season.</dd>
-        <dt>Length</dt><dd>Long form. The median episode runs 8 minutes 59 seconds and the longest is 29 minutes.</dd>
-      </dl>
-      <div class="stat-strip">
-        <div class="stat-cell"><div class="stat-num">81</div><div class="stat-label">Episodes</div></div>
-        <div class="stat-cell"><div class="stat-num">85.2M</div><div class="stat-label">Views, Full Playlist</div></div>
-        <div class="stat-cell"><div class="stat-num">19.4M</div><div class="stat-label">Top Episode</div></div>
-      </div>
-      <div class="proj-video-embed video-facade" data-yt="NE28SNDs1qk" role="button" tabindex="0" aria-label="Play video: Who is JOB, tubing and shorebreak"><img class="vf-thumb" src="https://i.ytimg.com/vi/NE28SNDs1qk/hqdefault.jpg" alt="" loading="lazy" onerror="this.style.display='none'"/><span class="vf-play" aria-hidden="true"></span><span class="vf-title">Tubing and shorebreak &middot; Who is JOB 4.0</span></div>
-      <p class="src note">The series ran for eight seasons between 2012 and 2019, across 81 numbered episodes plus a trailer and two extras. Not one of the 84 videos in the playlist names Red Bull in its title. The episode above has 3,783,474 views on its own.</p>
-      <p class="src">Red Bull, with surfer Jamie O'Brien &middot; <a target="_blank" rel="noopener" href="https://www.youtube.com/playlist?list=PLnuf8iyXggLHI9LXsJ03H7FO1uE3IcPZ6">The full playlist</a></p>
-    </div>
-  </div>
-
-  <hr class="rule-orange"/>
-
-  <!-- ============ SECTION 03 · SHORT FORM ============ -->
-  <div class="section-intro">
-    <span class="sec-pill-orange">03</span>
-    <h2 class="section-title">Short Form</h2>
-    <p class="section-subtitle">Three shows with episodes of about a minute, including one scripted series made for phone screens. Short form works differently, so the view counts here are not comparable to the long form numbers above.</p>
-  </div>
-
-<!-- 1. VOLVO TRUCKS -->
-  <div class="case">
-    <div class="case-head">
-      <img class="case-logo" src="assets/volvotrucks.svg" alt="Volvo Trucks" loading="lazy" onerror="this.style.display='none'"/>
+      <img class="case-logo" src="assets/volvotrucks.svg" alt="Volvo Trucks" loading="lazy" onerror="this.style.display='none'">
       <div class="case-headtext">
         <div class="case-company">Volvo Trucks</div>
         <div class="case-name">Volvo Trucks Live Tests</div>
@@ -470,7 +539,7 @@ body{background:var(--bg);min-height:100vh}
     </div>
     <dl class="spec">
       <dt>Format</dt><dd>One truck feature, one physical test, filmed live in a single take.</dd>
-      <dt>On camera</dt><dd>Volvo's own test drivers, a hamster, a herd of bulls, and Jean-Claude Van Damme doing the splits between two reversing trucks.</dd>
+      <dt>On camera</dt><dd>A different subject in every film: a hamster, a herd of bulls, a four-year-old with a remote control, and Jean-Claude Van Damme doing the splits between two reversing trucks.</dd>
       <dt>Length</dt><dd>Short form. The median film runs 1 minute 17 seconds, and 39 of the 41 are under 5 minutes.</dd>
     </dl>
     <div class="stat-strip">
@@ -478,93 +547,36 @@ body{background:var(--bg);min-height:100vh}
       <div class="stat-cell"><div class="stat-num">252.2M</div><div class="stat-label">Views, All Films</div></div>
       <div class="stat-cell"><div class="stat-num">128.0M</div><div class="stat-label">Top Film</div></div>
     </div>
-    <div class="proj-video-embed video-facade" data-yt="M7FIvfx5J10" role="button" tabindex="0" aria-label="Play video: Volvo Trucks, The Epic Split"><img class="vf-thumb" src="https://i.ytimg.com/vi/M7FIvfx5J10/hqdefault.jpg" alt="" loading="lazy" onerror="this.style.display='none'"/><span class="vf-play" aria-hidden="true"></span><span class="vf-title">The Epic Split · Volvo Trucks</span></div>
-    <p class="src note">Volvo has been making Live Tests since 2012 and the most recent went up in 2024. The agency separately reports €126 million in earned media value and YouTube subscribers going from 3,500 to 92,000. The agency also reports that almost half of the truck drivers who saw a Live Test film said they would be more likely to buy a Volvo next time. Of the 44 films in the playlist, 41 are still public, with 252.2 million views in total.</p>
+    <div class="proj-video-embed video-facade" data-yt="M7FIvfx5J10" role="button" tabindex="0" aria-label="Play video: Volvo Trucks, The Epic Split"><img class="vf-thumb" src="https://i.ytimg.com/vi/M7FIvfx5J10/hqdefault.jpg" alt="" loading="lazy" onerror="this.style.display='none'"><span class="vf-play" aria-hidden="true"></span><span class="vf-title">The Epic Split · Volvo Trucks</span></div>
+    <p class="src note">Volvo has been making Live Tests since 2012 and the most recent went up in 2024. Of the 44 films in the playlist, 41 are still public, with 252.2 million views in total. Forsman &amp; Bodenfors, the agency behind the series, separately reports €126 million in earned media value and subscribers rising from 3,500 to 92,000. The same entry says almost half the truck drivers who saw a film would be more likely to buy a Volvo next time.</p>
     <p class="src">Volvo Trucks with Forsman &amp; Bodenfors · <a target="_blank" rel="noopener" href="https://www.youtube.com/playlist?list=PLKFJ3tQvdojTHq0Zw0PUYtDTjGqi93bPe">Live tests playlist</a> · <a target="_blank" rel="noopener" href="https://www.contagious.com/news-and-views/insight-strategy-live-tests">Case study and results</a></p>
   </div>
 
-  <!-- 2. IKEA HOME TOUR -->
-  <div class="case">
+<div class="case">
     <div class="case-head">
-      <img class="case-logo" src="assets/ikea.svg" alt="IKEA" loading="lazy" onerror="this.style.display='none'"/>
-      <div class="case-headtext">
-        <div class="case-company">IKEA</div>
-        <div class="case-name">IKEA Home Tour</div>
-        <div class="case-meta">Home Furnishing · United States <span class="biz-tag biz-b2c">B2C</span></div>
-      </div>
-    </div>
-    <dl class="spec">
-      <dt>Format</dt><dd>Five IKEA employees, the Home Tour Squad, travel the country and make over one room in a real family's home.</dd>
-      <dt>On camera</dt><dd>The family whose house it is, and the IKEA employees doing the makeover.</dd>
-      <dt>Length</dt><dd>Short form. The median video runs 49 seconds, and 230 of the 237 are under 5 minutes.</dd>
-    </dl>
-    <div class="stat-strip">
-      <div class="stat-cell"><div class="stat-num">245</div><div class="stat-label">Videos</div></div>
-      <div class="stat-cell"><div class="stat-num">59.6M</div><div class="stat-label">Playlist Views</div></div>
-      <div class="stat-cell"><div class="stat-num">+4.1%</div><div class="stat-label">Store Sales</div></div>
-    </div>
-    <div class="proj-video-embed video-facade" data-yt="9vwtjTTPbLs" role="button" tabindex="0" aria-label="Play video: IKEA Home Tour Episode 202, family bedroom makeover"><img class="vf-thumb" src="https://i.ytimg.com/vi/9vwtjTTPbLs/hqdefault.jpg" alt="" loading="lazy" onerror="this.style.display='none'"/><span class="vf-play" aria-hidden="true"></span><span class="vf-title">Family Bedroom Makeover · Episode 202</span></div>
-    <p class="src note">IKEA sent its own staff rather than a celebrity, so the rooms look like something you could actually copy. The sales figure comes from IKEA's own award entry and can't be checked independently: store sales up an average of 4.1 percent during the weeks the first season aired. The playlist lists 245 videos, 237 still public.</p>
-    <p class="src">IKEA USA · <a target="_blank" rel="noopener" href="https://www.youtube.com/playlist?list=PLk5L7f7HqQ7FseahfMCjuaixZgxZ8vX8_">Makeovers playlist</a> · <a target="_blank" rel="noopener" href="https://shortyawards.com/7th/ikea-home-tour">Case study and results</a></p>
-  </div>
-
-  <!-- RICO'S TACOS -->
-  <div class="case">
-    <div class="case-head">
-      <img class="case-logo" src="assets/albertsons.svg" alt="Albertsons" loading="lazy" onerror="this.style.display='none'"/>
-      <div class="case-headtext">
-        <div class="case-company">Albertsons with Procter &amp; Gamble</div>
-        <div class="case-name">Rico's Tacos</div>
-        <div class="case-meta">Grocery · United States <span class="biz-tag biz-b2c">B2C</span></div>
-      </div>
-    </div>
-    <dl class="spec">
-      <dt>Format</dt><dd>A scripted family drama written to be watched on a phone or on the screens above the checkout.</dd>
-      <dt>On camera</dt><dd>A widowed father, his teenage daughter and her grandmother, starting a taco stand. They shot some episodes inside working stores with real staff.</dd>
-      <dt>Length</dt><dd>Short form. The median episode runs 49 seconds and the longest is 2 minutes 29 seconds.</dd>
-    </dl>
-    <div class="stat-strip">
-      <div class="stat-cell"><div class="stat-num">17</div><div class="stat-label">Episodes So Far</div></div>
-      <div class="stat-cell"><div class="stat-num">940K</div><div class="stat-label">Views, All Episodes</div></div>
-      <div class="stat-cell"><div class="stat-num">200K</div><div class="stat-label">Episode One</div></div>
-    </div>
-    <div class="proj-video-embed video-facade" data-yt="PeUsXJ4ccXY" role="button" tabindex="0" aria-label="Play video: Rico's Tacos Episode 1, Flavor Has a Price"><img class="vf-thumb" src="https://i.ytimg.com/vi/PeUsXJ4ccXY/hqdefault.jpg" alt="" loading="lazy" onerror="this.style.display='none'"/><span class="vf-play" aria-hidden="true"></span><span class="vf-title">Episode 1, Flavor Has a Price · Rico's Tacos</span></div>
-    <p class="src note">Albertsons and Procter &amp; Gamble launched this in June 2026 and new episodes are still coming out, with 17 of the announced 22 published so far. The series runs on Albertsons' YouTube and social channels and on the screens inside its stores, and the Albertsons app lets you buy what you just watched.</p>
-    <p class="src">Albertsons Media Collective with Procter &amp; Gamble, made by Minivela and Brilla Media · <a target="_blank" rel="noopener" href="https://www.youtube.com/playlist?list=PLD-Q2N8Wv-zLUeXnrglqit-M3zRMEO5F9">All episodes</a> · <a target="_blank" rel="noopener" href="https://www.marketingdive.com/news/pgs-latest-branded-microdrama-is-built-on-albertsons-retail-media-data/823121/">Trade coverage</a> &middot; <a target="_blank" rel="noopener" href="https://www.linkedin.com/pulse/welcome-taco-drama-tom-langan-wusce/">Tom Langan wrote about this one</a></p>
-  </div>
-
-  <hr class="rule-orange"/>
-
-  <!-- ============ SECTION 04 · B2B ============ -->
-  <div class="section-intro">
-    <span class="sec-pill-orange">04</span>
-    <h2 class="section-title">And It Works In B2B</h2>
-    <p class="section-subtitle">Every card above carries a B2C or B2B tag. Three of the eleven sell to businesses rather than to shoppers: Volvo Trucks sells to fleet operators, Make My Space Work is Shopify selling software, and this one sells excavators.</p>
-  </div>
-
-  <div class="case">
-    <div class="case-head">
-      <img class="case-logo sq" src="assets/caterpillar.svg" alt="Caterpillar" loading="lazy" onerror="this.style.display='none'"/>
+      <img class="case-logo sq" src="assets/caterpillar.svg" alt="Caterpillar" loading="lazy" onerror="this.style.display='none'">
       <div class="case-headtext">
         <div class="case-company">Caterpillar</div>
         <div class="case-name">Cat Trials</div>
-        <div class="case-meta">Heavy Equipment &middot; United States <span class="biz-tag biz-b2b">B2B</span></div>
+        <div class="case-meta">Heavy Equipment · United States <span class="biz-tag biz-b2b">B2B</span></div>
       </div>
     </div>
     <dl class="spec">
       <dt>Format</dt><dd>One machine and one task that looks impossible, attempted for real. Five excavators play a giant game of Jenga, a mini excavator threads a shop full of glassware, a loader builds a sand castle.</dd>
       <dt>On camera</dt><dd>The operators who run the machines, doing the work themselves.</dd>
-      <dt>Length</dt><dd>Short form. The median video runs 2 minutes 7 seconds, and 39 of the 44 are under five minutes.</dd>
+      <dt>Length</dt><dd>Short form. Short form. The median video runs 2 minutes 7 seconds, and 39 of the 44 are under five minutes.</dd>
     </dl>
     <div class="stat-strip">
       <div class="stat-cell"><div class="stat-num">44</div><div class="stat-label">Videos</div></div>
       <div class="stat-cell"><div class="stat-num">26.3M</div><div class="stat-label">Views, All Videos</div></div>
       <div class="stat-cell"><div class="stat-num">11</div><div class="stat-label">Years Running</div></div>
     </div>
-    <div class="proj-video-embed video-facade" data-yt="DWc8dUl7Xfo" role="button" tabindex="0" aria-label="Play video: Cat Trials, Stack, excavators playing Jenga"><img class="vf-thumb" src="https://i.ytimg.com/vi/DWc8dUl7Xfo/hqdefault.jpg" alt="" loading="lazy" onerror="this.style.display='none'"/><span class="vf-play" aria-hidden="true"></span><span class="vf-title">Stack &middot; Cat Trials</span></div>
+    <div class="proj-video-embed video-facade" data-yt="DWc8dUl7Xfo" role="button" tabindex="0" aria-label="Play video: Cat Trials, Stack, excavators playing Jenga"><img class="vf-thumb" src="https://i.ytimg.com/vi/DWc8dUl7Xfo/hqdefault.jpg" alt="" loading="lazy" onerror="this.style.display='none'"><span class="vf-play" aria-hidden="true"></span><span class="vf-title">Stack · Cat Trials</span></div>
     <p class="src note">Caterpillar sells excavators and loaders to construction firms, which is about as considered a purchase as buying gets. The first trial went up in April 2014 and the most recent in April 2025. The Jenga film above has 9,345,508 views on its own.</p>
-    <p class="src">Caterpillar &middot; <a target="_blank" rel="noopener" href="https://www.youtube.com/playlist?list=PLjMeT-rwp70gB5cOPRp9vc4g6HcQRGQpx">Cat Trials playlist</a></p>
+    <p class="src">Caterpillar · <a target="_blank" rel="noopener" href="https://www.youtube.com/playlist?list=PLjMeT-rwp70gB5cOPRp9vc4g6HcQRGQpx">Cat Trials playlist</a></p>
   </div>
+
+  
 
   <!-- ============ SECTION 05 ============ -->
   <div class="section-intro">

@@ -94,7 +94,11 @@ body{background:var(--bg);min-height:100vh}
 /* ---- featured case ---- */
 .feature{background:#15233F;border-radius:12px;padding:1.8rem 1.6rem;margin-bottom:1rem;border-top:4px solid var(--o);color:rgba(255,255,255,0.82)}
 .feature *{color:inherit}
-.feature [contenteditable]:focus{outline:2px solid #FFA45C;outline-offset:3px;background:rgba(255,255,255,0.06)}
+.feature p{font-family:'DM Sans',system-ui,sans-serif;color:rgba(255,255,255,0.86)}
+/* The editor's own focus style paints a cream background, which is right for the
+   light page and unreadable on this dark block. These override it. */
+.feature [contenteditable]:focus,.feature .tm-edit:focus{outline:2px solid #FFA45C!important;outline-offset:3px!important;background:rgba(255,255,255,0.10)!important}
+.feature p.tm-edit,.feature p[contenteditable]{color:rgba(255,255,255,0.86)!important;font-family:'DM Sans',system-ui,sans-serif!important;background:transparent}
 .feature-logo{display:inline-block;background:#fff;border-radius:8px;padding:11px 16px;margin-bottom:1.3rem;line-height:0}
 .feature-logo svg{display:block;height:24px;width:auto}
 .feature p{font-size:14.5px;line-height:1.8;margin-bottom:0.95rem}

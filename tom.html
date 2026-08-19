@@ -90,6 +90,22 @@ body{background:var(--bg);min-height:100vh}
 .principle-text{font-size:13.5px;color:var(--txt2);line-height:1.65}
 .opening-prompt{font-family:'EB Garamond',Georgia,serif;font-style:italic;font-size:16px;color:var(--txt);line-height:1.7;margin-bottom:1.3rem}
 .opening-foot{font-size:12.5px;color:var(--txt3);line-height:1.7}
+/* ---- contents ---- */
+html{scroll-behavior:smooth}
+.case,.feature-example,.section-intro{scroll-margin-top:1.5rem}
+.toc{display:grid;grid-template-columns:repeat(3,1fr);gap:1px;background:var(--border);border:1px solid var(--border);border-radius:10px;overflow:hidden;margin:1.6rem 0 0}
+.toc-col{background:var(--surface);padding:1.15rem 1.1rem}
+.toc-head{display:block;font-family:'Oswald',sans-serif;font-weight:600;font-size:10.5px;letter-spacing:0.12em;text-transform:uppercase;color:var(--o-text);text-decoration:none;padding-bottom:0.6rem;margin-bottom:0.7rem;border-bottom:1px solid var(--border)}
+.toc-head:hover{color:var(--o)}
+.toc-item{display:block;text-decoration:none;padding:0.42rem 0;border-bottom:1px solid rgba(226,221,214,0.55)}
+.toc-item:last-child{border-bottom:none}
+.toc-brand{display:block;font-family:'Oswald',sans-serif;font-weight:400;font-size:9.5px;letter-spacing:0.1em;text-transform:uppercase;color:var(--txt3);line-height:1.3}
+.toc-show{display:block;font-size:13.5px;color:var(--txt);line-height:1.4}
+.toc-item:hover .toc-show{color:var(--o-text)}
+.toc-item:hover .toc-brand{color:var(--o-text)}
+.toc-item:focus-visible{outline:2px solid var(--o);outline-offset:2px}
+.toc-note{font-family:'Oswald',sans-serif;font-weight:400;font-size:9px;letter-spacing:0.09em;text-transform:uppercase;color:var(--o-text)}
+@media(max-width:600px){.toc{grid-template-columns:1fr}}
 
 /* ---- featured case ---- */
 .feature{background:#15233F;border-radius:12px;padding:1.8rem 1.6rem;margin-bottom:1rem;border-top:4px solid var(--o);color:rgba(255,255,255,0.82)}
@@ -306,17 +322,40 @@ body{background:var(--bg);min-height:100vh}
 
   <p class="opening-foot">Figures pulled from the YouTube API on 12 August 2026. Any number that comes from a brand's or an agency's own award entry is labeled on the card.</p>
 
+  <nav class="toc" aria-label="Contents">
+    <div class="toc-col">
+      <a class="toc-head" href="#sec-long">Long Form</a>
+      <a class="toc-item" href="#dirt"><span class="toc-brand">Huckberry</span><span class="toc-show">DIRT</span></a>
+      <a class="toc-item" href="#make-up-over-makeup"><span class="toc-brand">e.l.f. Cosmetics</span><span class="toc-show">Make Up Over Makeup</span></a>
+      <a class="toc-item" href="#roadkill"><span class="toc-brand">Dodge</span><span class="toc-show">Roadkill</span></a>
+      <a class="toc-item" href="#yeti-presents"><span class="toc-brand">YETI</span><span class="toc-show">YETI Presents</span></a>
+      <a class="toc-item" href="#between-2-rides"><span class="toc-brand">eBay Motors</span><span class="toc-show">Between 2 Rides</span></a>
+      <a class="toc-item" href="#who-is-job"><span class="toc-brand">Red Bull <span class="toc-note">Special case</span></span><span class="toc-show">Who Is JOB</span></a>
+    </div>
+    <div class="toc-col">
+      <a class="toc-head" href="#sec-short">Short Form</a>
+      <a class="toc-item" href="#ikea-home-tour"><span class="toc-brand">IKEA</span><span class="toc-show">IKEA Home Tour</span></a>
+      <a class="toc-item" href="#ricos-tacos"><span class="toc-brand">Albertsons</span><span class="toc-show">Rico's Tacos</span></a>
+    </div>
+    <div class="toc-col">
+      <a class="toc-head" href="#sec-b2b">Works In B2B</a>
+      <a class="toc-item" href="#make-my-space-work"><span class="toc-brand">Shopify</span><span class="toc-show">Make My Space Work</span></a>
+      <a class="toc-item" href="#volvo-live-tests"><span class="toc-brand">Volvo Trucks</span><span class="toc-show">Live Tests</span></a>
+      <a class="toc-item" href="#cat-trials"><span class="toc-brand">Caterpillar</span><span class="toc-show">Cat Trials</span></a>
+    </div>
+  </nav>
+
   <hr class="rule-orange">
 
   <!-- ============ SECTION 01 ============ -->
-  <div class="section-intro">
+  <div class="section-intro" id="sec-long">
     <span class="sec-pill-orange">01</span>
     <h2 class="section-title">Long Form</h2>
     <p class="section-subtitle">Five shows with longer episodes, all selling to consumers.</p>
   </div>
 
   <!-- HUCKBERRY DIRT -->
-  <div class="case">
+  <div class="case" id="dirt">
     <div class="case-head">
       <img class="case-logo" src="assets/huckberry.svg" alt="Huckberry" loading="lazy" onerror="this.style.display='none'">
       <div class="case-headtext">
@@ -341,7 +380,7 @@ body{background:var(--bg);min-height:100vh}
   </div>
 
   <!-- 3. E.L.F. -->
-  <div class="case">
+  <div class="case" id="make-up-over-makeup">
     <div class="case-head">
       <img class="case-logo sq" src="assets/elf.svg" alt="e.l.f. Cosmetics" loading="lazy" onerror="this.style.display='none'">
       <div class="case-headtext">
@@ -366,7 +405,7 @@ body{background:var(--bg);min-height:100vh}
   </div>
 
   <!-- 4. ROADKILL -->
-  <div class="case">
+  <div class="case" id="roadkill">
     <div class="case-head">
       <img class="case-logo" src="assets/dodge.svg" alt="Dodge" loading="lazy" onerror="this.style.display='none'">
       <div class="case-headtext">
@@ -392,7 +431,7 @@ body{background:var(--bg);min-height:100vh}
 
   <!-- 5. SHOPIFY -->
     <!-- 6. YETI -->
-  <div class="case">
+  <div class="case" id="yeti-presents">
     <div class="case-head">
       <img class="case-logo" src="assets/yeti.svg" alt="YETI" loading="lazy" onerror="this.style.display='none'">
       <div class="case-headtext">
@@ -417,7 +456,7 @@ body{background:var(--bg);min-height:100vh}
   </div>
 
   <!-- 7. EBAY -->
-  <div class="case">
+  <div class="case" id="between-2-rides">
     <div class="case-head">
       <img class="case-logo" src="assets/ebay.svg" alt="eBay" loading="lazy" onerror="this.style.display='none'">
       <div class="case-headtext">
@@ -466,7 +505,7 @@ body{background:var(--bg);min-height:100vh}
     <p class="feature-src">Red Bull · <a target="_blank" rel="noopener" href="https://www.redbullmediahouse.com/en/about-us/">Red Bull Media House</a> · <a target="_blank" rel="noopener" href="https://www.bnnbloomberg.ca/business/company-news/2025/01/23/red-bull-touts-record-profit-in-2024-with-revenue-growth-slowing/">2024 results</a> · <a target="_blank" rel="noopener" href="https://en.wikipedia.org/wiki/Red_Bull_Racing">Red Bull Racing</a></p>
     <p class="feature-src"><br></p>
 
-    <div class="feature-example">
+    <div class="feature-example" id="who-is-job">
       <div class="fx-eyebrow">One of the shows</div>
       <div class="case-head">
       <div class="case-headtext">
@@ -494,7 +533,7 @@ body{background:var(--bg);min-height:100vh}
   <hr class="rule-orange">
 
   <!-- ============ SECTION 03 · SHORT FORM ============ -->
-  <div class="section-intro">
+  <div class="section-intro" id="sec-short">
     <span class="sec-pill-orange">03</span>
     <h2 class="section-title">Short Form</h2>
     <p class="section-subtitle">Two shows with episodes of a minute or so, including one scripted series made for phone screens. Short form works differently, so the view counts here are not comparable to the long form numbers above.</p>
@@ -502,7 +541,7 @@ body{background:var(--bg);min-height:100vh}
 
 <!-- 1. VOLVO TRUCKS -->
     <!-- 2. IKEA HOME TOUR -->
-  <div class="case">
+  <div class="case" id="ikea-home-tour">
     <div class="case-head">
       <img class="case-logo" src="assets/ikea.svg" alt="IKEA" loading="lazy" onerror="this.style.display='none'">
       <div class="case-headtext">
@@ -527,7 +566,7 @@ body{background:var(--bg);min-height:100vh}
   </div>
 
   <!-- RICO'S TACOS -->
-  <div class="case">
+  <div class="case" id="ricos-tacos">
     <div class="case-head">
       <img class="case-logo" src="assets/albertsons.svg" alt="Albertsons" loading="lazy" onerror="this.style.display='none'">
       <div class="case-headtext">
@@ -554,13 +593,13 @@ body{background:var(--bg);min-height:100vh}
   <hr class="rule-orange">
 
   <!-- ============ SECTION 04 · B2B ============ -->
-  <div class="section-intro">
+  <div class="section-intro" id="sec-b2b">
     <span class="sec-pill-orange">04</span>
     <h2 class="section-title">And It Works In B2B</h2>
     <p class="section-subtitle">These three sell to other businesses rather than to shoppers. The buyer is a shop owner, a fleet manager or a construction firm, and every one of these shows still had to earn the view.</p>
   </div>
 
-<div class="case">
+<div class="case" id="make-my-space-work">
     <div class="case-head">
       <img class="case-logo" src="assets/shopify.svg" alt="Shopify" loading="lazy" onerror="this.style.display='none'">
       <div class="case-headtext">
@@ -584,7 +623,7 @@ body{background:var(--bg);min-height:100vh}
     <p class="src">Shopify Studios with Alexandra Gater · <a target="_blank" rel="noopener" href="https://www.youtube.com/c/makemyspacework/featured">Series channel</a></p>
   </div>
 
-<div class="case">
+<div class="case" id="volvo-live-tests">
     <div class="case-head">
       <img class="case-logo" src="assets/volvotrucks.svg" alt="Volvo Trucks" loading="lazy" onerror="this.style.display='none'">
       <div class="case-headtext">
@@ -608,7 +647,7 @@ body{background:var(--bg);min-height:100vh}
     <p class="src">Volvo Trucks with Forsman &amp; Bodenfors · <a target="_blank" rel="noopener" href="https://www.youtube.com/playlist?list=PLKFJ3tQvdojTHq0Zw0PUYtDTjGqi93bPe">Live tests playlist</a> · <a target="_blank" rel="noopener" href="https://www.contagious.com/news-and-views/insight-strategy-live-tests">Case study and results</a></p>
   </div>
 
-<div class="case">
+<div class="case" id="cat-trials">
     <div class="case-head">
       <img class="case-logo sq" src="assets/caterpillar.svg" alt="Caterpillar" loading="lazy" onerror="this.style.display='none'">
       <div class="case-headtext">

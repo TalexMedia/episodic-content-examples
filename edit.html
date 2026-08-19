@@ -754,6 +754,7 @@ html{scroll-behavior:smooth}
   var statusEl = document.getElementById('tm-status');
   var saveTimer = null;
   window.__talexDocKey = DOC_KEY;
+  var BUILD_ID = '63c55d359e4f';
   window.__tmSkipSave = false;
 
   function setStatus(text, cls){
@@ -830,7 +831,7 @@ html{scroll-behavior:smooth}
     return fetch(DB_URL + '/drafts/' + DOC_KEY + '.json', {
       method: 'PUT',
       headers: {'Content-Type': 'application/json'},
-      body: JSON.stringify(html)
+      body: JSON.stringify({html: html, build: BUILD_ID})
     }).then(function(r){ if(!r.ok) throw new Error('http ' + r.status); });
   }
   function resetDraft(){
@@ -851,6 +852,20 @@ html{scroll-behavior:smooth}
     .then(function(r){ if(!r.ok) throw new Error('http ' + r.status); return r.json(); })
     .then(function(v){
       clearTimeout(t);
+      // A draft saved against an older build must NOT be restored: it would
+      // silently paint the previous version over newer content and the reader
+      // would never know the page had moved on. Legacy drafts saved as a bare
+      // string carry no build id, so those still restore as before.
+      if(v && typeof v === 'object' && v.html){
+        if(v.build && v.build !== BUILD_ID){
+          done = true;
+          initEdit();
+          setStatus('This page was updated after your last edit. Your older draft was not applied.', 'warn');
+          return;
+        }
+        finish(v.html);
+        return;
+      }
       finish((typeof v === 'string' && v) ? v : localStorage.getItem(LOCAL_KEY));
     })
     .catch(function(){
